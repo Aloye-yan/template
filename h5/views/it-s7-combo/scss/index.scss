@@ -1,0 +1,707 @@
+.it-s7-combo-h5 {
+  width: 100%;
+
+  .banner-wrapper {
+    width: 100%;
+    height: 9rem;
+    background: url(https://static-ussite.tineco.com/6b391847-37d1-4055-91bb-08f699c92cea.jpg) no-repeat center/cover;
+
+    .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 0.8rem;
+
+      .title {
+        font-size: 0.4rem;
+        color: #fff;
+        line-height: 0.4rem;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      .sub-title {
+        font-size: 0.25rem;
+        color: #fff;
+        margin-top: 0.32rem;
+        margin-bottom: 0.64rem;
+      }
+
+      .watch-video-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .watch-video {
+          font-size: 0.17rem;
+          color: #ffffff;
+          margin-right: 0.3rem;
+        }
+
+        .play-btn {
+          margin-right: 1.3rem;
+          width: 0.3rem;
+          height: 0.3rem;
+          background: url(https://static-ussite.tineco.com/37135080-ece4-40c1-8623-40d2d26d1e2b.png) no-repeat center/0.3rem 0.3rem;
+        }
+
+        .buy-btn {
+          width: 1.8rem;
+          height: 0.56rem;
+          border: 2px solid #ffffff;
+          border-radius: 0.28rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          font-size: .24rem;
+          font-weight: bold;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .video-wrapper {
+    width: 100%;
+    padding: 0.54rem 0.2rem 0.14rem 0.2rem;
+
+    .video {
+      width: 5.6rem;
+      height: 4.2rem;
+      border-radius: 0.26rem;
+      overflow: hidden;
+
+      video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .title {
+      font-size: 0.28rem;
+      font-weight: bold;
+      color: #171818;
+      text-align: center;
+      padding: 0.2rem 0 0.14rem 0;
+    }
+
+    .text {
+      text-align: center;
+      font-size: 0.17rem;
+      line-height: 0.2rem;
+      color: #171818;
+      padding: 0 0.76rem;
+    }
+  }
+
+  .product-sale-wrapper {
+    margin-top: 0.54rem;
+
+    .img {
+      width: 100%;
+      height: 3.5rem;
+      background: url(https://static-ussite.tineco.com/6d06ec4c-965e-42e4-b7bb-978132ecf1ee.jpg) no-repeat center/cover;
+    }
+
+    .text-content {
+      //背景色渐变
+      background: linear-gradient(282deg, #0062ea 0%, #00bffa 100%);
+      padding: 0.2rem 0 0.14rem 0;
+
+      .text {
+        font-size: 0.28rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .content {
+        font-size: 0.17rem;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 0.1rem;
+      }
+    }
+  }
+
+  .product-sale-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0.66rem;
+
+    .img {
+      width: 2.91rem;
+      height: 1.85rem;
+      background: url(https://static-ussite.tineco.com/c420c681-cc3e-4733-84da-9d5220811242.jpg) no-repeat center/cover;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 0.28rem;
+      //字体渐变
+      background: linear-gradient(90deg, #10cbff 0%, #4665ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      padding: 0.1rem 0;
+    }
+
+    .text {
+      font-size: 0.17rem;
+      line-height: 0.2rem;
+      color: #171818;
+      text-align: center;
+      padding-bottom: 0.24rem;
+    }
+  }
+
+  .product-sale-wrapper-2 {
+    .img {
+      width: 100%;
+
+
+      &1 {
+        background: url(https://static-ussite.tineco.com/6f95e0d6-2217-4fbd-9923-55a199287620.jpg) no-repeat center/cover;
+        height: 3.03rem;
+      }
+
+      &2 {
+        height: 3.92rem;
+        background: url(https://static-ussite.tineco.com/e5ccca37-ab66-4ea4-8958-ab288929a348.jpg) no-repeat center/cover;
+      }
+
+      &3 {
+        height: 4.5rem;
+        background: url(https://static-ussite.tineco.com/3493472d-d5bc-4dcb-8a41-1f869be00f9d.jpg) no-repeat center/cover;
+      }
+
+      &4 {
+        height: 4.5rem;
+        background: url(https://static-ussite.tineco.com/44ee095c-9214-4c0f-b11d-d141335059dd.jpg) no-repeat center/cover;
+      }
+    }
+
+    .title {
+      font-size: 0.28rem;
+      font-weight: bold;
+      color: #171818;
+      margin-top: 0.6rem;
+      text-align: center;
+    }
+
+    .text {
+      font-size: 0.17rem;
+      line-height: 0.2rem;
+      color: #171818;
+      text-align: center;
+      padding: 0.1rem 0.44rem 0.3rem 0.44rem;
+    }
+  }
+
+  .swiper-container-1 {
+    background: linear-gradient(282deg, #0062ea 0%, #00bffa 100%);
+
+    margin-top: 0.1rem;
+
+    .swiper-wrapper {
+
+
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.54rem 0.2rem 0.2rem 0.2rem;
+      }
+
+      .title {
+        font-size: 0.28rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 0.2rem;
+      }
+
+      .text {
+        font-size: 0.17rem;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 0.2rem;
+      }
+
+      .img {
+        width: 100%;
+
+        &1 {
+          border-radius: 0.26rem;
+          overflow: hidden;
+          width: 5.62rem;
+          height: 4.22rem;
+          background: url(https://static-ussite.tineco.com/96740760-a295-445b-ba28-ee51c35a60be.jpg) no-repeat center/cover;
+        }
+
+        &2 {
+          border-radius: 0.26rem;
+          overflow: hidden;
+          width: 5.62rem;
+          height: 4.22rem;
+          background: url(https://static-ussite.tineco.com/0cb272a1-5f66-4467-951c-8a28e2c8811b.jpg) no-repeat center/cover;
+        }
+
+        &3 {
+          border-radius: 0.26rem;
+          overflow: hidden;
+          width: 5.62rem;
+          height: 4.22rem;
+          background: url(https://static-ussite.tineco.com/d19327fb-6f77-4cbe-a535-ccf27b17285d.jpg) no-repeat center/cover;
+        }
+      }
+
+    }
+
+    .swiper-pagination-1 {
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.1rem 0 0.2rem 0;
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #ffffff;
+        opacity: 1;
+
+        &-active {
+          background-color: transparent;
+          border: 1px solid #ffffff;
+        }
+      }
+    }
+  }
+
+  .triple-wrapper {
+    background: linear-gradient(83deg, #2162ea 0%, #57c0f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 0.28rem;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.54rem;
+
+    .img {
+      margin-top: 0.2rem;
+      width: 100%;
+      height: 4.5rem;
+      background: url(https://static-ussite.tineco.com/14b18427-439a-41af-8329-ab1cdc436f31.jpg) no-repeat center/cover;
+    }
+  }
+
+  .house-clean-wrapper {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(https://static-ussite.tineco.com/18aba35e-5a9f-4447-b561-628e889c52f0.jpg) no-repeat center/cover;
+    margin-top: 0.1rem;
+    padding-left: 0.2rem;
+
+    .title {
+      background: linear-gradient(83deg, #2162ea 0%, #57c0f9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 0.28rem;
+      line-height: 1.2;
+      font-weight: bold;
+
+
+    }
+
+    .text {
+      font-size: 0.17rem;
+      color: #000;
+      margin-bottom: 0.2rem;
+    }
+  }
+
+  .compare-wrapper {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(https://static-ussite.tineco.com/7488d860-07ac-42b3-9347-3a2ac95405f9.jpg) no-repeat center/cover;
+    margin-top: 0.1rem;
+    padding-top: 0.16rem;
+
+    .title {
+      font-size: 0.28rem;
+      line-height: 1.2;
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+    }
+
+    .text {
+      font-size: 0.17rem;
+      line-height: 0.2rem;
+      color: #000;
+      margin-bottom: 0.2rem;
+      text-align: center;
+    }
+  }
+
+  .swiper-container-2 {
+    position: relative;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        padding-top: 0.54rem;
+        padding-bottom: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+          font-size: 0.28rem;
+          line-height: 1.2;
+          font-weight: bold;
+          color: #000;
+          text-align: center;
+        }
+
+        .text {
+          font-size: 0.17rem;
+          line-height: 0.2rem;
+          color: #000;
+          margin-top: 0.2rem;
+          text-align: center;
+          margin-bottom: 0.4rem;
+        }
+
+        .img {
+          &1 {
+            width: 4.56rem;
+            height: 3.42rem;
+            background: url(https://static-ussite.tineco.com/0d84dfb3-b279-4db4-bed8-6ea01cafff60.jpg) no-repeat center/cover;
+          }
+
+          &2 {
+            width: 4.56rem;
+            height: 3.42rem;
+            background: url(https://static-ussite.tineco.com/45be92d3-b4f7-4d7d-9e9a-e336cce34038.jpg) no-repeat center/cover;
+          }
+
+          &3 {
+            width: 4.56rem;
+            height: 3.42rem;
+            background: url(https://static-ussite.tineco.com/9688b041-b0e8-4f75-a21e-275d5f652fa5.jpg) no-repeat center/cover;
+          }
+
+          &4 {
+            width: 4.56rem;
+            height: 3.42rem;
+            background: url(https://static-ussite.tineco.com/996d1140-8aa6-4ffa-a90d-ae14bb38936e.jpg) no-repeat center/cover;
+          }
+        }
+      }
+    }
+
+    .cursor {
+      width: 18px;
+      height: 3.42rem;
+      position: absolute;
+      top: 2.2rem;
+      z-index: 9;
+
+      &.prev {
+        background: url(https://static-ussite.tineco.com/ce612d63-95f8-4b40-8bca-bee2686477f7.svg) no-repeat center/18px 20px;
+        left: 0.3rem;
+      }
+
+      &.next {
+        background: url(https://static-ussite.tineco.com/ce612d63-95f8-4b40-8bca-bee2686477f7.svg) no-repeat center/18px 20px;
+        right: 0.3rem;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .product-wrapper {
+    padding: 1.2rem 0.2rem;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      text-align: center;
+      font-size: 0.36rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 0.6rem;
+    }
+
+    .product-swiper {
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      width: 5.2rem;
+
+      .swiper-slide {
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          .product-img {
+            height: 3.48rem;
+            width: auto;
+          }
+
+          .name {
+            margin: 0.15rem 0 0.2rem;
+            font-size: 0.28rem;
+            font-weight: 700;
+          }
+
+          .buyat {
+            color: #00327d;
+            font-size: 0.19rem;
+            font-weight: 700;
+          }
+
+          .icon-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 4.05rem;
+            margin-top: 0.2rem;
+
+            .buy-item {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 1rem;
+              margin-bottom: 0.2rem;
+              position: relative;
+
+              .icon-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 0.82rem;
+                background: #fff;
+                border: 0.02rem solid #00327D;
+                border-radius: 0.27rem;
+                overflow: hidden;
+
+                a {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-decoration: none;
+                  color: #00327d;
+
+                  img {
+                    width: 0.32rem;
+                    height: 0.32rem;
+                  }
+                }
+              }
+
+              .tineco-buy-tips {
+                font-size: 10px;
+                font-weight: 400;
+                color: #232222;
+                display: none;
+                opacity: 0;
+                position: absolute;
+                left: 0px;
+                right: 0;
+                bottom: -22px;
+                width: 100%;
+                text-align: center;
+                white-space: pre;
+              }
+
+              &:hover {
+                .tineco-buy-tips {
+                  display: block;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+
+          .whatsinclude {
+            font-size: 0.11rem;
+            font-weight: 400;
+            color: #151414;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            justify-content: center;
+
+            a {
+              font-size: 0.11rem;
+              font-weight: 400;
+              color: #151414;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              padding: 0.1rem;
+
+              .iconfont {
+                margin-left: 10px;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #000;
+                display: inline-block;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+
+      .swiper-button-prev1, .swiper-button-next1 {
+        position: absolute;
+        top: 50%;
+        width: 0.42rem;
+        height: 0.42rem;
+        background-repeat: no-repeat;
+        z-index: 999;
+      }
+
+      .swiper-button-prev1 {
+        left: 0.18rem;
+        background: url('https://static-ussite.tineco.com/6c5420ea-3e81-4fe4-bf06-7dad840b4952.png') no-repeat center center / 100% 100%;
+      }
+
+      .swiper-button-next1 {
+        right: 0.18rem;
+        background: url('https://static-ussite.tineco.com/3e57bbbe-6777-4868-af0a-0fb2ddb04b25.png') no-repeat center center / 100% 100%;
+      }
+    }
+
+    .commoditys-content-box {
+      width: 5.2rem;
+      padding: 0.4rem 0 0.75rem;
+      background: #fff;
+      margin: 0 auto;
+
+      .commoditys-content {
+        border: 1px solid #EFF1F4;
+        width: 4.93rem;
+        margin: 0 auto;
+        padding-top: 0.3rem;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+
+        .commoditys-item {
+          text-align: center;
+          width: 50%;
+          padding-bottom: 0.3rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: 100%;
+          }
+
+          .msg {
+            font-size: 0.11rem;
+            font-weight: 400;
+            color: #232222;
+            line-height: 0.16rem;
+          }
+        }
+      }
+    }
+  }
+
+  .support-wrapper {
+    background: #FFF;
+    padding: 0 0.2rem;
+
+    .title {
+      text-align: center;
+      font-size: 0.36rem;
+      font-weight: 700;
+      color: #000;
+      padding: 0.54rem 0;
+    }
+
+    .support-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .item {
+        width: 48.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #F5F5F5;
+        border-radius: 7px;
+        text-decoration: none;
+        margin-bottom: 0.22rem;
+        padding: 0.36rem 0.12rem;
+
+        .img {
+          width: 0.98rem;
+          height: 0.98rem;
+          margin-bottom: 0.3rem;
+        }
+
+        .text {
+          color: #000;
+          font-weight: 700;
+          font-size: 0.17rem;
+
+        }
+      }
+    }
+  }
+
+  .modal-content {
+    border-radius: 0.1rem;
+
+    .modal-header {
+      padding: 0.16rem;
+
+      .modal-title {
+        font-size: 0.2rem
+      }
+
+      .close {
+        padding: 0.16rem;
+        margin: -0.16rem -0.16rem -0.16rem auto;
+        font-size: 0.24rem;
+      }
+    }
+  }
+}

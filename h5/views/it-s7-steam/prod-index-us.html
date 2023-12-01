@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="./css/it-s7-steam-index.css">
+</head>
+
+<body>
+    <div class="s7-steam-h5">
+        <div class="banner-wrapper">
+            <img alt="" src="https://static-ussite.tineco.com/611615f9-a461-4e6b-965f-a06cb22956ec.png" />
+            <div class="content">
+                <div class="product-name"><span>FLOOR ONE</span> S7 Steam</div>
+                <div class="sub-title">Pulizia Profonda con Vapore a 140°C</div>
+                <div class="video-and-buy">
+                    <div class="text">
+                        Guarda il video
+                    </div>
+
+                    <a href="#videoModal" data-toggle="modal" data-target="#videoModal" data-title="FLOOR ONE S7 Steam"
+                        data-videofly="https://www.youtube.com/embed/7C7XjefAfdI" class="about-us-info-video">
+                        <div class="play-btn"></div>
+                    </a>
+                    <div class="buy-btn" onclick="handleScrollTo('.product-wrapper')">Acquistare</div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title" id="modal-title"></div>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body  p-0">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function handleScrollTo(targetEl) {
+                    let targetOffset = $(targetEl).offset().top;
+                    let scrollTo = targetOffset;
+                    $("html, body").animate({
+                        scrollTop: scrollTo
+                    }, 1000)
+                }
+                $(function () {
+                    $("#videoModal").on("show.bs.modal", function (event) {
+                        let button = $(event.relatedTarget); // Button that triggered the modal
+                        let url = button.data("videofly"); // Extract url from data-video attribute
+                        var title = button.data("title");
+
+                        $("#modal-title").html(title);
+                        $(this).find("iframe").attr({
+                            src: url,
+                            allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        });
+                    });
+
+                })
+            </script>
+        </div>
+        <div class="function-wrapper">
+            <div class="top">
+                <div class="left">
+                    <div class="content-1">
+                        <img alt="" class="function-img"
+                            src="https://static-ussite.tineco.com/d2314103-e920-48e7-b9bb-3a91b1473c74.png" />
+                        <div class="content">
+                            <div class="top-content">
+                                <div class="title">140° C</div>
+                                <div class="sub-title"> HyperSteam</div>
+                            </div>
+                            <div class="bottom-content">
+                                Elimina istantaneamente le macchie in modo naturale
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-2">
+                        <img alt="" class="function-img"
+                            src="https://static-ussite.tineco.com/49940552-93a1-47d3-aa10-a718e8ff8c0b.png" />
+                        <div class="content">
+                            Autopulizia con vapore
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content-3">
+                        <img alt="" class="function-img"
+                            src="https://static-ussite.tineco.com/6c14aa03-419d-4f7f-850b-f26ddb03a5c6.png" />
+                        <div class="content">
+                            <div class="title">
+                                <div>Vapore spruzzato direttamente sul pavimento</div>
+                            </div>
+                            <div class="bottom-content">
+                                Riduce la perdita di calore del vapore
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <div class="content-4">
+                    <img alt="" class="function-img"
+                        src="https://static-ussite.tineco.com/f2891e62-ec3f-4475-923b-5c0801990e08.png" />
+                    <div class="content">
+                        <div class="text-gradient">Display LED intelligente</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="content-5">
+                    <img alt="" class="function-img"
+                        src="https://static-ussite.tineco.com/92403d3a-79d8-4bc2-9a10-a90326b2ee87.png" />
+                    <div class="content">
+                        <div class="text">Modalità Vapore</div>
+                        <div class="text-1">2 Modalità Vapore</div>
+                        <div class="text-2">Potenzia la modalità Vapore</div>
+                    </div>
+                </div>
+                <div class="content-6">
+                    <img alt="" class="function-img"
+                        src="https://static-ussite.tineco.com/b21b8766-9575-4ff3-9d1a-20b80a74cba5.png" />
+                    <div class="content">
+                        <div class="text">Tecnologia</div>
+                        <div class="text">MHCBS™</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hot-f-wrapper">
+            <div class="content">
+                <div class="text">Le Macchie Vengono Istantaneamente Eliminate.</div>
+                <div class="text-1">Non dovrai preoccuparti di nulla, grazie alla potenza del vapore.</div>
+            </div>
+            <div class="img-wrapper">
+                <img src="https://static-ussite.tineco.com/f23f8859-7e5e-414b-9618-5bc3e8d78295.jpg" alt="" />
+            </div>
+        </div>
+
+        <div class="desk-wrapper">
+            <div class="title">Non importa qual è il tipo di macchia, FLOOR ONE FLOOR ONE S7 Steam la rimuoverà, lasciando i tuoi pavimenti immacolati e nuovi.</div>
+            <div class="bottom-content">
+                <div class="content">
+                    <video autoplay loop muted class="video-content"
+                        src="https://static-ussite.tineco.com/650ac447-0275-4df0-99ba-b441e9b63d56.mp4"></video>
+                    <div class="text-wrapper">
+                        <div class="text">Modalità VAPORE</div>
+                        <div class="text-1">Affronta lo sporco pesante e di grandi dimensioni.</div>
+                    </div>
+                    <div class="icon">
+                        <img src="https://static-ussite.tineco.com/0ea18f9d-019c-4c4e-8217-6037461bb089.png" alt=""
+                            srcset="" />
+                    </div>
+
+                </div>
+                <div class="content">
+                    <video autoplay loop muted class="video-content"
+                        src="https://static-ussite.tineco.com/60685ea5-641b-43fb-85d5-fc3de3331882.mp4"></video>
+                    <div class="text-wrapper">
+                        <div class="text">Modalità POTENZIA VAPORE</div>
+                        <div class="text-1">Mira alle macchie localizzate e ostinate.</div>
+                    </div>
+                    <div class="icon">
+                        <img src="https://static-ussite.tineco.com/7a8308d0-289f-4f84-b2bd-03cf68cf68e0.png" alt=""
+                            srcset="" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="safe-wrapper">
+            <div class="content">
+                <div class="text">Sicurezza assicurata per Animali Domestici e Bambini</div>
+                <div class="text-1">Il vapore a 140°C elimina facilmente i batteri, fornendo un ambiente di vita senza preoccupazioni e privo di germi, ottimo per famiglie con neonati e animali domestici.</div>
+            </div>
+            <div class="img-wrapper">
+                <img src="https://static-ussite.tineco.com/bb96576b-a957-4f84-ad4f-9bb8b6241f73.png" alt="" />
+            </div>
+        </div>
+        <div class="safe-wrapper">
+            <div class="content">
+                <div class="text">Cancella le impronte fangose con facilità</div>
+                <div class="text-1">Affronta senza fatica le macchie difficili da gestire, anche provenienti dall'esterno, poiché S7 Steam pulisce e disinfetta rapidamente, garantendo un pavimento immacolato e igienico.</div>
+            </div>
+            <div class="img-wrapper">
+                <img src="https://static-ussite.tineco.com/08da9992-b148-47a0-8027-e5b79e3d84d8.jpg" alt="" />
+            </div>
+        </div>
+        <div class="safe-wrapper">
+            <div class="content">
+                <div class="text">Elimina in sicurezza le Macchie degli Animali Domestici</div>
+                <div class="text-1">Non lasciare che le macchie degli animali domestici ti stressino! S7 Steam affronta e igienizza facilmente i disordini degli animali domestici senza compromettere la salute della tua famiglia.</div>
+            </div>
+            <div class="img-wrapper">
+                <img src="https://static-ussite.tineco.com/22956cf2-9660-4efb-b456-d3eff9cffd22.jpg" alt="" />
+            </div>
+        </div>
+        <div class="safe-wrapper">
+            <div class="content">
+                <div class="text">Sistema Autopulente MultiFase</div>
+                <div class="text-1">Con un solo tocco, acqua pulita e vapore caldo puliscono a fondo la tua lavapavimenti.
+                    <br/> L'asciugatura centrifuga elimina l'acqua in eccesso e minimizza gli odori.</div>
+            </div>
+            <div class="img-wrapper">
+                <img src="https://static-ussite.tineco.com/2317424a-5652-4276-bc40-4d2bc4421365.png" alt="" />
+            </div>
+        </div>
+
+        <div class="edge-wrapper">
+            <div class="edge-swiper-wrapper swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img alt="" class="swipe-img"
+                            src="https://static-ussite.tineco.com/aa8bc10c-f57f-4837-95df-adcf191ec725.png" />
+                        <div class="content">
+                            <div class="title">Passaggio 1</div>
+                            <div class="text">Autopulizia con acqua pulita</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="" class="swipe-img"
+                            src="https://static-ussite.tineco.com/059f35c3-289b-4723-8bb2-41f54deeaa15.png" />
+                        <div class="content">
+                            <div class="title">Passaggio 2</div>
+                            <div class="text">Fase di autosterilizzazione</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="" class="swipe-img"
+                            src="https://static-ussite.tineco.com/c2b55684-f20b-437d-b371-38de616d6df9.png" />
+                        <div class="content">
+                            <div class="title">Passaggio 3</div>
+                            <div class="text"> Processo di asciugatura centrifuga all'aria</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-content">
+                <div class="top">
+                    <div class="title">Pulizia Costante con Spazzole Pulite con tecnologia MHCBS™</div>
+                    <div class="text">Ogni pulizia del pavimento viene eseguita con una spazzola a rullo pulita e vapore a 140°C. Quindi, S7 Steam:</div>
+                </div>
+                <div class="bottom">
+                    <div class="img-item">
+                        <div class="img-bg"
+                            style="background-image: url('https://static-ussite.tineco.com/9aa761f6-59e7-4f3a-baf5-3d3edb6d8f22.png');">
+                        </div>
+                        <div class="setp">
+                            <img src="https://static-ussite.tineco.com/ab3e2f43-593a-4953-b220-468a1a423b4c.png" alt=""
+                                class="icon" />
+                            <div class="text"><span>RISCIACQUARE</span> con acqua pulita e vapore</div>
+                        </div>
+                    </div>
+                    <div class="img-item">
+                        <div class="img-bg"
+                            style="background-image: url('https://static-ussite.tineco.com/c57ba823-02e6-4767-ae12-199819d5b81b.png');">
+                        </div>
+                        <div class="setp">
+                            <img src="https://static-ussite.tineco.com/d8ca1ae2-f129-49ce-80e3-e9d0d24f7dd5.png" alt=""
+                                class="icon" />
+                            <div class="text"><span>LAVARE</span> con rullo spazzola a 450 giri/min</div>
+                        </div>
+                    </div>
+                    <div class="img-item">
+                        <div class="img-bg"
+                            style="background-image: url('https://static-ussite.tineco.com/6e60ba97-22a0-4235-9829-231c9ab71602.png');">
+                        </div>
+                        <div class="setp">
+                            <img src="https://static-ussite.tineco.com/c5d8697a-4689-4721-840e-a9c7d0c43e25.png" alt=""
+                                class="icon" />
+                            <div class="text"><span>RASCHIA</span> sporcizie e acque reflue</div>
+                        </div>
+                    </div>
+                    <div class="img-item">
+                        <div class="img-bg"
+                            style="background-image: url('https://static-ussite.tineco.com/9a4a3ebc-0956-49db-bb97-52bdbeb63951.png');">
+                        </div>
+                        <div class="setp">
+                            <img src="https://static-ussite.tineco.com/4e91f7f2-e3c5-4f7a-926f-b5a6de769581.png" alt=""
+                                class="icon" />
+                            <div class="text"><span>RIMUOVE</span> l'acqua sporca</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                var edgeSwiper = new Swiper(".edge-swiper-wrapper", {
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                });
+            });
+        </script>
+
+        <div class="safe-wrapper">
+            <div class="content">
+                <div class="text">Perché dovrei scegliere la lavapavimenti intelligente di Tineco?</div>
+                <div class="text-1">Senza il Sensore Smart TINECO iLoopTM, avrai difficoltà a gestire l'efficienza dell'aspirapolvere o dello spazzolone.</div>
+                <div class="text-1">La pulizia richiederà molti più sforzi e più interruzioni.</div>
+            </div>
+            <div class="img-wrapper">
+                <img src="https://static-ussite.tineco.com/668466d8-1f9f-4004-89ca-f76731221f9d.jpg" alt="" />
+            </div>
+        </div>
+
+        <div class="safe-c-wrapper">
+            <img src="https://static-ussite.tineco.com/3a81835b-3f25-4bd4-a4f2-9227e1e6b443.jpg" alt="" class="bg" />
+            <div class="content">
+                <div class="text">Triplica la durata della Batteria,<br/> Sblocca una potenza costante</div>
+            </div>
+        </div>
+
+        <div class="introduce-wrapper">
+            <div class="introduce-swiper swiper">
+                <div class="swiper-button-prev1"></div>
+                <div class="swiper-button-next1"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="text">Fino a 40 minuti di autonomia</div>
+                            <div class="text-1">Con serbatoi dell'acqua più grandi e iLoopTM Smart Sensor di Tineco, ottieni una maggiore autonomia in modo da poter pulire aree più grandi senza interruzioni.</div>
+                        </div>
+                        <img src="https://static-ussite.tineco.com/e1aa258e-6eb7-4685-8d3d-bb5772c7e7b6.jpg" alt=""
+                            class="img" />
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="text">La Pulizia Profonda Diventa Semplice</div>
+                            <div class="text-1">Pulisci tutta la tua casa con una lavapavimenti a vapore leggera e senza fili. È facile da manovrare e pronto all'uso ogni volta che ne hai bisogno.</div>
+                        </div>
+                        <img src="https://static-ussite.tineco.com/b54c53ba-2699-4c00-80c3-076d9486e07f.jpg" alt=""
+                            class="img" />
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="text">Pulizia dei Bordi Laterali migliorata</div>
+                            <div class="text-1">Pulisce battiscopa e angoli difficili da raggiungere entro 0,20 pollici su entrambi i lati,<br/> senza lasciare spazi vuoti o disordine.</div>
+                        </div>
+                        <img src="https://static-ussite.tineco.com/1a8b5dcd-a89f-44d9-a7d4-f477669a5b0d.jpg" alt=""
+                            class="img" />
+                    </div>
+                </div>
+
+            </div>
+            <script>
+                $(function () {
+                    var intraoduceSwiper = new Swiper(".introduce-swiper", {
+                        loop: true,
+                        navigation: {
+                            nextEl: '.swiper-button-next1',
+                            prevEl: '.swiper-button-prev1'
+                        }
+                    })
+                })
+            </script>
+        </div>
+
+        <div class="introduce-t-wrapper">
+            <div class="item">
+                <img src="https://static-ussite.tineco.com/d2b56d64-f1b9-441d-9ebc-4615b4b3c951.jpg" alt=""
+                    class="img" />
+                <div class="text">Sistema di Rimozione del Calcare per Vapore Intenso</div>
+            </div>
+            <div class="item">
+                <img src="https://static-ussite.tineco.com/3148e28c-faff-46b7-9ed2-67e3e5e664f0.png" alt=""
+                    class="img" />
+                <div class="text">4 Modalità di Pulizia<br/> Versatili</div>
+            </div>
+            <div class="item">
+                <img src="https://static-ussite.tineco.com/020e152b-8a3a-414d-823d-9183878ac0f3.png" alt=""
+                    class="img" />
+                <div class="text">Illumina la strada in ogni angolo</div>
+            </div>
+            <div class="item">
+                <img src="https://static-ussite.tineco.com/2b6a8edd-a4e7-4ab0-8bae-1f179e71b06d.png" alt=""
+                    class="img" />
+                <div class="text">Asciugatura Rapida Senza Aloni</div>
+            </div>
+        </div>
+
+        <div id="product-wrapper" class="product-wrapper">
+            <div class="title">FLOOR ONE S7 Steam</div>
+            <div class="swiper product-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <img src="https://static-ussite.tineco.com/ec3de4f1-c4bd-4329-aa74-dd07a66e5879.png" alt=""
+                                class="product-img">
+                            <div class="name">FLOOR ONE S7 Steam</div>
+                            <div class="buyat">Acquista presso</div>
+                            <div class="icon-list">
+                                <div class="buy-item">
+                                    <div id="s7pro" class="icon-item">
+                                        <a href="https://de-store.tineco.com/products/tineco-floor-one-s7-schnurloser-dampfreiniger"
+                                            target="_blank">
+                                            <img src="https://static-ussite.tineco.com/tineccstore-icon.svg_2f873c2e-d.svg"
+                                                alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="tineco-buy-tips">Tineco Store</div>
+                                </div>
+                                <div class="buy-item">
+                                    <div id="s7pro" class="icon-item">
+                                        <a href="https://www.amazon.it/S7-Steam-Lavapavimenti-Appiccicoso-Autopulizia/dp/B0CCXQJCT4?maas=maas_adg_4B674F80AA4C90AF2070F88E67B38420_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank">
+                                            <img src="https://static-ussite.tineco.com/80cf9152-7213-4473-9177-04c5f9dc9762.svg"
+                                                alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="tineco-buy-tips">Amazon</div>
+                                </div>
+                            </div>
+                            <div class="whatsinclude">
+                                <a role="btn" data-toggle="collapse" href="#whatIncludeCollapse1" aria-expanded="false"
+                                    aria-controls="whatIncludeCollapse1" class="collapsed">
+                                    Cosa è incluso
+                                    <span id="xiangxiazhankai" class="iconfont"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-button-prev1"></div>
+                <div class="swiper-button-next1"></div> -->
+            </div>
+            <div class="commoditys-content-box">
+                <div id="whatIncludeCollapse1" class="collapse">
+                    <div class="commoditys-content">
+                        <div class="commoditys-item">
+                            <img src="https://static-ussite.tineco.com/0ab0b0a0-7c3b-46e8-9e76-c5f77cec4284.jpg"
+                                alt="" />
+                            <div class="msg">Rullo Spazzola</div>
+                        </div>
+                        <div class="commoditys-item">
+                            <img src="https://static-ussite.tineco.com/8bfbf127-76e9-4089-bdca-c1a7065247e0.jpg"
+                                alt="" />
+                            <div class="msg">Filtro HEPA</div>
+                        </div>
+                        <div class="commoditys-item">
+                            <img src="https://static-ussite.tineco.com/278cc008-0277-4300-8253-6636469fbc41.jpg"
+                                alt="" />
+                            <div class="msg">Adattatore</div>
+                        </div>
+                        <div class="commoditys-item">
+                            <img src="https://static-ussite.tineco.com/2147a7be-6f9f-491f-b3ac-b8272c633367.jpg"
+                                alt="" />
+                            <div class="msg">Base di ricarica</div>
+                        </div>
+                        <div class="commoditys-item">
+                            <img src="https://static-ussite.tineco.com/638aba80-ade3-4d90-889c-e5bb5d8a20f4.jpg"
+                                alt="" />
+                            <div class="msg">Strumento di pulizia</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(function () {
+                    var productSwiper = new Swiper(".product-swiper", {
+                        loop: true,
+                        // navigation: {
+                        //     nextEl: '.swiper-button-next1',
+                        //     prevEl: '.swiper-button-prev1'
+                        // }
+                    })
+                })
+            </script>
+        </div>
+
+        <div id="support-wrapper" class="support-wrapper">
+            <div class="title">Assistenza</div>
+            <div class="support-list">
+                <a class="item" href="support/troubleshooting/">
+                    <img src="https://static-ussite.tineco.com/cab4e3af-b37f-4488-83d1-dcc6d73815cf.png" alt=""
+                        class="img" />
+                    <div class="text">Risoluzione dei problemi</div>
+                </a>
+                <a class="item" href="support/faqs/">
+                    <img src="https://static-ussite.tineco.com/b57ffab4-129a-479d-80b4-9dcb798aeef1.png" alt=""
+                        class="img" />
+                    <div class="text">DOMANDE FREQUENTI</div>
+                </a>
+                <a class="item" href="support/product-care/">
+                    <img src="https://static-ussite.tineco.com/b57ffab4-129a-479d-80b4-9dcb798aeef1.png" alt=""
+                        class="img" />
+                    <div class="text">Manutenzione del prodotto</div>
+                </a>
+                <a class="item" href="support/instruction-manual/">
+                    <img src="https://static-ussite.tineco.com/03a4e3fb-c16e-4483-9d17-4fee94ff30dd.png" alt=""
+                        class="img" />
+                    <div class="text">Manuale di istruzioni</div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div id="videoModal" class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modal-title" class="modal-title"></h5>
+                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                </div>
+                <div class="modal-body  p-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe allowfullscreen class="embed-responsive-item"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

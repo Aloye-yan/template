@@ -1,0 +1,28 @@
+{
+  "name": "page-template",
+  "version": "1.0.0",
+  "description": "Page create for web.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node scripts/watch.mjs",
+    "build:pc": "vite build --mode pc",
+    "build:h5": "vite build --mode h5",
+    "build:pct": "vite build --mode pct",
+    "build:h5t": "vite build --mode h5t",
+    "create-page": "node scripts/createPages.mjs",
+    "create-template": "node scripts/createTemplates.mjs",
+    "generate": "node scripts/generator.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "author": "yongqiang.gu",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "ejs": "^3.1.9",
+    "eslint": "^8.22.0",
+    "inquirer": "^9.2.11",
+    "rollup-plugin-scss": "^4.0.0",
+    "sass": "^1.69.4",
+    "vite": "^4.5.0"
+  }
+}

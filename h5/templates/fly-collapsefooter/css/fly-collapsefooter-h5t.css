@@ -1,0 +1,81 @@
+.fly-collapsefooter-h5 {
+  width: 100%;
+  padding: 0.5rem 0.3rem;
+}
+.fly-collapsefooter-h5 .item {
+  margin-bottom: 0.4rem;
+}
+.fly-collapsefooter-h5 .item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.01rem solid rgba(0, 0, 0, 0.5);
+}
+.fly-collapsefooter-h5 .item .head .title {
+  font-size: 0.19rem;
+  color: #000;
+  font-weight: 700;
+  margin-right: 0.12rem;
+}
+.fly-collapsefooter-h5 .item .head .icon {
+  text-align: right;
+  font-size: 0.24rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.fly-collapsefooter-h5 .item .head .icon.active {
+  transform: rotate(45deg);
+}
+.fly-collapsefooter-h5 .item .content .text {
+  font-size: 0.16rem;
+  line-height: 0.23rem;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0.2rem 0 0.3rem;
+}
+.fly-collapsefooter-h5 .item .content .text .learn-more {
+  display: inline-block;
+  width: 100%;
+  word-wrap: break-word;
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.6);
+}
+.fly-collapsefooter-h5 .item .content .buy-list {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+.fly-collapsefooter-h5 .item .content .buy-list .buy-item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fly-collapsefooter-h5 .item .content .buy-list .buy-item .btn-icon {
+  width: 0.58rem;
+  height: 0.31rem;
+  border-radius: 0.15rem;
+  border: solid 0.02rem #00327D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.04rem;
+}
+.fly-collapsefooter-h5 .item .content .buy-list .buy-item .btn-icon img {
+  height: 0.21rem;
+  width: auto;
+}
+.fly-collapsefooter-h5 .item .content .buy-list .buy-item .national-flag {
+  text-decoration: none;
+  display: block;
+  width: auto;
+  height: 0.2rem;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.68);
+  margin-left: 0.08rem;
+}
+.fly-collapsefooter-h5 .item .content .buy-list .buy-item .national-flag img {
+  width: auto;
+  height: 100%;
+}
+.fly-collapsefooter-h5 .fz-04 {
+  font-size: 0.4rem;
+}

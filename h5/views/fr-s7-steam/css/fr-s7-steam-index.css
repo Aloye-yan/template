@@ -1,0 +1,831 @@
+.s7-steam-h5 .banner-wrapper {
+  width: 100%;
+  position: relative;
+}
+.s7-steam-h5 .banner-wrapper img {
+  width: 100%;
+}
+.s7-steam-h5 .banner-wrapper .content {
+  position: absolute;
+  left: 0;
+  bottom: 0.79rem;
+  width: 100%;
+  max-height: 100%;
+  padding: 0 0.48rem;
+  text-align: center;
+}
+.s7-steam-h5 .banner-wrapper .content .product-name {
+  font-size: 0.4rem;
+  line-height: 0.48rem;
+  color: #fff;
+}
+.s7-steam-h5 .banner-wrapper .content .product-name span {
+  font-weight: bold;
+}
+.s7-steam-h5 .banner-wrapper .content .sub-title {
+  font-size: 0.25rem;
+  line-height: 0.48rem;
+  color: #fff;
+  margin-top: 0.2rem;
+}
+.s7-steam-h5 .banner-wrapper .content .video-and-buy {
+  display: flex;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+.s7-steam-h5 .banner-wrapper .content .video-and-buy .text {
+  color: #fff;
+  font-size: 0.2rem;
+}
+.s7-steam-h5 .banner-wrapper .content .video-and-buy .play-btn {
+  width: 0.3rem;
+  height: 0.3rem;
+  background: url(https://static-ussite.tineco.com/37135080-ece4-40c1-8623-40d2d26d1e2b.png) no-repeat center center/100% 100%;
+  margin: 0 1rem 0 0.27rem;
+  cursor: pointer;
+}
+.s7-steam-h5 .banner-wrapper .content .video-and-buy .buy-btn {
+  width: 1.5rem;
+  height: 0.57rem;
+  border: 0.02rem solid #fff;
+  border-radius: 0.27rem;
+  font-size: 0.24rem;
+  line-height: 0.48rem;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.s7-steam-h5 .function-wrapper {
+  background-image: url("https://static-ussite.tineco.com/4d8f8ee8-1170-4ce9-b2a0-ef35c41659d9.png");
+  background-repeat: no-repeat;
+  padding: 0.25rem 0.34rem;
+  width: 100vw;
+  background-size: cover;
+}
+.s7-steam-h5 .function-wrapper img {
+  width: 100%;
+}
+.s7-steam-h5 .function-wrapper .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s7-steam-h5 .function-wrapper .top .left {
+  width: 50%;
+  margin-right: 0.05rem;
+}
+.s7-steam-h5 .function-wrapper .top .left .content-1 {
+  width: 2.59rem;
+  height: 1.76rem;
+  position: relative;
+}
+.s7-steam-h5 .function-wrapper .top .left .content-1 .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0.12rem;
+  left: 0;
+  padding: 0.15rem 0.13rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+.s7-steam-h5 .function-wrapper .top .left .content-1 .content .top-content .title {
+  font-size: 0.22rem;
+  line-height: 0.25rem;
+  color: #ff7624;
+  font-weight: 700;
+  padding-top: 0.12rem;
+}
+.s7-steam-h5 .function-wrapper .top .left .content-1 .content .top-content .sub-title {
+  font-size: 0.17rem;
+  line-height: 0.3rem;
+  color: #fff;
+}
+.s7-steam-h5 .function-wrapper .top .left .content-1 .content .bottom-content {
+  font-size: 10px;
+  color: #fff;
+}
+.s7-steam-h5 .function-wrapper .top .left .content-2 {
+  margin-top: 0.07rem;
+  width: 2.59rem;
+  height: 1.76rem;
+  position: relative;
+}
+.s7-steam-h5 .function-wrapper .top .left .content-2 .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.15rem 0.3rem;
+  display: flex;
+  font-size: 0.22rem;
+  line-height: 0.25rem;
+  text-align: center;
+  background: linear-gradient(77deg, #00c0fa, #015eea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+}
+.s7-steam-h5 .function-wrapper .top .right {
+  width: 50%;
+  margin-left: 0.05rem;
+}
+.s7-steam-h5 .function-wrapper .top .right .content-3 {
+  width: 100%;
+  position: relative;
+}
+.s7-steam-h5 .function-wrapper .top .right .content-3 .content {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  bottom: 0.12rem;
+  left: 0;
+  padding: 0.15rem 0.13rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.s7-steam-h5 .function-wrapper .top .right .content-3 .content .title {
+  font-size: 0.22rem;
+  line-height: 0.28rem;
+  background: linear-gradient(77deg, #00c0fa, #015eea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+.s7-steam-h5 .function-wrapper .top .right .content-3 .content .bottom-content {
+  font-size: 10px;
+  color: #fff;
+}
+.s7-steam-h5 .function-wrapper .center {
+  width: 100%;
+  margin: 0.05rem 0;
+}
+.s7-steam-h5 .function-wrapper .center .content-4 {
+  width: 100%;
+  position: relative;
+}
+.s7-steam-h5 .function-wrapper .center .content-4 .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.15rem 0.13rem;
+  font-size: 0.22rem;
+  line-height: 0.32rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.s7-steam-h5 .function-wrapper .center .content-4 .content .text-gradient {
+  background: linear-gradient(77deg, #00c0fa, #015eea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.s7-steam-h5 .function-wrapper .bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s7-steam-h5 .function-wrapper .bottom .content-5 {
+  width: 58%;
+  position: relative;
+}
+.s7-steam-h5 .function-wrapper .bottom .content-5 .content {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  bottom: 0.14rem;
+  left: 0;
+  padding: 0 0.27rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s7-steam-h5 .function-wrapper .bottom .content-5 .content .text {
+  font-size: 0.12rem;
+  color: #fff;
+}
+.s7-steam-h5 .function-wrapper .bottom .content-5 .content .text-1 {
+  font-size: 0.22rem;
+  font-weight: 700;
+  background: linear-gradient(77deg, #fd644f, rgb(242, 142, 38));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.s7-steam-h5 .function-wrapper .bottom .content-5 .content .text-2 {
+  font-size: 10px;
+  color: #fff;
+  margin-top: 0.76rem;
+}
+.s7-steam-h5 .function-wrapper .bottom .content-6 {
+  width: 42%;
+  margin-left: 0.1rem;
+  position: relative;
+}
+.s7-steam-h5 .function-wrapper .bottom .content-6 .content {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  bottom: 0.14rem;
+  left: 0;
+  padding: 0 0.27rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.22rem;
+  line-height: 0.3rem;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+.s7-steam-h5 .function-wrapper .bottom .content-6 .content .text {
+  display: flex;
+  background: linear-gradient(77deg, #00c0fa, #015eea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.s7-steam-h5 .function-wrapper .bottom .content-6 .content .text span {
+  font-size: 0.16rem;
+  font-weight: bold;
+  line-height: 0.16rem;
+  margin-top: 0.04rem;
+}
+.s7-steam-h5 .hot-f-wrapper {
+  width: 100%;
+}
+.s7-steam-h5 .hot-f-wrapper .content {
+  background: #fff;
+  padding: 0.54rem 0 0.19rem;
+  text-align: center;
+}
+.s7-steam-h5 .hot-f-wrapper .content .text {
+  background: linear-gradient(77deg, #005feb, #00c5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 0.29rem;
+  font-weight: bold;
+}
+.s7-steam-h5 .hot-f-wrapper .content .text-1 {
+  font-size: 0.17rem;
+  color: #000000;
+  margin-top: 0.11rem;
+  padding: 0 1rem;
+}
+.s7-steam-h5 .hot-f-wrapper .img-wrapper {
+  width: 100%;
+}
+.s7-steam-h5 .hot-f-wrapper .img-wrapper img {
+  width: 100%;
+}
+.s7-steam-h5 .desk-wrapper {
+  width: 100%;
+  padding: 0 0.1rem;
+}
+.s7-steam-h5 .desk-wrapper .title {
+  font-size: 0.17rem;
+  background: #fff;
+  color: #000000;
+  text-align: center;
+  padding: 0.54rem 0.34rem 0.2rem;
+}
+.s7-steam-h5 .desk-wrapper .bottom-content {
+  width: 100%;
+}
+.s7-steam-h5 .desk-wrapper .bottom-content .content {
+  position: relative;
+  width: 100%;
+  height: 2.4rem;
+}
+.s7-steam-h5 .desk-wrapper .bottom-content .content .video-content {
+  width: 100%;
+  border-radius: 0.2rem;
+}
+.s7-steam-h5 .desk-wrapper .bottom-content .content .text-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0.21rem;
+  width: 100%;
+  max-height: 100%;
+  padding-left: 0.27rem;
+  text-align: left;
+}
+.s7-steam-h5 .desk-wrapper .bottom-content .content .text-wrapper .text {
+  font-size: 0.29rem;
+  font-weight: 700;
+  background: linear-gradient(77deg, #00c0fa, #015eea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.s7-steam-h5 .desk-wrapper .bottom-content .content .text-wrapper .text-1 {
+  font-size: 0.17rem;
+  color: #fff;
+}
+.s7-steam-h5 .desk-wrapper .bottom-content .content .icon {
+  position: absolute;
+  left: 0.2rem;
+  top: -0.06rem;
+  width: 0.83rem;
+  height: 0.96rem;
+  background: url("https://static-ussite.tineco.com/42f5f1ea-60aa-46b8-9949-f5b2ae4299d5.png") no-repeat center center/100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s7-steam-h5 .desk-wrapper .bottom-content .content .icon img {
+  width: 0.43rem;
+  height: 0.43rem;
+}
+.s7-steam-h5 .safe-wrapper .content {
+  padding: 0.54rem 0.2rem 0.2rem;
+  background: #fff;
+  color: #000000;
+  text-align: center;
+}
+.s7-steam-h5 .safe-wrapper .content .text {
+  font-size: 0.29rem;
+  line-height: 0.3rem;
+  font-weight: 700;
+  margin-bottom: 0.11rem;
+  padding: 0 0.2rem;
+}
+.s7-steam-h5 .safe-wrapper .content .text-1 {
+  font-size: 0.17rem;
+}
+.s7-steam-h5 .safe-wrapper .img-wrapper {
+  width: 100%;
+}
+.s7-steam-h5 .safe-wrapper .img-wrapper img {
+  width: 100%;
+}
+.s7-steam-h5 .edge-wrapper .edge-swiper-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFF;
+  padding-bottom: 0.3rem;
+}
+.s7-steam-h5 .edge-wrapper .edge-swiper-wrapper .swiper-wrapper .swiper-slide {
+  padding: 0.33rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.s7-steam-h5 .edge-wrapper .edge-swiper-wrapper .swiper-wrapper .swiper-slide .swipe-img {
+  width: 4.1rem;
+  height: 2.7rem;
+}
+.s7-steam-h5 .edge-wrapper .edge-swiper-wrapper .swiper-wrapper .swiper-slide .content {
+  padding: 0.21rem;
+  text-align: center;
+  font-weight: 700;
+}
+.s7-steam-h5 .edge-wrapper .edge-swiper-wrapper .swiper-wrapper .swiper-slide .content .title {
+  font-size: 0.29rem;
+  font-style: italic;
+  line-height: 0.34rem;
+  background: linear-gradient(-85deg, #015eea, #00c0fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.s7-steam-h5 .edge-wrapper .edge-swiper-wrapper .swiper-wrapper .swiper-slide .content .text {
+  font-size: 0.17rem;
+  line-height: 0.34rem;
+  margin-top: 0.06rem;
+  color: #000000;
+}
+.s7-steam-h5 .edge-wrapper .edge-swiper-wrapper .swiper-pagination .swiper-pagination-bullet {
+  background: #00327d;
+  opacity: 1;
+}
+.s7-steam-h5 .edge-wrapper .edge-swiper-wrapper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+  border: 1px solid #0099ff;
+}
+.s7-steam-h5 .edge-wrapper .img-content {
+  background: url("https://static-ussite.tineco.com/4d8f8ee8-1170-4ce9-b2a0-ef35c41659d9.png") no-repeat center center/100% 100%;
+}
+.s7-steam-h5 .edge-wrapper .img-content .top {
+  text-align: center;
+  color: #ffffff;
+  padding: 0.54rem 0;
+}
+.s7-steam-h5 .edge-wrapper .img-content .top .title {
+  font-size: 0.29rem;
+  line-height: 0.4rem;
+  font-weight: 700;
+}
+.s7-steam-h5 .edge-wrapper .img-content .top .title span {
+  font-size: 0.16rem;
+  font-weight: 700;
+  line-height: 0.16rem;
+  margin-top: 0.04rem;
+}
+.s7-steam-h5 .edge-wrapper .img-content .top .text {
+  font-size: 0.17rem;
+  margin-top: 0.11rem;
+  padding: 0 0.2rem;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 0.2rem 0.35rem;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom .img-item {
+  width: 49%;
+  border-radius: 0.14rem;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom .img-item .img-bg {
+  width: 100%;
+  height: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-size: 140% auto;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom .img-item:nth-of-type(2) .img-bg {
+  background-position: 65% 75% !important;
+  background-size: 170% auto !important;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom .img-item:nth-of-type(3) .img-bg {
+  background-position: 50% 54%;
+  background-size: 200% auto;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom .img-item:nth-of-type(4) .img-bg {
+  background-position: 72% 42%;
+  background-size: 150% auto;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom .img-item .setp {
+  height: 0.5rem;
+  padding: 0 0.12rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom .img-item .setp .icon {
+  width: 0.34rem;
+  height: 0.34rem;
+  margin-right: 0.12rem;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom .img-item .setp .text {
+  font-size: 0.13rem;
+  line-height: 0.18rem;
+  color: #000;
+}
+.s7-steam-h5 .edge-wrapper .img-content .bottom .img-item .setp .text span {
+  font-weight: 700;
+  background: linear-gradient(-85deg, #015eea, #00c0fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.s7-steam-h5 .safe-c-wrapper {
+  position: relative;
+}
+.s7-steam-h5 .safe-c-wrapper .bg {
+  width: 100%;
+}
+.s7-steam-h5 .safe-c-wrapper .content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.54rem 0.49rem 0;
+}
+.s7-steam-h5 .safe-c-wrapper .content .text {
+  font-size: 0.29rem;
+  line-height: 0.34rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(-85deg, #015eea, #00c0fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.s7-steam-h5 .introduce-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s7-steam-h5 .introduce-wrapper .introduce-swiper {
+  overflow: hidden;
+  position: unset;
+  width: 5.2rem;
+}
+.s7-steam-h5 .introduce-wrapper .introduce-swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.54rem 0;
+}
+.s7-steam-h5 .introduce-wrapper .introduce-swiper .swiper-wrapper .swiper-slide .content {
+  color: #000;
+  text-align: center;
+  padding: 0 0 0.27rem;
+  height: 1.8rem;
+}
+.s7-steam-h5 .introduce-wrapper .introduce-swiper .swiper-wrapper .swiper-slide .content .text {
+  font-size: 0.29rem;
+  font-weight: 700;
+  line-height: 0.32rem;
+}
+.s7-steam-h5 .introduce-wrapper .introduce-swiper .swiper-wrapper .swiper-slide .content .text-1 {
+  padding: 0 0.22rem 0.22rem;
+  font-size: 0.17rem;
+  line-height: 0.23rem;
+  margin-top: 0.12rem;
+}
+.s7-steam-h5 .introduce-wrapper .introduce-swiper .swiper-wrapper .swiper-slide .img {
+  width: 4.56rem;
+}
+.s7-steam-h5 .introduce-wrapper .introduce-swiper .swiper-button-prev1, .s7-steam-h5 .introduce-wrapper .introduce-swiper .swiper-button-next1 {
+  position: absolute;
+  top: 4rem;
+  width: 0.34rem;
+  height: 0.5rem;
+  background-repeat: no-repeat;
+  z-index: 999;
+}
+.s7-steam-h5 .introduce-wrapper .introduce-swiper .swiper-button-prev1 {
+  left: 0.18rem;
+  background-image: url(https://static-ussite.tineco.com/ce612d63-95f8-4b40-8bca-bee2686477f7.svg);
+}
+.s7-steam-h5 .introduce-wrapper .introduce-swiper .swiper-button-next1 {
+  right: 0.18rem;
+  background-image: url(https://static-ussite.tineco.com/74a5c351-e408-4348-85a9-84a6c8296949.svg);
+}
+.s7-steam-h5 .introduce-t-wrapper {
+  background: url("https://static-ussite.tineco.com/4d8f8ee8-1170-4ce9-b2a0-ef35c41659d9.png") no-repeat center center/100% 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.65rem 0.2rem 0.1rem;
+}
+.s7-steam-h5 .introduce-t-wrapper .item {
+  width: 49%;
+  margin-bottom: 0.23rem;
+  display: flex;
+  flex-direction: column;
+}
+.s7-steam-h5 .introduce-t-wrapper .item .text {
+  padding: 0.27rem 0;
+  padding-right: 0.6rem;
+  font-size: 0.17rem;
+  color: #fff;
+  font-weight: 700;
+}
+.s7-steam-h5 .introduce-t-wrapper .item .img {
+  display: block;
+  width: 100%;
+  border-radius: 0.27rem;
+}
+.s7-steam-h5 .product-wrapper {
+  padding: 1.2rem 0.2rem;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s7-steam-h5 .product-wrapper .title {
+  text-align: center;
+  font-size: 0.36rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.6rem;
+}
+.s7-steam-h5 .product-wrapper .product-swiper {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  width: 5.2rem;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .product-img {
+  height: 3.48rem;
+  width: auto;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .name {
+  margin: 0.15rem 0 0.2rem;
+  font-size: 0.28rem;
+  font-weight: 700;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .buyat {
+  color: #00327d;
+  font-size: 0.19rem;
+  font-weight: 700;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 4.05rem;
+  margin-top: 0.2rem;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .icon-list .buy-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1rem;
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .icon-list .buy-item .icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.82rem;
+  background: #fff;
+  border: 0.02rem solid #00327D;
+  border-radius: 0.27rem;
+  overflow: hidden;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .icon-list .buy-item .icon-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #00327d;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .icon-list .buy-item .icon-item a img {
+  width: 0.32rem;
+  height: 0.32rem;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .icon-list .buy-item .tineco-buy-tips {
+  font-size: 10px;
+  font-weight: 400;
+  color: #232222;
+  display: none;
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  right: 0;
+  bottom: -22px;
+  width: 100%;
+  text-align: center;
+  white-space: pre;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .icon-list .buy-item:hover .tineco-buy-tips {
+  display: block;
+  opacity: 1;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .whatsinclude {
+  font-size: 0.11rem;
+  font-weight: 400;
+  color: #151414;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .whatsinclude a {
+  font-size: 0.11rem;
+  font-weight: 400;
+  color: #151414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.1rem;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-slide .content .whatsinclude a .iconfont {
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-button-prev1, .s7-steam-h5 .product-wrapper .product-swiper .swiper-button-next1 {
+  position: absolute;
+  top: 50%;
+  width: 0.42rem;
+  height: 0.42rem;
+  background-repeat: no-repeat;
+  z-index: 999;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-button-prev1 {
+  left: 0.18rem;
+  background: url("https://static-ussite.tineco.com/6c5420ea-3e81-4fe4-bf06-7dad840b4952.png") no-repeat center center/100% 100%;
+}
+.s7-steam-h5 .product-wrapper .product-swiper .swiper-button-next1 {
+  right: 0.18rem;
+  background: url("https://static-ussite.tineco.com/3e57bbbe-6777-4868-af0a-0fb2ddb04b25.png") no-repeat center center/100% 100%;
+}
+.s7-steam-h5 .product-wrapper .commoditys-content-box {
+  width: 5.2rem;
+  padding: 0.4rem 0 0.75rem;
+  background: #fff;
+  margin: 0 auto;
+}
+.s7-steam-h5 .product-wrapper .commoditys-content-box .commoditys-content {
+  border: 1px solid #EFF1F4;
+  width: 4.93rem;
+  margin: 0 auto;
+  padding-top: 0.3rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.s7-steam-h5 .product-wrapper .commoditys-content-box .commoditys-content .commoditys-item {
+  text-align: center;
+  width: 50%;
+  padding-bottom: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s7-steam-h5 .product-wrapper .commoditys-content-box .commoditys-content .commoditys-item img {
+  width: 100%;
+}
+.s7-steam-h5 .product-wrapper .commoditys-content-box .commoditys-content .commoditys-item .msg {
+  font-size: 0.11rem;
+  font-weight: 400;
+  color: #232222;
+  line-height: 0.16rem;
+}
+.s7-steam-h5 .support-wrapper {
+  background: #FFF;
+  padding: 0 0.2rem;
+}
+.s7-steam-h5 .support-wrapper .title {
+  text-align: center;
+  font-size: 0.36rem;
+  font-weight: 700;
+  color: #000;
+  padding: 0.54rem 0;
+}
+.s7-steam-h5 .support-wrapper .support-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.s7-steam-h5 .support-wrapper .support-list .item {
+  width: 48.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #F5F5F5;
+  border-radius: 7px;
+  text-decoration: none;
+  margin-bottom: 0.22rem;
+  padding: 0.36rem 0.12rem;
+}
+.s7-steam-h5 .support-wrapper .support-list .item .img {
+  width: 0.98rem;
+  height: 0.98rem;
+  margin-bottom: 0.3rem;
+}
+.s7-steam-h5 .support-wrapper .support-list .item .text {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.17rem;
+}
+
+.modal-content {
+  border-radius: 0.1rem;
+}
+.modal-content .modal-header {
+  padding: 0.16rem;
+}
+.modal-content .modal-header .modal-title {
+  font-size: 0.2rem;
+}
+.modal-content .modal-header .close {
+  padding: 0.16rem;
+  margin: -0.16rem -0.16rem -0.16rem auto;
+  font-size: 0.24rem;
+}

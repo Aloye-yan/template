@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Title</title>
+    <link href="../../assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/base-h5.css">
+    <link rel="stylesheet" href="./css/fr-black5-h5.css">
+
+</head>
+
+<body>
+    <div class="fr-black5-h5" id="event-container">
+        <div class="banner-wrapper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box" data-banner_name="Black Friday" data-position="1" ga4-event="ga4-top-banner">
+                        <img alt="" src="https://static-ussite.tineco.com/f7e04bf3-d48f-40b7-8aa0-4c32e0aad7dc.jpg">
+                        <div class="content">
+                            <div class="title">Profitez de nos offres <span>BLACK FRIDAY</span> maintenant</div>
+                            <div class="off-title">Jusqu’à <span>50%</span></div>
+                            <div class="text">Faites confiance à la marque aimée par 12 Millions*<br /> de foyers dans
+                                le monde</div>
+                            <div class="btn-content">
+                                <a class="btn-link"
+                                    href="https://www.amazon.fr/stores/page/25BF31C4-B3CD-48E4-B033-DB9AC942F1CF?maas=maas_adg_344B834F976C70B8C257469287AC60BE_afap_abs&ref_=aa_maas&tag=maas">
+                                    <img alt=""
+                                        src="https://static-ussite.tineco.com/9d83437f-abdf-4c0f-add6-b749f89d0508.png">
+                                </a>
+                                <a class="btn-link mar-l-1"
+                                    href="https://fr-store.tineco.com/?utm_source=official_site&utm_medium=banner&utm_campaign=bf2023">
+                                    <img alt=""
+                                        src="https://static-ussite.tineco.com/7403a878-7e79-40cb-b05e-3e29afd27e3a.png">
+                                </a>
+                            </div>
+                            <div class="tips">*Ventes nettes tirées des comptes officiels de Tineco (de Janvier 2020 à
+                                Octobre 2023). Tineco se réserve le droit d'interprétation finale.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-banner_name="floor one s7 combo" data-position="2"
+                    ga4-event="ga4-top-banner">
+                    <a class="box" href="https://www.amazon.fr/Tineco-Floor-One-S7-Combo/dp/B0CFD6TTJ2?ref_=ast_sto_dp">
+                        <img alt="" src="https://static-ussite.tineco.com/487bd7b5-64ba-4a13-97ad-dd7ca1919a5e.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide" data-banner_name="PURE ONE Station PET" data-position="3"
+                    ga4-event="ga4-top-banner">
+                    <a class="box" href="products/pure-one-station.html">
+                        <img alt="" src="https://static-ussite.tineco.com/24ec118d-be52-49b1-8341-aa24264946cb.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                const bannerSwiper = new Swiper('.banner-wrapper', {
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }
+                })
+            })
+        </script>
+        <div class="media-wrapper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text">Comme en vedette</div>
+                </div>
+                <div class="swiper-slide">
+                    <img alt="" class="img-1"
+                        src="https://static-ussite.tineco.com/%E6%9C%AA%E6%A0%87%E9%A2%98-1.png_53b9bd1a-b.png">
+                </div>
+                <div class="swiper-slide">
+                    <img alt="" class="img-2"
+                        src="https://static-ussite.tineco.com/75a6899e-d520-44ab-b3aa-56626974f1c9.png_b7347dfe-8.png">
+                </div>
+                <div class="swiper-slide">
+                    <img alt="" class="img-3"
+                        src="https://static-ussite.tineco.com/bcd58d6d-7904-4574-bdb2-0d2a79bb27b7.png_a235d366-a.png">
+                </div>
+                <div class="swiper-slide">
+                    <img alt="" class="img-4"
+                        src="https://static-ussite.tineco.com/756696b7-48c9-4098-ad22-c9dfd32ebdc5.png_3a6f2cd8-7.png">
+                </div>
+            </div>
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
+        </div>
+        <script>
+            $(function () {
+                //一屏幕3个 左右引导箭头
+                const mediaSwiper = new Swiper('.media-wrapper', {
+                    slidesPerView: 3,
+                    navigation: {
+                        nextEl: '.left',
+                        prevEl: '.right',
+                    },
+                })
+            })
+        </script>
+        <div class="limit-wrapper">
+            <div class="limit-title">
+                <div class="text">Offres à durée limitée Tineco pour le Black Friday</div>
+            </div>
+            <div class="product-list active">
+                <div class="floor-wash">
+                    <img alt="" src="https://static-ussite.tineco.com/f1290e22-ddf3-40a7-a0e2-f98f4dc1483a.png">
+                    <div class="title hover">NETTOYEUR SEC/HUMIDE</div>
+                </div>
+                <div class="floor-wash-wrapper pad-b-50" id="floor-wash-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt="" src="https://static-ussite.tineco.com/S5.jpg_212d6f4f-b.jpg">
+                                <div class="hot-icon"></div>
+                                <div class="content">
+                                    <div class="title"><b>FLOOR ONE</b> S5</div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn"
+                                            href="https://www.amazon.fr/Tineco-Aspirateur-Poussi%C3%A8re-Intelligent-autonomie/dp/B093GCNT4Z?maas=maas_adg_8DF3F18F9D7AAB33CCD6D30CDEDA2391_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="FLOOR ONE S5" data-product_series="FLOOR ONE S5"
+                                            data-product_type="Floor Washer" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+                                        <a class="store-btn buy-btn mar-l-26"
+                                            href="https://fr-store.tineco.com/products/tineco-aspirateur-eau-et-poussiere-sans-fil-floor-one-s5-intelligent?utm_source=official_site&utm_medium=product&utm_campaign=bf2023"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Tineco Store"
+                                            data-product_name="FLOOR ONE S5" data-product_series="FLOOR ONE S5"
+                                            data-product_type="Floor Washer" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-8.png_cb3ca90c-1.png">
+                                        </a>
+                                    </div>
+                                    <a class="learn-more" data-button_name="Learn more" data-product_name="FLOOR ONE S5"
+                                        data-product_series="FLOOR ONE S5" data-product_type="Floor Washer"
+                                        ga4-event="ga4-learn-more" href="/products/floor-one-s5.html">En savoir plus
+                                        ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt=""
+                                    src="https://static-ussite.tineco.com/S5-COMBO-POWER-KIT.jpg_6a131a98-4.jpg">
+                                <div class="content">
+                                    <div class="title"><b>FLOOR ONE</b> S5 <br />Combo Power KIT</div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn"
+                                            href="https://www.amazon.fr/Tineco-Aspirateur-Poussi%C3%A8re-intelligents-collantes/dp/B09PBHYKVM?maas=maas_adg_AD1F63909B63BA5ABFE3856CDC7EAB61_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="FLOOR ONE S5 Combo Power KIT"
+                                            data-product_series="FLOOR ONE S5" data-product_type="Floor Washer"
+                                            ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+                                        <a class="store-btn buy-btn mar-l-26"
+                                            href="https://fr-store.tineco.com/products/tineco-floor-one-s5-combo-power-kit-aspirateur-intelligent-sec-et-humide?utm_source=official_site&utm_medium=product&utm_campaign=bf2023"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Tineco Store"
+                                            data-product_name="FLOOR ONE S5 Combo Power KIT"
+                                            data-product_series="FLOOR ONE S5" data-product_type="Floor Washer"
+                                            ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-8.png_cb3ca90c-1.png">
+                                        </a>
+                                    </div>
+                                    <a class="learn-more" data-button_name="Learn more"
+                                        data-product_name="FLOOR ONE S5 Combo Power KIT"
+                                        data-product_series="FLOOR ONE S5" data-product_type="Floor Washer"
+                                        ga4-event="ga4-learn-more" href="/products/floor-one-s5.html" target="_blank"
+                                        rel="noopener noreferrer">En savoir plus ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt="" src="https://static-ussite.tineco.com/S3.jpg_61b2cd33-4.jpg">
+                                <div class="content">
+                                    <div class="title"><b>FLOOR ONE</b> S3</div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn"
+                                            href="https://www.amazon.fr/Tineco-Aspirateur-Poussi%C3%A8re-Intelligent-Connection/dp/B08962Q28F?maas=maas_adg_508DECA09B9999ED03E3E115C09FEC18_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="FLOOR ONE S3" data-product_series="FLOOR ONE S3"
+                                            data-product_type="Floor Washer" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+                                        <a class="store-btn buy-btn mar-l-26"
+                                            href="https://fr-store.tineco.com/products/tineco-floor-one-s3-nettoyeur-sec-humide-intelligent-des-sols-durs-3-en-1?utm_source=official_site&utm_medium=product&utm_campaign=bf2023"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Tineco Store"
+                                            data-product_name="FLOOR ONE S3" data-product_series="FLOOR ONE S3"
+                                            data-product_type="Floor Washer" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-8.png_cb3ca90c-1.png">
+                                        </a>
+                                    </div>
+                                    <a href="/products/floor-one-s3.html" target="_blank" rel="noopener noreferrer"
+                                        class="learn-more" data-button_name="Learn more"
+                                        data-product_name="FLOOR ONE S3" data-product_series="FLOOR ONE S3"
+                                        data-product_type="Floor Washer" ga4-event="ga4-learn-more">En savoir plus ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt="" src="https://static-ussite.tineco.com/S7-PRO.jpg_f72bc067-6.jpg">
+                                <div class="content">
+                                    <div class="title"><b>FLOOR ONE</b> S7 Pro</div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn"
+                                            href="https://www.amazon.fr/Tineco-Aspirateur-Intelligent-sans-Fil-Autonomie/dp/B0BDLVC8V1?maas=maas_adg_1A47CB40A809D8B9AFFACE5930F3D327_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="FLOOR ONE S7 PRO" data-product_series="FLOOR ONE S7"
+                                            data-product_type="Floor Washer" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+                                        <a class="store-btn buy-btn mar-l-26"
+                                            href="https://fr-store.tineco.com/products/tineco-floor-one-s7-pro-aspirateur-et-laveur-sec-et-humide-sans-fil-intelligent?utm_source=official_site&utm_medium=product&utm_campaign=bf2023"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Tineco Store"
+                                            data-product_name="FLOOR ONE S7 PRO" data-product_series="FLOOR ONE S7"
+                                            data-product_type="Floor Washer" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-8.png_cb3ca90c-1.png">
+                                        </a>
+                                    </div>
+                                    <a href="/products/floor-one-s7-pro.html" target="_blank" rel="noopener noreferrer"
+                                        class="learn-more" data-button_name="Learn more"
+                                        data-product_name="FLOOR ONE S7 PRO" data-product_series="FLOOR ONE S7"
+                                        data-product_type="Floor Washer" ga4-event="ga4-learn-more">En savoir plus ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination1"></div>
+                    <script>
+                        $(function () {
+                            const floorSwiper = new Swiper('#floor-wash-wrapper', {
+                                loop: true,
+                                slidesPerView: 1.2,
+                                centeredSlides: true,
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                },
+                            })
+                        })
+                    </script>
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="floor-wash">
+                    <img alt="" src="https://static-ussite.tineco.com/04792421-f52e-43ec-83a0-9ecc3ce82394.png">
+                    <div class="title hover">ASPIRATEUR SANS FIL</div>
+                </div>
+                <div class="floor-wash-wrapper pad-b-50" id="vacuum-cleaner-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt="" src="https://static-ussite.tineco.com/PURE-ONE-X-PET.jpg_536d2626-2.jpg">
+                                <div class="hot-icon"></div>
+                                <div class="content">
+                                    <div class="title"><b>PURE ONE</b> X Pet</div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn"
+                                            href="https://www.amazon.fr/Tineco-Aspirateur-Intelligent-aspirateur-Accessoires/dp/B09SKQZ3MW?maas=maas_adg_8045D962EA68A6E81BA99BDAFDF397FC_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="PURE ONE X Pet" data-product_series="PURE ONE X Pet"
+                                            data-product_type="Vacuum Cleaner" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+
+                                    </div>
+                                    <a href="/products/pure-one-x.html" target="_blank" rel="noopener noreferrer"
+                                        class="learn-more" data-button_name="Learn more"
+                                        data-product_name="PURE ONE X Pet" data-product_series="PURE ONE X Pet"
+                                        data-product_type="Vacuum Cleaner" ga4-event="ga4-learn-more">En savoir plus
+                                        ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt="" src="https://static-ussite.tineco.com/S15-PET.jpg_f56d4f9b-8.jpg">
+
+                                <div class="content">
+                                    <div class="title"><b>PURE ONE</b> S15 Pet</div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn" data-button_name="Amazon"
+                                            href="https://www.amazon.fr/Tineco-Aspirateur-Intelligent-Anti-n%C5%93uds-Multi-Surface/dp/B09TT1PSCV?maas=maas_adg_B13ECF7B5B0C60615A2B1934DEC78F6B_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="PURE ONE S15 Pet" data-product_series="PURE ONE S15"
+                                            data-product_type="Vacuum Cleaner" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+                                        <a class="store-btn buy-btn mar-l-26"
+                                            href="https://fr-store.tineco.com/products/tineco-pure-one-s15-pet-aspirateur-balai-sans-fil-intelligent?utm_source=official_site&utm_medium=product&utm_campaign=bf2023"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Tineco Store"
+                                            data-product_name="PURE ONE S11" data-product_series="PURE ONE S15"
+                                            data-product_type="Vacuum Cleaner" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-8.png_cb3ca90c-1.png">
+                                        </a>
+                                    </div>
+                                    <a href="/products/pure-one-s15.html" target="_blank" rel="noopener noreferrer"
+                                        class="learn-more" data-button_name="Learn more"
+                                        data-product_name="PURE ONE S15 Pet" data-product_series="PURE ONE S15"
+                                        data-product_type="Vacuum Cleaner" ga4-event="ga4-learn-more>En savoir plus">En
+                                        savoir plus ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt="" src="https://static-ussite.tineco.com/pure-one-station.jpg_ee610e64-0.jpg">
+
+                                <div class="content">
+                                    <div class="title"><b>PURE ONE</b> Station Pet</div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn"
+                                            href="https://www.amazon.fr/Aspirateur-Station-auto-nettoyage-ZeroTangle-Toilettage/dp/B0C7M8QMJT?maas=maas_adg_33A8ECB9491741FDB61784862F16DCD2_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="PURE ONE Station Pet"
+                                            data-product_series="PURE ONE Station" data-product_type="Vacuum Cleaner"
+                                            ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+                                        <a class="store-btn buy-btn mar-l-26"
+                                            href="https://fr-store.tineco.com/products/tineco-pure-one-station-pet-aspirateur-balai-sans-fil-intelligent?utm_source=official_site&utm_medium=product&utm_campaign=bf2023"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Tineco Store"
+                                            data-product_name="PURE ONE Station Pet"
+                                            data-product_series="PURE ONE Station" data-product_type="Vacuum Cleaner"
+                                            ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-8.png_cb3ca90c-1.png">
+                                        </a>
+                                    </div>
+                                    <a href="/products/pure-one-station.html" target="_blank" rel="noopener noreferrer"
+                                        class="learn-more" data-button_name="Learn more"
+                                        data-product_name="PURE ONE Station Pet" data-product_series="PURE ONE Station"
+                                        data-product_type="Vacuum Cleaner" ga4-event="ga4-learn-more">En savoir plus
+                                        ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt="" src="https://static-ussite.tineco.com/AIR-PET.jpg_0ee2034f-e.jpg">
+
+                                <div class="content">
+                                    <div class="title"><b>PURE ONE</b> AIR Pet</div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn"
+                                            href="https://www.amazon.fr/Air-Pet-Domestiques-Multi-Cyclone-Ultra-Silencieux/dp/B0BFZJGW9P?maas=maas_adg_4FDDA2CEF3BA3798B3785E9236DF1723_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="PURE ONE AIR Pet" data-product_series="PURE ONE AIR Pet"
+                                            data-product_type="Vacuum Cleaner" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+                                    </div>
+                                    <a href="https://www.amazon.fr/Air-Pet-Domestiques-Multi-Cyclone-Ultra-Silencieux/dp/B0BFZJGW9P?maas=maas_adg_4FDDA2CEF3BA3798B3785E9236DF1723_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener noreferrer"
+                                        class="learn-more" data-button_name="Learn more"
+                                        data-product_name="PURE ONE AIR Pet" data-product_series="PURE ONE AIR Pet"
+                                        data-product_type="Vacuum Cleaner" ga4-event="ga4-learn-more">En savoir plus
+                                        ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination2"></div>
+                    <script>
+                        $(function () {
+                            const vacuumSwiper = new Swiper('#vacuum-cleaner-wrapper', {
+                                loop: true,
+                                slidesPerView: 1.2,
+                                centeredSlides: true,
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                },
+                            })
+                        })
+                    </script>
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="floor-wash">
+                    <img alt="" src="https://static-ussite.tineco.com/adae81fb-9562-4205-bd4a-3eeb1c04a1c0.png">
+                    <div class="title hover">NETTOYEUR DE TAPIS</div>
+                </div>
+                <div class="floor-wash-wrapper pad-b-50" id="carpet-cleaner-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt="" src="https://static-ussite.tineco.com/carpet-one.jpg_1fa8c74c-c.jpg">
+                                <div class="hot-icon"></div>
+                                <div class="content">
+                                    <div class="title"><b>CARPET ONE</b></div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn"
+                                            href="https://www.amazon.fr/Tineco-Carpet-One-dAmeublement-%C3%A9lectrique/dp/B09NM23W8W?maas=maas_adg_BB28628E57A1670D746B4D674DDE1F87_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="CARPET ONE" data-product_series="CARPET ONE"
+                                            data-product_type="Carpet Cleaner" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+                                        <a class="store-btn buy-btn mar-l-26"
+                                            href="https://fr-store.tineco.com/products/tineco-carpet-one-nettoyeur-de-tapis-intelligent?utm_source=official_site&utm_medium=product&utm_campaign=bf2023"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Tineco Store"
+                                            data-product_name="CARPET ONE" data-product_series="CARPET ONE"
+                                            data-product_type="Vacuum Cleaner" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-8.png_cb3ca90c-1.png">
+                                        </a>
+                                    </div>
+                                    <a href="/products/carpet-one-series.html" target="_blank" rel="noopener noreferrer"
+                                        class="learn-more" data-button_name="Learn more" data-product_name="CARPET ONE"
+                                        data-product_series="CARPET ONE" data-product_type="Carpet Cleaner"
+                                        ga4-event="ga4-learn-more">En savoir plus ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-wrapper">
+                                <img alt=""
+                                    src="https://static-ussite.tineco.com/carpet-one-spot-essentials.jpg_8753f734-0.jpg">
+                                <div class="hot-icon"></div>
+                                <div class="content">
+                                    <div class="title"><b>CARPET ONE</b> Spot Essentials</div>
+                                    <div class="buy-at">
+                                        Acheter à
+                                    </div>
+                                    <div class="btn-link">
+                                        <a class="amazon-btn buy-btn"
+                                            href="https://www.amazon.fr/Tineco-Carpet-One-dAmeublement-%C3%A9lectrique/dp/B09NM23W8W?maas=maas_adg_BB28628E57A1670D746B4D674DDE1F87_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="CARPET ONE" data-product_series="CARPET ONE"
+                                            data-product_type="Carpet Cleaner" ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png">
+                                        </a>
+                                        <a class="store-btn buy-btn mar-l-26"
+                                            href="https://www.amazon.fr/Tineco-Spot-Essentials-dameublement-Fonctionnement/dp/B0B6BQKPDQ?maas=maas_adg_79B1D008D25C7626D511A6EB79057A14_afap_abs&ref_=aa_maas&tag=maas"
+                                            target="_blank" rel="noopener noreferrer" data-button_name="Amazon"
+                                            data-product_name="CARPET ONE Spot Essentials"
+                                            data-product_series="CARPET ONE" data-product_type="Vacuum Cleaner"
+                                            ga4-event="ga4-shopping-portal">
+                                            <img alt=""
+                                                src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-8.png_cb3ca90c-1.png">
+                                        </a>
+                                    </div>
+                                    <a href="/products/carpet-one-series.html" target="_blank" rel="noopener noreferrer"
+                                        class="learn-more" data-button_name="Learn more" data-product_name="CARPET ONE"
+                                        data-product_series="CARPET ONE" data-product_type="Carpet Cleaner"
+                                        ga4-event="ga4-learn-more">En savoir plus ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination3"></div>
+                    <script>
+                        $(function () {
+                            const vacuumSwiper = new Swiper('#carpet-cleaner-wrapper', {
+                                loop: true,
+                                slidesPerView: 1.2,
+                                centeredSlides: true,
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                },
+                            })
+                        })
+                    </script>
+                </div>
+            </div>
+            <script>
+                $(function () {
+                    $(".product-list").on("click", function () {
+                        $(this).addClass("active").siblings().removeClass("active")
+                    })
+                })
+            </script>
+        </div>
+        <div class="w-top-wrapper">
+            <div class="where-to-buy-wrapper">
+                <div class="where-to-buy-wrapper-text">Où acheter</div>
+                <div class="btn-content">
+                    <a class="btn-link" data-button_name=">Where to Buy >Amazon" ga4-event="ga4-where-to-buy"
+                        href="https://www.amazon.fr/stores/page/25BF31C4-B3CD-48E4-B033-DB9AC942F1CF?maas=maas_adg_344B834F976C70B8C257469287AC60BE_afap_abs&ref_=aa_maas&tag=maas">
+                        <img alt="" src="https://static-ussite.tineco.com/9d83437f-abdf-4c0f-add6-b749f89d0508.png">
+                    </a>
+                    <a class="btn-link mar-l-1" data-button_name=">Where to Buy >Tineco Store"
+                        ga4-event="ga4-where-to-buy"
+                        href="https://fr-store.tineco.com/?utm_source=official_site&utm_medium=banner&utm_campaign=bf2023">
+                        <img alt="" src="https://static-ussite.tineco.com/7403a878-7e79-40cb-b05e-3e29afd27e3a.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="about-us-wrapper">
+            <video autoplay loop muted src="https://static-ussite.tineco.com/app.mp4_1fe80553-6.mp4"></video>
+            <div class="content">
+                <div class="title">Tineco aide plus de <span>12,000,000*</span> familles dans<br/> le monde à</div>
+                <div class="enj-text">Live Easy. Enjoy Life.</div>
+                <a data-target="#videoModal" data-title="Grab BLACK FRIDAY Deals Now" data-toggle="modal"
+                    data-video="https://www.youtube.com/embed/qALDtYQ7Uu0" href="#videoModal">
+                    <div class="learn-more-btn" ga4-event="ga4-click-video">Regardez la vidéo
+                    </div>
+                </a>
+                <div class="bottom-content">
+                    <div class="bottom-content-text">Tineco présente sa technologie innovante et intelligente pour
+                        rendre les  appareils électroménagers plus intelligents et plus faciles à utiliser, et se concentre
+                        sur  l'humain et les choses que nous aimons.
+                        <div class="tips">*Les données proviennent de ressources internes et sont fournies à titre
+                            indicatif
+                            uniquement.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="videoModal" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title"></h5>
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
+                    </div>
+                    <div class="modal-body  p-0">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe allowfullscreen class="embed-responsive-item"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $("#videoModal").on("show.bs.modal", function (event) {
+                    let button = $(event.relatedTarget); // Button that triggered the modal
+                    let url = button.data("video"); // Extract url from data-video attribute
+                    var title = button.data("title");
+
+                    $("#modal-title").html(title);
+                    $(this).find("iframe").attr({
+                        src: url,
+                        allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    });
+                });
+            })
+        </script>
+    </div>
+    <script src="./js/fr-black5-index.js"></script>
+    <script src="https://static-ussite.tineco.com/ga4.iife.js_03781119-c.js"></script>
+</body>
+
+</html>

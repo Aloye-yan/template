@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Title</title>
+    <link href="../../assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <link href="../../assets/css/base-h5.css" rel="stylesheet">
+    <link href="./css/de-s7-combo-h5.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="de-s7-combo-h5">
+    <div class="banner-wrapper">
+        <div class="content">
+            <div class="title"><span>FLOOR ONE</span> S7 Combo</div>
+            <div class="sub-title">Ein Staubsauger ist nicht genug</div>
+            <div class="watch-video-wrapper">
+                <!--                <div class="watch-video">Guarda il video</div>-->
+                <!--                <a href="#videoModal" data-toggle="modal" data-target="#videoModal"-->
+                <!--                   data-title="FLOOR ONE S7 Combo"-->
+                <!--                   data-videofly="https://www.youtube.com/embed/7C7XjefAfdI" class="about-us-info-video">-->
+                <!--                    <div class="play-btn"></div>-->
+                <!--                </a>-->
+                <div class="buy-btn" onclick="handleScrollTo('.product-wrapper')">Kaufen</div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="modal-title"></div>
+                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                </div>
+                <div class="modal-body  p-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe allowfullscreen class="embed-responsive-item"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      function handleScrollTo(targetEl) {
+        let targetOffset = $(targetEl).offset().top;
+        let scrollTo = targetOffset;
+        $("html, body").animate({
+          scrollTop: scrollTo
+        }, 1000)
+      }
+
+      $(function () {
+        $("#videoModal").on("show.bs.modal", function (event) {
+          let button = $(event.relatedTarget); // Button that triggered the modal
+          let url = button.data("videofly"); // Extract url from data-video attribute
+          var title = button.data("title");
+
+          $("#modal-title").html(title);
+          $(this).find("iframe").attr({
+            src: url,
+            allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          });
+        });
+
+      })
+    </script>
+    <div class="video-wrapper">
+        <div class="video">
+            <video
+                    autoplay
+                    loop muted
+                    src="https://static-ussite.tineco.com/9f3eec93-29cd-4dda-855b-78218c7c9f39.mp4"></video>
+        </div>
+        <div class="title">Völlig freihändiges Selbstreinigungssystem</div>
+        <div class="text">Eine revolutionäre Lösung, die eine Bürstenplatte, die sich absenkt, um an der
+            Bürstenwalze anzuliegen, für eine tiefe, gründliche Reinigung mit einer bidirektional rotierenden
+            Bürstenwalze kombiniert, die für ein trockeneres und flauschigeres Ergebnis sorgt.
+        </div>
+    </div>
+    <div class="video-wrapper">
+        <div class="video">
+            <video
+                    autoplay
+                    loop muted
+                    src="https://static-ussite.tineco.com/45b5e30f-79c7-43cc-bdb4-747a2572c41d.mp4"></video>
+        </div>
+        <div class="title">Die Tineco MHCBS™ Technologie garantiert eine gleichbleibend saubere Bürste</div>
+        <div class="text">Die Bürstenwalze wird ständig mit frischem Wasser gereinigt, während der schwimmende
+            Flachschaber das Schmutzwasser effizient entfernt. So wird die Sauberkeit der Bürste gewährleistet und
+            Ihre Böden bleiben sauberer.
+        </div>
+    </div>
+    <div class="video-wrapper">
+        <div class="video">
+            <video autoplay loop
+                   muted src="https://static-ussite.tineco.com/83a93831-73b8-4b1c-b64f-3afed63a894e.mp4"></video>
+        </div>
+        <div class="title">Makellose Bodenreinigung mit der Consistent-clean-Bürste</div>
+        <div class="text">Der schwimmende Flachschaber von Tineco entfernt Schmutz effektiv und macht den Boden
+            streifen- und rückstandsfrei. Ohne ihn kann schmutziges Wasser leicht durch Ritzen entweichen und
+            unansehnliche Flecken zurücklassen.
+        </div>
+    </div>
+    <div class="product-sale-wrapper">
+        <div class="img"></div>
+        <div class="text-content">
+            <div class="text">Reinigen Sie jede Unordnung, wo immer Sie eine finden</div>
+            <div class="content">Von Fett in der Küche bis zum Wasserfleck im Bad: Der FLOOR ONE S7 Combo
+                beseitigt
+                jede Verschmutzung, an jedem Ort und zu jeder Zeit.
+            </div>
+        </div>
+    </div>
+    <div class="product-sale-wrapper-1">
+        <div class="img"></div>
+        <div class="title">Ein Schalter, unendliche Möglichkeiten</div>
+        <div class="text">Wechseln Sie die Aufsätze! Wechseln Sie nahtlos die Aufsätze für eine effizientere
+            und mühelose Reinigung und beseitigen Sie so mühelos jede Unordnung in Ihrem Zuhause.
+        </div>
+    </div>
+    <div class="product-sale-wrapper-2">
+        <div class="img img1"></div>
+        <div class="title">
+            Tineco innovative MHCBS™ Technologie
+        </div>
+        <div class="text">Ständige Reinigung mit frischem Wasser, denn nur saubere Bürsten
+            ergeben saubere Böden.
+        </div>
+    </div>
+    <div class="product-sale-wrapper-2">
+        <div class="img img2"></div>
+        <div class="title">Maximierung der Reinigungseffizienz mit dem verbesserten schwimmenden
+            Abstreifer
+        </div>
+        <div class="text">Der neu hinzugefügte schwimmende Abstreifer haftet nahtlos und
+            gleichmäßig an der Bürstenwalze und gewährleistet eine optimale Reinigungsleistung, auch
+            wenn die Bürste natürlich verschleißt.
+        </div>
+    </div>
+    <div class="product-sale-wrapper-2">
+        <div class="img img3"></div>
+        <div class="title">Fortschrittliche antibakterielle Technologie – 2x schneller</div>
+        <div class="text">Die antibakterielle Technologie von Tineco hebt die Reinigung auf eine neue Stufe.
+            Das elektrolysierte Wasser wird mit doppelter Geschwindigkeit gereinigt und eliminiert 99,99 % der
+            schädlichen Bakterien.
+        </div>
+    </div>
+    <div class="product-sale-wrapper-2">
+        <div class="img img4"></div>
+    </div>
+    <div class="swiper-container-1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="title">Fortschrittliche Reinigungsleistung für alle Reinigungsbedürfnisse</div>
+                <div class="text">Nur Staubsauger, die mit Tineco PureCyclone und ZeroTangle™-Bürste
+                    ausgestattet sind, bieten eine unvergleichliche Reinigungsleistung.
+                </div>
+                <div class="img img1"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">Knotenfreie Haarentfernung mit der ZeroTangle™ Bürste</div>
+                <div class="text">Die Haare lassen sich leicht anheben und absaugen, ohne dass sie sich
+                    auf der Bürstenwalze verheddern.
+                </div>
+                <div class="img img2"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">Tineco PureCyclone Tech für starke, lang anhaltende Absaugung</div>
+                <div class="text">Trennt effektiv Luft und Staub, um den Filter länger sauber zu halten
+                    und die Saugkraft zu erhalten.
+                </div>
+                <div class="img img3"></div>
+            </div>
+        </div>
+        <div class="swiper-pagination-1"></div>
+    </div>
+    <script>
+      $(function () {
+        let swiperContainer1 = new Swiper('.swiper-container-1', {
+          loop: true,
+          //指示器
+          pagination: {
+            el: '.swiper-pagination-1',
+          }
+        })
+      })
+    
+    </script>
+    <div class="triple-wrapper">
+        <div class="title">Verdreifachung der Akkulaufzeit, Freischaltung konstanter Leistung</div>
+        <div class="img"></div>
+    </div>
+    <div class="house-clean-wrapper">
+        <div class="title">Ununterbrochene Reinigung des gesamten Hauses</div>
+        <div class="text">Kein Batteriewechsel erforderlich</div>
+    </div>
+    <div class="compare-wrapper">
+        <div class="title">Hohe Reinigungseffizienz und längere Laufzeit mit Tineco iLoop™</div>
+        <div class="text">Der Tineco iLoop™ Smart Sensor erkennt Verschmutzungen in Echtzeit
+            und optimiert die Saugleistung und den Wasserdurchfluss für eine gründliche Reinigung
+            und eine längere Betriebsdauer.
+        </div>
+    </div>
+    <div class="swiper-container-2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="title">Mit dem SmoothPower-System ist die Reinigung ein Kinderspiel</div>
+                <div class="text">Nach vorne schieben oder nach hinten ziehen, der FLOOR ONE S7 Combo
+                    unterstützt immer die Bewegung und macht die Reinigung so einfach wie nie.
+                </div>
+                <div class="img img1"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">Leichtes Design für die Reinigung überall</div>
+                <div class="text">Durch sein geringes Gewicht ist er leicht zu manövrieren und
+                    ermöglicht es Ihnen, Treppen zu reinigen, unter Sofas zu gelangen und sogar hohe
+                    Schränke zu säubern.
+                </div>
+                <div class="img img2"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">Beidseitige verbesserte Kantenreinigung</div>
+                <div class="text">Beseitigen Sie alle übersehenen Stellen und sorgen Sie für eine
+                    umfassende Reinigung Ihrer gesamten Wohnung, bei der keine Lücken oder Ecken ungereinigt
+                    bleiben.
+                </div>
+                <div class="img img3"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">Beleuchtet den Weg in jeden Winkel</div>
+                <div class="text">Der mit einem LED-Scheinwerfer ausgestattete Bürstenkopf leuchtet
+                    Ihren Reinigungsweg aus, damit Sie problemlos unter Möbeln und in engen Räumen reinigen
+                    können.
+                </div>
+                <div class="img img4"></div>
+            </div>
+        </div>
+        <div class="cursor prev"></div>
+        <div class="cursor next"></div>
+    </div>
+    <script>
+      $(function () {
+        var swiperContainer2 = new Swiper('.swiper-container-2', {
+          loop: true,
+          //前后指示器
+          navigation: {
+            nextEl: '.next',
+            prevEl: '.prev',
+          }
+        })
+      })
+    
+    </script>
+    <div class="product-wrapper" id="product-wrapper">
+        <div class="title">FLOOR ONE S7 Combo</div>
+        <div class="swiper product-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img alt="" class="product-img"
+                             src="https://static-ussite.tineco.com/7fa500ef-691d-4e22-9e12-9ea99ea8c40a.png">
+                        <div class="name">FLOOR ONE S7 Combo</div>
+                        <div class="buyat">Kaufen bei</div>
+                        <div class="icon-list">
+                            <div class="buy-item">
+                                <div class="icon-item" id="s7pro">
+                                    <a href="https://de-store.tineco.com/products/tineco-floor-one-s7-combo-smart-multifunktionsreiniger"
+                                       target="_blank">
+                                        <img alt=""
+                                             src="https://static-ussite.tineco.com/tineccstore-icon.svg_2f873c2e-d.svg"/>
+                                    </a>
+                                </div>
+                                <div class="tineco-buy-tips">Tineco Store</div>
+                            </div>
+                            <div class="buy-item">
+                                <div class="icon-item" id="s7pro">
+                                    <a href="https://www.amazon.de/Tineco-ONE-Selbstreinigend-Handstaubsauger-Stielstaubsauger/dp/B0CFD6TTJ2?maas=maas_adg_A6832DFBA561C63EAFA13C8BFBD42552_afap_abs&ref_=aa_maas&tag=maas"
+                                       target="_blank">
+                                        <img alt=""
+                                             src="https://static-ussite.tineco.com/80cf9152-7213-4473-9177-04c5f9dc9762.svg"/>
+                                    </a>
+                                </div>
+                                <div class="tineco-buy-tips">Amazon</div>
+                            </div>
+                        </div>
+                        <div class="whatsinclude">
+                            <a aria-controls="whatIncludeCollapse1" aria-expanded="false" class="collapsed"
+                               data-toggle="collapse"
+                               href="#whatIncludeCollapse1" role="btn">
+                                Was ist enthalten?
+                                <span class="iconfont" id="xiangxiazhankai"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-prev1"></div>
+            <div class="swiper-button-next1"></div> -->
+        </div>
+        <div class="commoditys-content-box">
+            <div class="collapse" id="whatIncludeCollapse1">
+                <div class="commoditys-content">
+                    <div class="commoditys-item">
+                        <img alt=""
+                             src="https://static-ussite.tineco.com/1db2e033-1127-442d-b5e9-58c31cf0c9a0.jpg"/>
+                        <div class="msg">2-in-1-Fugenbürste zum Staubwischen</div>
+                    </div>
+                    <div class="commoditys-item">
+                        <img alt=""
+                             src="https://static-ussite.tineco.com/d1c49548-26ec-4e9b-b06f-388abdb80fde.jpg"/>
+                        <div class="msg">Reinigungswerkzeug</div>
+                    </div>
+                    <div class="commoditys-item">
+                        <img alt=""
+                             src="https://static-ussite.tineco.com/3a7b7e5c-bc5b-47d4-94bf-1d601b8716fe.jpg"/>
+                        <div class="msg">Mini-Power-Bürste</div>
+                    </div>
+                    <div class="commoditys-item">
+                        <img alt=""
+                             src="https://static-ussite.tineco.com/89da0922-64fe-48e1-b129-1bdd3e57bd41.jpg"/>
+                        <div class="msg">Stromquelle</div>
+                    </div>
+                    <div class="commoditys-item">
+                        <img alt=""
+                             src="https://static-ussite.tineco.com/14a8b9bf-a4d7-42c2-a2bc-deeb8cd1042a.jpg"/>
+                        <div class="msg">Ersatz-Bürstenwalze</div>
+                    </div>
+                    <div class="commoditys-item">
+                        <img alt=""
+                             src="https://static-ussite.tineco.com/0211a0bc-019d-48af-b4ac-a3de9c6c095b.jpg"/>
+                        <div class="msg">ZeroTangle™-Bürste</div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <script>
+          $(function () {
+            var productSwiper = new Swiper(".product-swiper", {
+              loop: true,
+            })
+          })
+        </script>
+    </div>
+    
+    <div class="support-wrapper" id="support-wrapper">
+        <div class="title">Unterstützung</div>
+        <div class="support-list">
+            <a class="item" href="support/troubleshooting/">
+                <img alt="" class="img"
+                     src="https://static-ussite.tineco.com/cab4e3af-b37f-4488-83d1-dcc6d73815cf.png"/>
+                <div class="text">Fehlerbehebung</div>
+            </a>
+            <a class="item" href="support/faqs/">
+                <img alt="" class="img"
+                     src="https://static-ussite.tineco.com/78fd7424-de95-41d5-a4f5-0ec2f3b68ff9.png"/>
+                <div class="text">FAQs</div>
+            </a>
+            <a class="item" href="support/product-care/">
+                <img alt="" class="img"
+                     src="https://static-ussite.tineco.com/b57ffab4-129a-479d-80b4-9dcb798aeef1.png"/>
+                <div class="text">Produktpflege</div>
+            </a>
+            <a class="item" href="support/instruction-manual/">
+                <img alt="" class="img"
+                     src="https://static-ussite.tineco.com/03a4e3fb-c16e-4483-9d17-4fee94ff30dd.png"/>
+                <div class="text">Bedienungsanleitungeni</div>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="./js/de-s7-combo-index.js"></script>
+</body>
+</html>

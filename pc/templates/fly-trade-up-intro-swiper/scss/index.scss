@@ -1,0 +1,155 @@
+.fly-trade-up-intro-swiper-pc {
+
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &.mar-t-100 {
+    margin-top: 1rem;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    height: 10.08rem;
+
+    .swiper-slide {
+      width: 13.37rem;
+      height: 7.63rem;
+      position: relative;
+      border-radius: 0.3rem;
+      overflow: hidden;
+      transition: all ease-in-out 0.3s;
+      cursor: pointer;
+
+      &.swiper-slide-active {
+        width: 14.86rem;
+        height: 8.48rem;
+        border-radius: 0.33rem;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      video {
+        display: block;
+      }
+
+      .content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        padding: 2.74rem 1.38rem;
+
+        &.right-text {
+          padding: 2.74rem 0 0 8.3rem;
+        }
+
+        .title {
+          font-size: 0.42rem;
+          font-weight: bold;
+          position: relative;
+          transform: unset;
+
+          &:before {
+            content: attr(data-text);
+            position: absolute;
+            font-weight: bold;
+            top: 0;
+            left: 0;
+            background: linear-gradient(6deg, #dcdffb 0%, #dcdffb 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-stroke: 0.06rem transparent;
+          }
+
+          &:after {
+            content: attr(data-text);
+            position: absolute;
+            font-weight: bold;
+            top: 0;
+            left: 0;
+            background: linear-gradient(124deg, #041282 0%, #3c198f 35%, #382bbd 50%, #3141f6 70%, #021b6e 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            z-index: 1;
+          }
+        }
+
+        .content-text {
+          font-size: 0.33rem;
+          font-weight: bold;
+          color: #ffffff;
+          width: 4.8rem;
+
+
+          &.s-2 {
+            width: 4.79rem;
+          }
+        }
+
+        .desc-text {
+          font-size: 0.21rem;
+          color: #ffffff;
+          width: 5.46rem;
+          margin-top: 0.1rem;
+
+          &.s-2 {
+            width: 5.52rem;
+          }
+
+          &.s-3 {
+            width: 4.92rem;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button {
+    width: 1.35rem;
+    height: 1.27rem;
+    position: absolute;
+    background: url(https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%202%20%E6%8B%B7%E8%B4%9D%203.png_c1e8f30f-9.png) no-repeat center center / 100% 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 99;
+
+    &.fly-trade-up-intro-swiper-pc-prev {
+      transform: translate(-50%, -50%) rotate(180deg);
+      left: 1.45rem;
+    }
+
+    &.fly-trade-up-intro-swiper-pc-next {
+      right: 0.8rem;
+    }
+  }
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .swiper-pagination-bullet {
+      width: 1.85rem;
+      height: 0.1rem;
+      background-color: #e6e6e6;
+      border-radius: 0.05rem;
+      opacity: 1;
+      margin: 0 0.25rem;
+
+      &.swiper-pagination-bullet-active {
+        background-color: #00327d;
+      }
+    }
+  }
+}

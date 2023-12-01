@@ -1,0 +1,987 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin cursor-pointer($radius: 0.3rem) {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: $radius
+}
+
+//带角度的渐变
+@mixin font-gradient($color1, $color2, $deg: 90deg) {
+  background: linear-gradient($deg, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.s7-steam-h5 {
+  .banner-wrapper {
+    width: 100%;
+    position: relative;
+    
+    img{
+      width: 100%;
+    }
+
+    .content {
+      position: absolute;
+      left: 0;
+      bottom: .79rem; 
+      width: 100%;
+      max-height: 100%;
+      padding: 0 .48rem;
+      text-align: center;
+      .product-name {
+        font-size: 0.4rem;
+        line-height: 0.48rem;
+        color: #fff;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      .sub-title {
+        font-size: 0.25rem;
+        line-height: 0.48rem;
+        color: #fff;
+        margin-top: 0.2rem;
+      }
+
+      .video-and-buy {
+        display: flex;
+        align-items: center;
+        margin-top: 0.8rem;
+
+        .text {
+          color: #fff;
+          font-size: 0.2rem;
+        }
+
+        .play-btn {
+          width: 0.3rem;
+          height: 0.3rem;
+          background: url(https://static-ussite.tineco.com/37135080-ece4-40c1-8623-40d2d26d1e2b.png) no-repeat center center / 100% 100%;
+          margin: 0 1rem 0 0.27rem;
+          cursor: pointer;
+        }
+
+        .buy-btn {
+          width: 1.7rem;
+          height: 0.57rem;
+          border: 0.02rem solid #fff;
+          border-radius: 0.27rem;
+          font-size: 0.24rem;
+          line-height: 0.48rem;
+          font-weight: bold;
+          color: #fff;
+          @include flex-center;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .function-wrapper {
+    background-image: url('https://static-ussite.tineco.com/4d8f8ee8-1170-4ce9-b2a0-ef35c41659d9.png');
+    background-repeat: no-repeat;
+    padding: .25rem .34rem;
+    width: 100vw;
+    background-size: cover;
+
+    img{
+      width: 100%;
+    }
+
+    .top{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+      .left {
+        width: 50%;
+        margin-right: 0.05rem;
+
+        .content-1 {
+          width: 2.59rem;
+          height: 1.76rem;
+          position: relative;
+
+          .content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0.12rem;
+            left: 0;
+            padding: 0.15rem 0.13rem 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-between;
+
+            .top-content{
+
+              .title {
+                font-size: 0.25rem;
+                line-height: 0.25rem;
+                color: #ff7624;
+                font-weight: 700;
+                padding-top: 0.12rem;
+              }
+
+              .sub-title{
+                font-size: 0.17rem;
+                line-height: 0.3rem;
+                color: #fff;
+              }
+            }
+
+            .bottom-content {
+              font-size: 10px;
+              color: #fff;
+            }
+          }
+        }
+
+        .content-2 {
+          margin-top: 0.07rem;
+          width: 2.59rem;
+          height: 1.76rem;
+          position: relative;
+
+          .content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding: 0.15rem 0.3rem;
+            display: flex;
+            font-size: 0.25rem;
+            line-height: 0.25rem;
+            text-align: center;
+            @include font-gradient(#00c0fa, #015eea, 77deg);
+            align-items: flex-end;
+            justify-content: center;
+            font-weight: bold;
+          }
+        }
+
+       
+      }
+
+      .right{
+        width: 50%;
+        margin-left: 0.05rem;
+
+        .content-3 {
+          width: 100%;
+          position: relative;
+
+          .content {
+            position: absolute;
+            width: 100%;
+            max-height: 100%;
+            bottom: 0.12rem;
+            left: 0;
+            padding: 0.15rem 0.13rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .title{
+              font-size: 0.25rem;
+              line-height: 0.28rem;
+              @include font-gradient(#00c0fa, #015eea, 77deg);
+              align-items: flex-end;
+              justify-content: center;
+              font-weight: bold;
+              margin-bottom: 0.4rem;
+            }
+
+            .bottom-content {
+              font-size: 10px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .center {
+      width: 100%;
+      margin: 0.05rem 0;
+
+      .content-4 {
+        width: 100%;
+        position: relative;
+
+        .content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          padding: 0.15rem 0.13rem;
+          font-size: 0.25rem;
+          line-height: 0.32rem;
+          color: #fff;
+          display: flex;
+          align-items: center;
+
+          .text-gradient {
+            @include font-gradient(#00c0fa, #015eea, 77deg);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+        .content-5 {
+          width: 58%;
+          position: relative;
+
+          .content {
+            position: absolute;
+            width: 100%;
+            max-height: 100%;
+            bottom: 0.14rem;
+            left: 0;
+            padding: 0 0.27rem ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .text {
+              font-size: 0.12rem;
+              color: #fff;
+            }
+
+            .text-1 {
+              font-size: 0.25rem;
+              font-weight: 700;
+              @include font-gradient(#fd644f, rgba(242,142,38,1), 77deg);
+            }
+
+            .text-2 {
+              font-size: 10px;
+              color: #fff;
+              margin-top: 0.76rem;
+            }
+          }
+        }
+
+        .content-6 {
+          width: 42%;
+          margin-left: 0.1rem;
+          position: relative;
+
+          .content {
+            position: absolute;
+            width: 100%;
+            max-height: 100%;
+            bottom: 0.14rem;
+            left: 0;
+            padding: 0 0.27rem ;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.25rem;
+            line-height: 0.32rem;
+
+            align-items: center;
+            justify-content: flex-end;
+            font-weight: bold;
+
+            .text {
+              display: flex;
+              @include font-gradient(#00c0fa, #015eea, 77deg);
+
+              span {
+                font-size: 0.16rem;
+                font-weight: bold;
+                line-height: 0.16rem;
+                margin-top: 0.04rem;
+              }
+            }
+          }
+        }
+      
+    }
+  }
+
+  .hot-f-wrapper {
+    width: 100%;
+    
+    .content {
+      background: #fff;
+      padding: 0.54rem 0 0.19rem;
+      text-align: center;
+
+      .text {
+        @include font-gradient(#005feb, #00c5fd, 77deg);
+        font-size: 0.29rem;
+        font-weight: bold;
+      }
+
+      .text-1 {
+        font-size: 0.17rem;
+        color: #000000;
+        margin-top: 0.11rem;
+        padding: 0 1rem;
+      }
+
+    }
+
+    .img-wrapper {
+      width: 100%;
+
+      img {
+       width: 100%;
+      }
+    }
+
+  }
+
+  .desk-wrapper {
+    width: 100%;
+    padding: 0 0.1rem;
+
+      .title {
+        font-size: 0.17rem;
+        background: #fff;
+        color: #000000;
+        text-align: center;
+        padding: 0.54rem 0.34rem 0.2rem;
+        
+      }
+
+      .bottom-content {
+        width: 100%;
+        .content{
+          position: relative;
+          width: 100%;
+          height: 2.4rem;
+
+          .video-content{
+            width: 100%;
+            border-radius: 0.2rem;
+          }
+
+          .text-wrapper{
+            position: absolute;
+            left: 0;
+            bottom: 0.21rem;
+            width: 100%;
+            max-height: 100%;
+            padding-left: 0.27rem;
+            text-align: left;
+
+            .text{
+              font-size: 0.29rem;
+              font-weight: 700;
+              @include font-gradient(#00c0fa, #015eea, 77deg);
+            }
+
+            .text-1{
+              font-size: 0.17rem;
+              color: #fff;
+            }
+          }
+          .icon{
+            position: absolute;
+            left: 0.2rem;
+            top: -0.06rem;
+            width: 0.83rem;
+            height: 0.96rem;
+            background: url('https://static-ussite.tineco.com/42f5f1ea-60aa-46b8-9949-f5b2ae4299d5.png') no-repeat center center / 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+              width: 0.43rem;
+              height: 0.43rem;
+            }
+          }
+        }
+        
+      }
+  }
+
+  .safe-wrapper {
+    .content{
+      padding: 0.54rem 0.2rem 0.2rem;
+      background: #fff;
+      color: #000000;
+      text-align: center;
+
+      .text{
+        font-size: 0.29rem;
+        line-height: 0.44rem;
+        font-weight: 700;
+        margin-bottom: 0.11rem;
+        
+      }
+      .text-1{
+        font-size: 0.17rem;
+      }
+    }
+    .img-wrapper {
+      width: 100%;
+
+      img {
+       width: 100%;
+      }
+    }
+
+  }
+
+  .edge-wrapper{
+    .edge-swiper-wrapper {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background-color: #FFF;
+      padding-bottom: 0.3rem;
+  
+      .swiper-wrapper {
+  
+        .swiper-slide {
+          padding: 0.33rem 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+  
+          .swipe-img {
+            width: 4.1rem;
+            height: 2.7rem;
+          }
+          .content{
+            padding: 0.21rem;
+            text-align: center;
+            font-weight: 700;
+  
+            .title{
+              font-size: 0.29rem;
+              font-style: italic;
+              line-height: 0.34rem;
+              @include font-gradient(#015eea, #00c0fa, -85deg);
+            }
+            
+            .text{
+              font-size: 0.17rem;
+              line-height: 0.34rem;
+              margin-top: 0.06rem;
+              color: #000000;
+            }
+          }
+        }
+      }
+      .swiper-pagination{
+  
+        .swiper-pagination-bullet{
+          background: #00327d;
+          opacity: 1;
+        }
+  
+        .swiper-pagination-bullet-active{
+          background: #fff;
+          border: 1px solid #0099ff;
+        }
+      }
+  
+    }
+    
+    .img-content{
+      background: url('https://static-ussite.tineco.com/4d8f8ee8-1170-4ce9-b2a0-ef35c41659d9.png') no-repeat center center / 100% 100%;
+
+      .top{
+        text-align: center;
+        color: #ffffff;
+        padding: 0.54rem 0.2rem;
+
+        .title{
+          font-size: 0.29rem;
+          line-height: 0.4rem;
+          font-weight: 700;
+          
+          span{
+            font-size: .16rem;
+            font-weight: 700;
+            line-height: .16rem;
+            margin-top: 0.04rem;
+          }
+        }
+
+        .text{
+          font-size: 0.17rem;
+          margin-top: 0.11rem;
+        }
+      }
+
+      .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 0.2rem 0.35rem;
+
+        .img-item{
+          width: 49%;
+          border-radius: 0.14rem;
+          overflow: hidden;
+          margin-bottom: 0.3rem;
+
+          .img-bg{
+            width: 100%;
+            height: 1.2rem;
+            background-repeat: no-repeat;
+            background-position: 50% 80%;
+            background-size: 140% auto;
+
+          }
+
+          &:nth-of-type(2){
+            .img-bg{
+              background-position: 65% 75% !important;
+              background-size: 170% auto !important;
+            }
+          }
+          &:nth-of-type(3){
+            .img-bg{
+              background-position: 50% 54%;
+              background-size: 200% auto;
+            }
+            
+          }
+          &:nth-of-type(4){
+            .img-bg{
+              background-position: 72% 42%;
+              background-size: 150% auto;
+            }
+            
+          }
+          .setp{
+            height: 0.5rem;
+            padding: 0 0.12rem;
+            background: #fff;
+            display: flex;
+            align-items: center;
+
+            .icon{
+              width: 0.34rem;
+              height: 0.34rem;
+              margin-right: 0.12rem;
+            }
+
+            .text{
+              font-size: 0.14rem;
+              line-height: 0.18rem;
+              color: #000;
+
+              span{
+                font-weight: 700;
+                @include font-gradient(#015eea, #00c0fa, -85deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .safe-c-wrapper{
+    position: relative;
+
+    .bg{
+      width: 100%;
+    }
+
+    .content{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0.54rem 0.49rem 0;
+
+      .text{
+        font-size: 0.29rem;
+        line-height: 0.34rem;
+        font-weight: 700;
+        text-align: center;
+        @include font-gradient(#015eea, #00c0fa, -85deg);
+      }
+    }
+  }
+
+  .introduce-wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .introduce-swiper{
+      overflow: hidden;
+      position: unset;
+      width: 5.2rem;
+  
+      .swiper-wrapper{
+        .swiper-slide{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0.54rem 0;
+  
+          .content{
+            color: #000;
+            text-align: center;
+            padding: 0 0 0.27rem;
+            height: 1.8rem;
+            .text{
+              font-size: 0.29rem;
+              font-weight: 700;
+              line-height: 0.32rem;
+            }
+  
+            .text-1{
+              padding: 0 0.22rem 0.22rem;
+              font-size: 0.17rem;
+              line-height: 0.23rem;
+              margin-top: 0.12rem;
+            }
+          }
+  
+          .img{
+            width: 4.56rem;
+          }
+        }
+      }
+  
+      .swiper-button-prev1,.swiper-button-next1{
+        position: absolute;
+        top: 4rem;
+        width: 0.34rem;
+        height: 0.5rem;
+        background-repeat: no-repeat;
+        z-index: 999;
+      }
+      .swiper-button-prev1{
+        left: 0.18rem;
+        background-image: url(https://static-ussite.tineco.com/ce612d63-95f8-4b40-8bca-bee2686477f7.svg);
+      }
+       .swiper-button-next1{
+        right: 0.18rem;
+        background-image: url(https://static-ussite.tineco.com/74a5c351-e408-4348-85a9-84a6c8296949.svg);
+      }
+    }
+  }
+
+  .introduce-t-wrapper{
+    background: url('https://static-ussite.tineco.com/4d8f8ee8-1170-4ce9-b2a0-ef35c41659d9.png') no-repeat center center/100% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.65rem 0.2rem 0.1rem;
+
+    .item{
+      width: 49%;
+      margin-bottom: 0.23rem;
+      display: flex;
+      flex-direction: column;
+    
+      .text{
+        padding: 0.27rem 0;
+        padding-right: 0.4rem;
+        font-size: 0.17rem;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      .img{
+        display: block;
+        width: 100%;
+        border-radius: 0.27rem;
+      }
+    }
+  }
+
+  .product-wrapper{
+    padding: 1.2rem 0.2rem;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+      text-align: center;
+      font-size: 0.36rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 0.6rem;
+    }
+
+    .product-swiper{
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      width: 5.2rem;
+
+      .swiper-slide{
+        .content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          .product-img{
+            height: 3.48rem;
+            width: auto;
+          }
+          
+          .name{
+            margin: 0.15rem 0 0.2rem;
+            font-size: 0.28rem;
+            font-weight: 700;
+          }
+
+          .buyat{
+            color: #00327d;
+            font-size: 0.19rem;
+            font-weight: 700;
+          }
+
+          .icon-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 4.05rem;
+            margin-top: 0.2rem;
+
+            .buy-item{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 1rem;
+              margin-bottom: 0.2rem;
+              position: relative;
+
+              .icon-item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 0.82rem;
+                background: #fff;
+                border: 0.02rem solid #00327D;
+                border-radius: 0.27rem;
+                overflow: hidden;
+                
+                a{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-decoration: none;
+                  color: #00327d;
+
+                  img{
+                    width: 0.32rem;
+                    height: 0.32rem;
+                  }
+                }
+              }
+
+              .tineco-buy-tips{
+                font-size:10px;
+                font-weight: 400;
+                color: #232222;
+                display: none;
+                opacity: 0;
+                position: absolute;
+                left: 0px;
+                right: 0;
+                bottom: -22px;
+                width: 100%;
+                text-align: center;
+                white-space: pre;
+              }
+              &:hover{
+                .tineco-buy-tips{
+                  display: block;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+
+          .whatsinclude{
+            font-size: 0.11rem;
+            font-weight: 400;
+            color: #151414;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            justify-content: center;
+            
+            a{
+              font-size: 0.11rem;
+              font-weight: 400;
+              color: #151414;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              padding: 0.1rem;
+
+              .iconfont{
+                margin-left: 10px;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #000;
+                display: inline-block;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+
+      .swiper-button-prev1,.swiper-button-next1{
+        position: absolute;
+        top: 50%;
+        width: 0.42rem;
+        height: 0.42rem;
+        background-repeat: no-repeat;
+        z-index: 999;
+      }
+      .swiper-button-prev1{
+        left: 0.18rem;
+        background: url('https://static-ussite.tineco.com/6c5420ea-3e81-4fe4-bf06-7dad840b4952.png') no-repeat center center / 100% 100%;
+      }
+       .swiper-button-next1{
+        right: 0.18rem;
+        background: url('https://static-ussite.tineco.com/3e57bbbe-6777-4868-af0a-0fb2ddb04b25.png') no-repeat center center / 100% 100%;
+      }
+    }
+
+    .commoditys-content-box{
+      width: 5.2rem;
+      padding: 0.4rem 0 0.75rem;
+      background: #fff;
+      margin: 0 auto;
+      
+      .commoditys-content{
+        border: 1px solid #EFF1F4;
+        width: 4.93rem;
+        margin: 0 auto;
+        padding-top: 0.3rem;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+
+        .commoditys-item{
+          text-align: center;
+          width: 50%;
+          padding-bottom: 0.3rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img{
+            width: 100%;
+          }
+          
+          .msg {
+            font-size: 0.11rem;
+            font-weight: 400;
+            color: #232222;
+            line-height: 0.16rem;
+          }
+        }
+      }
+    }
+  }
+
+  .support-wrapper{
+    background: #FFF;
+    padding: 0 0.2rem;
+
+    .title{
+      text-align: center;
+      font-size: 0.36rem;
+      font-weight: 700;
+      color: #000;
+      padding: 0.54rem 0;
+    }
+
+    .support-list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .item{
+        width: 48.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #F5F5F5;
+        border-radius: 7px;
+        text-decoration: none;
+        margin-bottom: 0.22rem;
+        padding: 0.36rem 0.12rem;
+
+        .img{
+          width: 0.98rem;
+          height: 0.98rem;
+          margin-bottom: 0.3rem;
+        }
+
+        .text{
+          color: #000;
+          font-weight: 700;
+          font-size: 0.17rem;
+
+        }
+      }
+    }
+  }
+
+}
+
+.modal-content {
+  border-radius: 0.1rem;
+
+  .modal-header {
+    padding: 0.16rem;
+
+    .modal-title {
+      font-size: 0.2rem
+    }
+
+    .close {
+      padding: 0.16rem;
+      margin: -0.16rem -0.16rem -0.16rem auto;
+      font-size: 0.24rem;
+    }
+  }
+}

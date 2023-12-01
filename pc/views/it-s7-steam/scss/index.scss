@@ -1,0 +1,1734 @@
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin cursor-pointer($radius: 0.3rem) {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: $radius
+}
+
+//带角度的渐变
+@mixin font-gradient($color1, $color2, $deg: 90deg) {
+  background: linear-gradient($deg, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin wrap($height:8rem) {
+  width: 100vw;
+  height: $height;
+  overflow: hidden;
+  position: relative;
+}
+
+@mixin wrap2($height:8rem) {
+  width: 100%;
+  height: $height;
+  overflow: hidden;
+  position: relative;
+}
+@mixin fade-in-animation($time: 1s) {
+  opacity: 0;
+  position: relative;
+  top: 0.4rem;
+  transition: all $time ease-in-out;
+}
+
+@mixin fade-in-animation-delay($time: 1s) {
+  animation-name: fade-in-delay;
+  animation-duration: $time;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in-delay {
+  0% {
+    opacity: 0;
+    top: 0.2rem;
+  }
+  50% {
+    opacity: 0;
+    top: 0.2rem;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+
+.s7-steam-pc {
+  .banner-wrapper {
+    width: 100vw;
+    height: 8.5rem;
+    position: relative;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 2.2rem 3rem;
+
+      .title {
+        font-size: 0.34rem;
+        line-height: 0.34rem;
+        color: #fff;
+      }
+
+      .product-name {
+        margin-top: 0.64rem;
+        font-size: 0.57rem;
+        line-height: 0.57rem;
+        color: #fff;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      .sub-title {
+        font-size: 0.36rem;
+        line-height: 0.36rem;
+        color: #fff;
+        margin-top: 0.48rem;
+      }
+
+      .video-and-buy {
+        display: flex;
+        align-items: center;
+        margin-top: 0.6rem;
+
+        .text {
+          color: #fff;
+          font-size: 0.24rem;
+        }
+
+        .play-btn {
+          width: 0.36rem;
+          height: 0.36rem;
+          background: url(https://static-ussite.tineco.com/37135080-ece4-40c1-8623-40d2d26d1e2b.png) no-repeat center center / cover;
+          margin: 0 0.7rem 0 0.34rem;
+          cursor: pointer;
+        }
+
+        .buy-btn {
+          width: 1.7rem;
+          height: 0.52rem;
+          border: 0.02rem solid #fff;
+          border-radius: 0.26rem;
+          font-size: 0.24rem;
+          line-height: 0.24rem;
+          font-weight: bold;
+          color: #fff;
+          cursor: pointer;
+          @include flex-center;
+        }
+      }
+    }
+  }
+
+  .function-wrapper {
+    background-color: #3c4045;
+    padding: 0.6rem 1rem;
+    @include flex-center;
+
+    .function-img {
+      transition: all 0.2s linear;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+    }
+
+    .hover-img {
+      transition: all 0.2s linear;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+
+    .left {
+      width: 4.8rem;
+      height: 6.7rem;
+      flex-shrink: 0;
+
+
+      .content-1 {
+        width: 4.8rem;
+        height: 3.25rem;
+        @include cursor-pointer;
+        position: relative;
+
+        &:hover {
+          .function-img {
+            display: none;
+          }
+
+          .hover-img {
+            opacity: 1;
+            transform: scale(1.1);
+          }
+        }
+
+        .content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          padding: 0.4rem 0 0.3rem 0;
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            font-size: 0.34rem;
+            line-height: 0.34rem;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+
+            span {
+              font-size: 0.54rem;
+              line-height: 0.54rem;
+              color: #ff7624;
+            }
+
+            div {
+              font-weight: normal;
+            }
+          }
+
+          .bottom-content {
+            flex-grow: 1;
+            font-size: 0.16rem;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+          }
+        }
+      }
+
+      .content-2 {
+        margin-top: 0.16rem;
+        width: 4.8rem;
+        height: 3.36rem;
+        position: relative;
+        @include cursor-pointer;
+
+        &:hover {
+          .function-img {
+            display: none;
+          }
+
+          .hover-img {
+            opacity: 1;
+            transform: scale(1.1);
+          }
+        }
+
+        .content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          padding: 0.4rem 0 0.3rem 0;
+          display: flex;
+          font-size: 0.34rem;
+          @include font-gradient(#00baf9, #015eea, 77deg);
+          align-items: flex-end;
+          justify-content: center;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .center {
+      margin: 0 0.16rem;
+      flex-shrink: 0;
+
+      .content-3 {
+        width: 4.8rem;
+        height: 6.7rem;
+        @include cursor-pointer;
+        position: relative;
+
+        &:hover {
+          .function-img {
+            display: none;
+          }
+
+          .hover-img {
+            opacity: 1;
+            transform: scale(1.1);
+          }
+        }
+
+        .content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          padding: 0.4rem 0 0.3rem 0;
+          display: flex;
+          font-size: 0.16rem;
+          flex-direction: column;
+          color: #fff;
+          justify-content: flex-end;
+          align-items: center;
+
+          .text {
+            margin-top: 0.64rem;
+          }
+
+          .text-gradient {
+            @include font-gradient(#00baf9, #015eea, 77deg);
+            font-size: 0.34rem;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 7.48rem;
+
+      .content-4 {
+        width: 7.48rem;
+        height: 2.71rem;
+        @include cursor-pointer;
+        position: relative;
+
+        &:hover {
+          .function-img {
+            display: none;
+          }
+
+          .hover-img {
+            opacity: 1;
+            transform: scale(1.1);
+          }
+        }
+
+        .content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          align-items: center;
+          display: flex;
+          padding: 0.64rem;
+
+          .text-gradient {
+            @include font-gradient(#00baf9, #015eea, 77deg);
+            font-size: 0.34rem;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .bottom-wrapper {
+        display: flex;
+        margin-top: 0.16rem;
+
+        .content-5 {
+          width: 4.18rem;
+          height: 3.84rem;
+          @include cursor-pointer;
+          position: relative;
+
+          &:hover {
+            .function-img {
+              display: none;
+            }
+
+            .hover-img {
+              opacity: 1;
+              transform: scale(1.1);
+            }
+          }
+
+          .content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding: 0.4rem 0 0.3rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            .text {
+              font-size: 0.16rem;
+              color: #fff;
+              margin-top: 1.2rem;
+            }
+
+            .text-1 {
+              font-size: 0.34rem;
+              color: #ff7624;
+              font-weight: bold;
+            }
+
+            .text-2 {
+              font-size: 0.2rem;
+              color: #fff;
+            }
+
+            .text-gradient {
+              @include font-gradient(#00baf9, #015eea, 77deg);
+              font-size: 0.34rem;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .content-6 {
+          width: 3.16rem;
+          height: 3.84rem;
+          margin-left: 0.16rem;
+          @include cursor-pointer;
+          position: relative;
+
+          &:hover {
+            .function-img {
+              display: none;
+            }
+
+            .hover-img {
+              opacity: 1;
+              transform: scale(1.1);
+            }
+          }
+
+          .content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding: 0.4rem 0 0.3rem 0;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.34rem;
+            line-height: 0.44rem;
+
+            align-items: center;
+            justify-content: flex-end;
+            font-weight: bold;
+
+            .text {
+              display: flex;
+              @include font-gradient(#00baf9, #015eea, 77deg);
+
+              span {
+                font-size: 0.16rem;
+                font-weight: bold;
+                line-height: 0.16rem;
+                margin-top: 0.04rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hot-f-wrapper {
+    @include wrap2;
+
+    &.show-fadein {
+      .content {
+        .text-1 {
+          opacity: 1;
+          top: 0;
+        }
+
+        .text {
+          opacity: 1;
+          top: 0;
+        }
+      }
+    }
+
+    .content {
+      background: url(https://static-ussite.tineco.com/f65dda01-a3d3-4c25-a9bb-3b1df8b06e34.jpg) no-repeat center center / cover;
+      padding: 2rem 2.5rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      .text {
+        @include font-gradient(#015eea, #00baf9, 77deg);
+        font-size: 0.6rem;
+        font-weight: bold;
+        @include fade-in-animation(0.75s)
+      }
+
+      .text-1 {
+        font-size: 0.28rem;
+        color: #fff;
+        @include fade-in-animation(0.75s);
+
+        &.mar-t-48 {
+          margin-top: 0.48rem;
+        }
+      }
+
+    }
+
+    .text-wrapper {
+      position: absolute;
+      left: 3.7rem;
+      top: 5.65rem;
+
+      .text {
+        font-size: 0.21rem;
+        line-height: 0.21rem;
+        color: #fff;
+
+
+        &.mar-l-150 {
+          margin-left: 1.5rem;
+        }
+
+        &.mar-t--8 {
+          margin-top: -0.08rem;
+        }
+      }
+
+      .top, .bottom {
+        display: flex;
+      }
+
+      .bottom {
+        margin-top: 0.7rem;
+      }
+    }
+
+    .position {
+      position: absolute;
+      left: 13.32rem;
+      top: 4.94rem;
+      width: 0.46rem;
+      height: 0.46rem;
+      background: url('https://static-ussite.tineco.com/5692ff7b-f94a-49f3-bf16-ea007522ce89.png') no-repeat center center / cover;
+      cursor: pointer;
+      overflow: hidden;
+
+      &:hover {
+        overflow: visible;
+
+        .f-wrapper {
+          opacity: 1;
+          top: -3.3rem;
+        }
+      }
+    }
+
+    .f-wrapper {
+      position: absolute;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+      left: 0.24rem;
+      top: -2.8rem;
+      width: 5.1rem;
+      height: 3.8rem;
+      background: url('https://static-ussite.tineco.com/8d2a9c2b-de46-4482-9e0f-39174f23af16.png') no-repeat top right / 100% auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      .text {
+        font-size: 0.2rem;
+        color: #fff;
+        margin-right: 0.2rem;
+        font-style: italic;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .desk-wrapper {
+    @include wrap2;
+    display: flex;
+
+    &.show-fadein {
+      .content {
+        .text {
+          opacity: 1;
+          top: 0;
+        }
+      }
+
+      .b-left, .b-right {
+        @include fade-in-animation-delay(1s);
+      }
+    }
+
+    .left, .right {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      z-index: 9;
+
+      &:hover {
+        video {
+          display: block;
+        }
+
+        img {
+          display: none;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      video {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: none;
+        margin: 0;
+        display: none;
+      }
+    }
+
+    .content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 0.9rem;
+      background: url(https://static-ussite.tineco.com/80192b9b-3f8e-4578-8d05-c2a30b2b1b1e.png) no-repeat bottom center / 19rem auto;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+
+      .text {
+        font-size: 0.27rem;
+        color: #fff;
+        text-align: center;
+        @include fade-in-animation(0.75s);
+        position: relative;
+      }
+
+      .bottom {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .bottom-content {
+          display: flex;
+          flex-grow: 1;
+          justify-content: center;
+          align-items: flex-end;
+
+          .b-left.on {
+            transform: scale(1.1);
+            //设置放大的右上
+            transform-origin: bottom;
+            transition: all 0.2s linear;
+          }
+
+          .b-right.on {
+            transform: scale(1.1);
+            //设置放大的右上
+            transform-origin: bottom;
+            transition: all 0.2s linear;
+          }
+
+          .b-left, .b-right {
+            position: relative;
+            color: #fff;
+            font-size: 0.22rem;
+            flex-grow: 1;
+            margin-bottom: 0.4rem;
+            display: flex;
+            flex-direction: column;
+
+            width: 50%;
+            align-items: center;
+            height: 100%;
+            justify-content: flex-end;
+
+            .title {
+              font-size: 0.32rem;
+              font-weight: bold;
+            }
+
+            .pad-r-100 {
+              padding-right: 1rem;
+            }
+
+            .pad-l-80 {
+              padding-left: 0.8rem;
+            }
+
+            .pad-l-190 {
+              padding-left: 1.9rem;
+            }
+          }
+
+          .b-left{
+            text-align: right;
+            align-items: flex-end;
+            padding-right: 3.36rem;
+          }
+          .b-right {
+            text-align: left;
+            align-items: flex-start;
+            padding-left: 3.36rem;
+          }
+        }
+      }
+    }
+  }
+
+  .safe-wrapper {
+    @include wrap2;
+    background: url(https://static-ussite.tineco.com/15658c0a-0e1d-4759-af3c-7c2f5aafaa3a.jpg) no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    justify-content: flex-end;
+    padding-bottom: 0.5rem;
+
+    .title {
+      font-size: 0.54rem;
+      font-weight: bold;
+      @include fade-in-animation(0.75s)
+    }
+
+    .text {
+      font-size: 0.26rem;
+      line-height: 0.28rem;
+      text-align: center;
+      padding: 0 0.4rem;
+      @include fade-in-animation(0.75s)
+    }
+
+    &.show-fadein {
+      .title {
+        opacity: 1;
+        top: 0;
+      }
+
+      .text {
+        opacity: 1;
+        top: 0;
+      }
+    }
+  }
+
+  .fixed-wrapper {
+    @include wrap(18rem);
+    background-color: #0e0e0e;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    img.fixed {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &.show-fadein {
+      .content {
+        .left {
+          .text {
+            opacity: 1;
+            top: 0;
+          }
+
+          .text-1 {
+            opacity: 1;
+            top: 0;
+          }
+
+          .delay {
+            &-text, &-text-1 {
+              @include fade-in-animation-delay(0.75s);
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      background-color: #0e0e0e;
+
+      .left {
+        width: 8rem;
+        height: 100%;
+        padding: 1.34rem 0 0 2.42rem;
+        flex-shrink: 0;
+        position: relative;
+
+        .mar-t-134 {
+          margin-top: 1.34rem;
+        }
+
+        .text {
+          @include font-gradient(#005feb, #00c5fd, 77deg);
+          font-size: 0.52rem;
+          font-weight: bold;
+          white-space: nowrap;
+          padding-left: 0.08rem;
+          line-height: 0.64rem;
+          @include fade-in-animation(0.75s);
+
+          .mar-t-24 {
+            margin-top: 0.24rem;
+          }
+        }
+
+        .delay-text {
+          @include font-gradient(#005feb, #00c5fd, 77deg);
+          font-size: 0.52rem;
+          font-weight: bold;
+          white-space: nowrap;
+          padding-left: 0.08rem;
+          line-height: 0.64rem;
+          position: relative;
+
+          .mar-t-24 {
+            margin-top: 0.24rem;
+          }
+        }
+
+        .text-1 {
+          font-size: 0.26rem;
+          color: #fff;
+          line-height: 0.4rem;
+          padding-left: 0.08rem;
+          @include fade-in-animation(0.75s);
+
+          .mar-t-46 {
+            margin-top: 0.46rem;
+          }
+        }
+
+        .delay-text-1 {
+          font-size: 0.26rem;
+          color: #fff;
+          line-height: 0.4rem;
+          padding-left: 0.08rem;
+          position: relative;
+
+          .mar-t-46 {
+            margin-top: 0.46rem;
+          }
+        }
+
+        .show-1 {
+          overflow: hidden;
+          left: 2.42rem;
+          z-index: 99;
+          position: absolute;
+          display: block;
+
+          .top{
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .show-2 {
+          overflow: hidden;
+          left: 2.42rem;
+          z-index: 99;
+          position: absolute;
+          display: none;
+        }
+
+        .tip-bg {
+          width: 3.76rem;
+          height: 1.3rem;
+
+          &.dis-none {
+            display: none;
+          }
+        }
+
+        .tip-icon{
+          width: 1.29rem;
+          height: 1.35rem;
+        }
+      }
+
+      .right {
+        flex-grow: 1;
+        flex-shrink: 0;
+        height: 100%;
+
+        img {
+          width: 11.2rem;
+          height: 8rem;
+          display: block;
+
+          &.img-1 {
+            display: block;
+          }
+
+          &.img-2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .step-wrapper {
+    @include wrap;
+    background: url(https://static-ussite.tineco.com/1eb46520-0d10-4266-8ddd-dc2355cb6ee2.jpg) no-repeat center center / cover;
+    position: relative;
+
+    &.show-fadein {
+      .content {
+        .gyq-text-wrapper {
+          .title {
+            opacity: 1;
+            top: 0;
+          }
+
+          .text {
+            opacity: 1;
+            top: 0;
+          }
+        }
+      }
+    }
+
+    .content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding: 1.4rem 0 0 2.42rem;
+
+      .gyq-text-wrapper {
+        max-width: 6.3rem;
+        .title {
+          margin-top: 0.66rem;
+          font-size: 0.54rem;
+          line-height: 0.7rem;
+          color: #fff;
+          font-weight: bold;
+          @include fade-in-animation(0.75s);
+        }
+
+        .text {
+          margin-top: 0.16rem;
+          font-size: 0.26rem;
+          line-height: 0.4rem;
+          color: #fff;
+          @include fade-in-animation(0.75s);
+        }
+      }
+
+      .img-step-wrapper {
+        width: 4.12rem;
+        height: 3.48rem;
+        margin-top: 2.2rem;
+        overflow: hidden;
+        position: relative;
+
+        .show-step {
+          transition: all 0.5s ease-in-out;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+
+          &.on {
+            opacity: 1;
+            z-index: 99;
+          }
+
+          &.off {
+            opacity: 0;
+          }
+        }
+      }
+
+      .s7-right-wrapper {
+        margin-left: 1.2rem;
+        flex-grow: 1;
+        flex-shrink: 0;
+        display: flex;
+
+        .line-wrapper {
+          width: 20px;
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .circle {
+            width: 0.2rem;
+            height: 0.2rem;
+            background: linear-gradient(159deg, #2aacf6, #0151e1);
+            border-radius: 50%;
+            transition: all 0.2s linear;
+
+            &.mar-t-26 {
+              margin-top: 0.26rem;
+            }
+
+            &.on {
+              transform: scale(1.2);
+            }
+          }
+
+          .line {
+            width: 1px;
+            height: 1rem;
+            background-color: #5baae5;
+          }
+        }
+
+        .right {
+          margin-left: 0.2rem;
+
+          .mar-t-60 {
+            margin-top: 0.6rem;
+          }
+
+          .step {
+            cursor: pointer;
+
+            &:hover {
+              .title, .text {
+                transform: scale(1.05);
+              }
+            }
+
+            &.on {
+              .title, .text {
+                transform: scale(1.05);
+              }
+            }
+          }
+
+          .title {
+            font-size: 0.24rem;
+            font-style: italic;
+            @include font-gradient(#2aacf6, #0151e1, 159deg);
+            font-weight: bold;
+            transition: all 0.2s linear;
+          }
+
+          .text {
+            font-size: 0.2rem;
+            color: #fff;
+            font-weight: bold;
+            line-height: 0.24rem;
+            transition: all 0.2s linear;
+          }
+        }
+      }
+    }
+  }
+
+  .movie-wrapper {
+    @include wrap;
+    background: url(https://static-ussite.tineco.com/a2d3548d-ae73-45ec-9f9e-d20fb2128cda.jpg) no-repeat center center / cover;
+    position: relative;
+    padding: 0.9rem 0 0 0;
+
+    &.show-fadein {
+      .title {
+        opacity: 1;
+        top: 0;
+      }
+
+      .sub-title {
+        opacity: 1;
+        top: 0;
+      }
+
+      .movies {
+        .content {
+          .text {
+            @include fade-in-animation-delay(1s);
+          }
+        }
+      }
+    }
+
+    .title {
+      font-size: 0.54rem;
+      line-height: 0.55rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      @include fade-in-animation(0.75s);
+    }
+
+    .sub-title {
+      font-size: 0.26rem;
+      line-height: 0.26rem;
+      margin-top: 0.14rem;
+      color: #fff;
+      text-align: center;
+      @include fade-in-animation(0.75s);
+    }
+
+    .movies {
+      height: 4.94rem;
+      margin: 0.44rem 0 0 1.36rem;
+      display: flex;
+      align-items: center;
+
+      .content {
+        width: 3.4rem;
+        height: 4.94rem;
+        border-radius: 0.26rem;
+        overflow: hidden;
+        padding-top: 3.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        transition: all 0.2s linear;
+        background-color: #fff;
+
+        &:hover {
+          width: 3.74rem;
+          height: 5.43rem;
+          padding-top: 3.63rem;
+
+          .circle, .text {
+            transform: scale(1.1);
+          }
+        }
+
+        &.on {
+          .movie-box {
+            .poster {
+              opacity: 0;
+            }
+          }
+        }
+
+        .movie-box {
+          width: 100%;
+          height: 73%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          cursor: pointer;
+
+          .poster {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: all ease-in-out 0.2s;
+            width: 100%;
+            height: 100%;
+          }
+
+          .movie {
+            position: absolute;
+            left: 0;
+            height: 100%;
+          }
+        }
+
+        .text {
+          font-size: 0.28rem;
+          color: #000;
+          font-weight: bold;
+          line-height: 0.36rem;
+          margin-top: 0.12rem;
+          position: relative;
+
+          .text-c {
+            text-align: center;
+          }
+
+          span {
+            @include font-gradient(#015eea, #00c0fa, -85deg);
+          }
+        }
+
+        &.mar-l-18 {
+          margin-left: 0.18rem;
+        }
+
+        .circle {
+          width: 0.55rem;
+          height: 0.55rem;
+          border-radius: 50%;
+          background: linear-gradient(180deg, #fff, #b4c9e9);
+          position: relative;
+          z-index: 99;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.2s linear;
+
+          .inner-circle {
+            width: 0.49rem;
+            height: 0.49rem;
+            border-radius: 50%;
+            background: linear-gradient(180deg, #2aacf6, #0151e1);
+            font-size: 0.24rem;
+            line-height: 0.49rem;
+            text-align: center;
+            color: #fff3cd;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .why-choose-wrapper {
+    @include wrap;
+    background: url('https://static-ussite.tineco.com/5dcf5c84-de2b-4275-9865-a7b5c116d5c9.jpg') no-repeat center center / cover;
+    padding-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+
+    &.show-fadein {
+      .title {
+        opacity: 1;
+        top: 0;
+      }
+
+      .sub-title {
+        opacity: 1;
+        top: 0;
+      }
+    }
+
+    .title {
+      font-size: 0.54rem;
+      line-height: 0.54rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      @include fade-in-animation(0.75s);
+    }
+
+    .sub-title {
+      font-size: 0.26rem;
+      line-height: 0.26rem;
+      margin-top: 0.16rem;
+      color: #fff;
+      text-align: center;
+      @include fade-in-animation(0.75s);
+
+      .mar-t-14 {
+        margin-top: 0.14rem;
+      }
+    }
+
+    .bottom-text {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      font-size: 0.16rem;
+      color: #fff;
+      align-items: center;
+      margin-bottom: 0.2rem;
+      margin-left: -1.2rem;
+    }
+  }
+
+  .compare-wrapper {
+    @include wrap;
+    background: url('https://static-ussite.tineco.com/42af7ee2-151e-4cc1-b9ce-add7384531fc.jpg') no-repeat center center / cover;
+    padding: 1.8rem 1.9rem;
+
+    .text {
+      font-size: 0.43rem;
+      font-weight: bold;
+      @include font-gradient(#019cfe, #47dfff);
+      @include fade-in-animation(0.75s);
+    }
+
+    &.show-fadein {
+      .text {
+        opacity: 1;
+        top: 0;
+      }
+    }
+
+  }
+
+  .edge-swiper-wrapper {
+    @include wrap;
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.show-fadein {
+      .s-title {
+        opacity: 1;
+        top: 0;
+      }
+
+      .sub-title {
+        opacity: 1;
+        top: 0;
+      }
+    }
+
+    .s-title {
+      font-size: 0.56rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin-top: 0.24rem;
+      @include font-gradient(#015eea, #00baf9, 45deg);
+      @include fade-in-animation(0.75s);
+    }
+
+    .sub-title {
+      font-size: 0.28rem;
+      line-height: 0.28rem;
+      color: #fff;
+      text-align: center;
+      @include fade-in-animation(0.75s);
+      margin-bottom: 0.2rem;
+      padding: 0 3rem;
+    }
+
+    .swiper-container {
+      width: 100%;
+      position: relative;
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .swipe-img {
+          width: 17rem;
+          height: 5.5rem;
+        }
+      }
+
+      .prev, .next {
+        width: 0.5rem;
+        height: 0.5rem;
+        background: url(https://static-ussite.tineco.com/e67a1169-cdc7-4a69-a83f-a94296145910.png) no-repeat center center / cover;
+        position: absolute;
+        top: 50%;
+        margin-top: 0.5rem;
+        z-index: 99;
+        cursor: pointer;
+      }
+
+      .prev {
+        left: 1.37rem;
+      }
+
+      .next {
+        right: 1.37rem;
+        transform: rotate(180deg);
+      }
+    }
+
+  }
+
+  .desc-wrapper {
+    @include wrap;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.46rem 1.06rem;
+
+    &.show-fadein {
+      .desc {
+        .title {
+          .content {
+            opacity: 1;
+            top: 0;
+          }
+        }
+
+        .text {
+          @include fade-in-animation-delay(1s);
+        }
+      }
+    }
+
+    .desc {
+      width: 4rem;
+
+      &-img {
+        width: 4rem;
+        height: auto;
+      }
+
+      .title {
+        font-size: 0.28rem;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 0.2rem;
+        border-bottom: 1px solid #018ff2;
+        box-shadow: 0 1px 0 0 #015eea;
+        line-height: 0.36rem;
+        padding-bottom: 0.1rem;
+
+        .content {
+          @include fade-in-animation(0.75s);
+        }
+      }
+
+      .text {
+        font-size: 0.18rem;
+        color: #fff;
+        margin-top: 0.2rem;
+        position: relative;
+      }
+    }
+  }
+}
+
+.modal-content {
+  border-radius: 0.1rem;
+
+  .modal-header {
+    padding: 0.16rem;
+
+    .modal-title {
+      font-size: 0.2rem
+    }
+
+    .close {
+      padding: 0.16rem;
+      margin: -0.16rem -0.16rem -0.16rem auto;
+      font-size: 0.24rem;
+    }
+  }
+}
+
+
+.product-wrapper {
+  width: 100vw;
+  padding: 1rem 3.5rem;
+  background-color: #f5f5f5;
+
+  .title {
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #232222;
+    margin-bottom: 0.56rem;
+  }
+
+  .product-container {
+    background-color: #fff;
+    width: 100%;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        padding-bottom: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+          width: 1.4rem;
+        }
+
+        .product-title {
+          padding-top: 0.4rem;
+          font-size: 16px;
+          font-weight: bold;
+          padding-bottom: 0.3rem;
+          color: #232222;
+        }
+
+        .buy-at {
+          font-size: 14px;
+          font-weight: bold;
+          padding-bottom: 0.12rem;
+          color: #00327D;
+        }
+
+        .icon_list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 2.7rem;
+
+          .buy-qd-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 1rem;
+            position: relative;
+
+            &:hover {
+              .buy-tips {
+                display: block;
+                opacity: 1;
+              }
+            }
+
+            .icon_item {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 0.72rem;
+              height: 0.45rem;
+              background: #fff;
+              border: 2px solid #00327D;
+              border-radius: 0.22rem;
+              margin-left: 0.02rem;
+              cursor: pointer;
+              overflow: hidden;
+
+              &:hover {
+                background: #002E81;
+                color: #fff;
+                box-shadow: 0.02rem 0.06rem 0.28rem 0.01rem rgba(0, 0, 0, 0.2);
+
+                img {
+                  filter: drop-shadow(#fff 0.8rem 0);
+                  transform: translateX(-0.8rem);
+                }
+              }
+
+              img {
+                width: 0.21rem;
+                height: 0.21rem;
+              }
+            }
+
+            .buy-tips {
+              font-size: 14px;
+              color: #232222;
+              display: none;
+              opacity: 0;
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: -0.3rem;
+              width: 1rem;
+              text-align: center;
+              flex-shrink: 0;
+              white-space: nowrap;
+            }
+          }
+        }
+
+        .include {
+          text-align: center;
+          margin: 0.5rem 0;
+          width: 100%;
+
+          span {
+            &.iconfont {
+              margin-left: 0.1rem;
+            }
+          }
+        }
+
+        .include, .include a, .include a:link {
+          font-size: 12px;
+          font-weight: 400;
+          color: #151414;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          justify-content: center;
+        }
+
+        .include a {
+          width: 100%;
+          padding: 0.1rem;
+        }
+      }
+    }
+  }
+
+  .down-area {
+    background-color: #fff;
+  }
+
+  .comm-content {
+    border-top: 1px solid #EFF1F4;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .comm-item {
+      text-align: center;
+      width: 25%;
+      padding-bottom: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a{
+        text-decoration: none;
+      }
+
+      img {
+        height: 1.8rem;
+        margin-bottom: 0.2rem;
+        width: unset;
+      }
+
+      .msg {
+        font-size: 13px;
+        font-weight: 400;
+        color: #232222;
+        line-height: 0.26rem;
+      }
+    }
+  }
+}
+.support-wrapper {
+  text-align: center;
+  padding: 0 3.5rem;
+
+  h3 {
+    padding: 1.2rem 0 0.76rem 0;
+    font-size: 0.34rem;
+    font-weight: bold;
+    color: #151414;
+  }
+
+  .support-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .support-item-list {
+      width: 24%;
+      height: 3.25rem;
+      background: #F5F5F5;
+      font-weight: bold;
+      color: #151414;
+      font-size: 0.16rem;
+      cursor: pointer;
+
+
+      &:hover {
+        box-shadow: 0.1rem 0.12rem 0.35rem 0.03rem rgba(0, 0, 0, 0.07);
+
+        img {
+          padding-bottom: 0.3rem;
+          padding-top: 0.6rem;
+        }
+
+        button {
+          display: block;
+          left: 50%;
+          transform: translateX(-50%);
+
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        span.mar-t-8 {
+          margin-top: 0.08rem;
+        }
+      }
+
+      img {
+        padding: 0.95rem 0 0.4rem 0;
+        transition: all 0.4s;
+        width: 0.9rem;
+        height: unset;
+
+        &.w-76 {
+          width: 0.76rem;
+        }
+      }
+
+      button {
+        background: #00327D;
+        color: #fff;
+        padding: 0.06rem 0.2rem;
+        border-radius: 0.25rem;
+        position: relative;
+        top: 0.26rem;
+        display: none;
+        font-size: 0.16rem;
+      } 
+    }
+  }
+}
+
+.bottom-nav-wrapper {
+  padding: 0.84rem 3.5rem 0.24rem 3.5rem;
+  font-size: 0.14rem;
+
+  .navbar-item {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .navbar-last {
+    color: #7c7c7c;
+    text-decoration: none;
+  }
+}
+

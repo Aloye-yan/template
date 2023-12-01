@@ -1,0 +1,71 @@
+<style>
+  .fly-imageTextSwiper-h5 .swiper-slide .swiper-item{
+    height:[i18]tradeup.swiper.itemheight[/i18]
+  }
+</style>
+
+<div class="fly-imageTextSwiper-h5 swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="swiper-item">
+        <div class="video">
+          <video
+            src="https://static-ussite.tineco.com/%E4%BB%A5%E6%97%A7%E6%8D%A2%E6%96%B0%E5%85%A8%E9%93%BE%E8%B7%AF%E6%B8%85%E6%B4%81%E5%8A%A8%E6%80%81.mp4_98c53ce3-2.mp4"
+            loop autoplay muted></video>
+        </div>
+        <div class="content">
+          <div class="title">[i18]tradeup.swiper.title[/i18]</div>
+          <div class="sub-title">[i18]tradeup.swiper.subtitle1[/i18]</div>
+          <div class="text">[i18]tradeup.swiper.text1[/i18]</div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="swiper-item">
+        <div class="img"
+          style="background-image: url(https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%204%20%E6%8B%B7%E8%B4%9D.png_89457c5e-d.png);background-position-x: left;">
+        </div>
+        <div class="content">
+          <div class="title">[i18]tradeup.swiper.title[/i18]</div>
+          <div class="sub-title">[i18]tradeup.swiper.subtitle2[/i18]</div>
+          <div class="text">[i18]tradeup.swiper.text2[/i18]</div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="swiper-item">
+        <div class="img"
+          style="background-image: url(https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%204%20%E6%8B%B7%E8%B4%9D%202.png_aca3bcd1-4.png);background-position-x: right;">
+        </div>
+        <div class="content">
+          <div class="title">[i18]tradeup.swiper.title[/i18]</div>
+          <div class="sub-title">[i18]tradeup.swiper.subtitle3[/i18]</div>
+          <div class="text">[i18]tradeup.swiper.text3[/i18]</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination swiper-pagination2"></div>
+  <div class="swiper-btn prev"></div>
+  <div class="swiper-btn next"></div>
+</div>
+<script>
+  $(() => {
+    let imgTextSwiper = new Swiper('.fly-imageTextSwiper-h5', {
+      allowTouchMove: true,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 15000,
+        disableOnInteraction: false,
+    },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.next',
+        prevEl: '.prev',
+      }
+    });
+  })
+</script>

@@ -1,0 +1,45 @@
+.black5-footer-h5 .index-4feture {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 1rem;
+  background: #00327D;
+  padding: 0 0.4rem;
+}
+.black5-footer-h5 .index-4feture .en-item {
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.black5-footer-h5 .index-4feture .en-item img {
+  height: 0.44rem;
+  width: auto;
+  display: inline-block;
+}
+.black5-footer-h5 .search {
+  background: url("https://static-ussite.tineco.com/Subscription1.jpg_67527dbc-9.jpg") no-repeat center/100%;
+  padding-top: 0.28rem;
+}
+.black5-footer-h5 .search .subscribe-title {
+  font-size: 0.3rem;
+  line-height: 0.34rem;
+  color: #FFF;
+  font-weight: 700;
+}
+.black5-footer-h5 .search .search-title {
+  margin: 0.36rem 0 0.14rem !important;
+}
+.black5-footer-h5 .search .join-title {
+  margin-top: 0.4rem;
+  color: #FFF;
+  font-size: 19px;
+  font-weight: 700;
+}
+.black5-footer-h5 .search .join .join-item {
+  background: unset !important;
+  filter: invert(100%);
+}

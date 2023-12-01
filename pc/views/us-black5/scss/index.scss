@@ -1,0 +1,576 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.us-black5-pc{
+
+  .banner-wrapper{
+    width: 100%;
+
+    #bannerSwiper{
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+
+      .banner-item{
+        position: relative;
+        
+        .bg{
+          width: 100%;
+          height: auto;
+        }
+
+        .content{
+          position: absolute;
+          left: 2.24rem;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: #FFF;
+
+          .text{
+            font-size: 0.35rem;
+            line-height: 0.4rem;
+
+            span{
+              font-weight: 700;
+              color: #E7BD88;
+            }
+          }
+
+          .title{
+            font-size: 0.89rem;
+            font-weight: 700;
+            margin: 0.42rem 0;
+            position: unset !important;
+            transform: unset !important;
+            transform-origin: unset !important;
+            color: #FFF;
+
+            span{
+              font-size: 1rem;
+            }
+          }
+
+          .btn-content{
+            display: flex;
+            align-items: center;
+            margin-top: 0.6rem;
+
+            .btn{
+              width: 2.4rem;
+              height: 0.73rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              border-radius: 0.36rem;
+              background-image: linear-gradient(159deg, #E7BD88 0%, rgba(233, 199, 154, 1) 100%), linear-gradient( #ffffff, #ffffff);
+              background-blend-mode: normal, normal;
+              
+              .icon{
+                width: 1.61rem;
+                height: auto;
+              }
+            }
+          }
+        }
+
+        .tips{
+          position: absolute;
+          right: 0.36rem;
+          bottom: 0.25rem;
+          font-size: 0.14rem;
+          color: #FFF;
+        }
+
+        .bg-link{
+          text-decoration: none;
+          display: block;
+        }
+      }
+
+      .swiper-pagination-banner{
+        width: 100%;
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 11;
+
+        .swiper-pagination-bullet{
+          width: 100px;
+          height: 5px;
+          display: inline-block;
+          background: #FFF;
+          opacity: 1;
+          margin: 0 5px;
+          border-radius: 20px;
+          position: relative;
+          cursor: pointer;
+          outline: none;
+	        vertical-align: middle;
+          
+  
+          &.swiper-pagination-bullet-active{
+            opacity: 1;
+            background: #FFF;
+            width: 100px;
+            transition-delay: 0s;
+  
+            .sprogress {
+              background: #E7BD88;
+              height: 5px;
+              width: 0px;
+              position: absolute;
+              top: 0px;
+              left: 0;
+              transform-origin: left;
+              z-index: 3;
+              transition-timing-function: linear;
+              animation: middle 5s;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .brand-wrapper{
+    width: 100%;
+    height: 1.19rem;
+    background: #000;
+    color: #CCC;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 2.4rem;
+    position: relative;
+    
+    .brand-item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+
+      .text{
+        font-size: 0.26rem;
+        font-weight: 700;
+      }
+
+      .img{
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .prod-classification-wrapper{
+    width: 100%;
+    background: #0F1319;
+    background-image: url('https://static-ussite.tineco.com/%E7%BB%84%201.png_cb16e092-4.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+    padding: 0 2.4rem 1.17rem;
+
+    .main-title{
+      color: #e9c79a;
+      font-size: 0.48rem;
+      font-weight: 700;
+      letter-spacing: 0.02rem;
+      text-align: center;
+      padding: 0.75rem 0;
+    }
+
+    .guidance-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
+      .guidance-item{
+        width: 32%;
+        cursor: pointer;
+
+        .img{
+          width: 100%;
+          height: auto;
+        }
+
+        .text{
+          width: 100%;
+          height: 0.91rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background: #f5f7f8;
+          font-size: 0.4rem;
+          line-height: 0.48rem;
+          font-weight: 700;
+          color: #090d15;
+        }
+        
+      }
+    }
+
+    .product-content{
+      color: #FFF;
+
+      .sub-title{
+        font-size: 0.4rem;
+        text-align: center;
+        font-weight: 700;
+        padding: 0.97rem 0 0.57rem;
+      }
+
+      .prod-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        opacity: 1;
+
+        .prod-item{
+          position: relative;
+          width: 3.36rem;
+          height: 4.8rem;
+          border-radius: 0.22rem;
+          background: #000;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: end;
+          margin: 0 0.07rem 0.2rem;
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          text-align: center;
+
+          .title{
+            font-size: 0.22rem;
+            line-height: 0.24rem;
+            white-space: nowrap;
+          }
+
+          .buy-at{
+            font-size: 0.16rem;
+            margin: 0.2rem auto 0.1rem;
+          }
+
+          .btn-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 0.1rem;
+
+            .buy-item{
+              width: 1.22rem;
+              padding: 0 0.1rem;
+              margin-bottom: 0.12rem;
+              position: relative;
+
+              .icon-item{
+                width: 1.02rem;
+                height: 0.36rem;
+                text-align: center;
+                border-radius: 0.17rem;
+                background: #FFF;
+
+                a{
+                  text-decoration: none;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  height: 100%;
+
+                  .icon{
+                    width: 0.72rem;
+                    height: 0.21rem;
+                  }
+                }
+              }
+
+              .buy-tips{
+                font-size: 0.13rem;
+                position: absolute;
+                left: 0;
+                bottom: -0.22rem;
+                width: 100%;
+                text-align: center;
+                display: none;
+                opacity: 0;
+              }
+
+              &:hover{
+                .icon-item{
+                  background-image: linear-gradient(159deg, #E7BD88 0%, rgba(233, 199, 154, 1) 100%), linear-gradient( #ffffff, #ffffff);
+                }
+                .buy-tips{
+                  display: block;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+
+          .learn-more{
+            font-size: 0.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: block;
+            color: #FFF;
+            margin-bottom: 0.2rem;
+
+          }
+
+          .hot-icon{
+            position: absolute;
+            top: -0.1rem;
+            left: 0.23rem;
+            width: 0.81rem;
+            height: 0.71rem;
+          }
+        }
+
+        &.hidden {
+          opacity: 0;
+          display: none;
+        }
+
+        &:first-of-type{
+          margin-left: 0 !important;
+        }
+        &:nth-of-type(4n){
+          margin-right: 0 !important;
+        }
+      }
+    }
+
+    .where-to-buy-wrapper{
+      margin-top: 0.92rem;
+      width: 100%;
+      height: 2.61rem;
+      background: #000;
+      background-image: url('https://static-ussite.tineco.com/where-to-buy.png_e7cb16e7-9.png');
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: left;
+      border-radius: 0.54rem;
+      display: flex;
+      align-items: center;
+
+      .text{
+        font-size: 0.6rem;
+        color: #FFF;
+        font-weight: 700;
+        margin-left: 2.9rem;
+      }
+
+      .btn-content{
+        display: flex;
+        align-items: center;
+
+        .btn{
+          width: 2.39rem;
+          height: 0.73rem;
+          background-image: linear-gradient(159deg, #efbd81 0%, rgba(240, 199, 149, 1) 100%), linear-gradient(#ffffff, #ffffff);
+          background-blend-mode: normal, normal;
+          border-radius: 0.36rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          margin-left: 0.35rem;
+
+          .icon{
+            width: 1.61rem;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .live-wrapper{
+    width: 100%;
+    position: relative;
+    background: #0f1319;
+    margin-bottom: -0.07rem;
+
+    .bg{
+      width: 100%;
+      height: auto;
+    }
+
+    .content{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      color: #FFF;
+      padding: 0.56rem 0 0.22rem;
+
+      .title{
+        width: 12.69rem;
+        height: 0.83rem;
+        padding-left: 1.88rem;
+        background-image: url('https://static-ussite.tineco.com/about%201652.png_1d12a778-6.png');
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        display: flex;
+        align-items: center;
+        font-size: 0.24rem;
+        color: #232222;
+
+        span{
+          font-size: 0.36rem;
+          font-weight: 700;
+          color: #00327D;
+          letter-spacing: 0.01rem;
+          padding: 0 0.06rem;
+        }
+      }
+
+      .sub-title{
+        font-size: 0.59rem;
+        font-weight: bold;
+        padding-left: 1.88rem;
+        margin: 0.2rem 0 0.3rem;
+      }
+
+      .text{
+        font-size: 0.24rem;
+        padding-left: 1.88rem;
+      }
+      
+      .video-content{
+        margin: 0.24rem 0 0.56rem;
+        padding-left: 1.88rem;
+        a{
+          text-decoration: none;
+
+          .video-btn{
+            color: #e9c79a;
+            border-radius: 0.27rem;
+	          border: solid 0.02rem #e9c79a;
+            width: 2.2rem;
+            height: 0.55rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.2rem;
+            font-weight: 700;
+            white-space: nowrap;
+          }
+        }
+
+      }
+
+      .tips{
+        font-size: 0.14rem;
+        padding-left: 1.88rem;
+      }
+    }
+  }
+
+  .modal-content {
+    border-radius: 0.1rem;
+  
+    .modal-header {
+      padding: 0.16rem;
+  
+      .modal-title {
+        font-size: 0.2rem
+      }
+  
+      .close {
+        padding: 0.16rem;
+        margin: -0.16rem -0.16rem -0.16rem auto;
+        font-size: 0.24rem;
+      }
+    }
+  }
+  
+  .ugc-wrapper{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: url(https://static-ussite.tineco.com/%E5%9B%BE%E5%B1%821.jpg_f132c9a5-5.jpg) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+
+    .bg{
+      width: 12.8rem;
+      height: auto;
+      opacity: 0;
+    }
+
+    .content{
+      position: absolute;
+      top: 1.8rem;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title{
+        font-size: 0.56rem;
+        font-weight: 700;
+        line-height: 0.48rem;
+        color: #e9c79a;
+      }
+
+      .text{
+        font-size: 0.32rem;
+        color: #FFF;
+        line-height: 0.48rem;
+        padding: 0.4rem 0;
+      }
+
+      .ugc-btn{
+        width: 1.98rem;
+        height: 0.55rem;
+        background: #e9c79a;
+        border: 0.02rem solid #e9c79a;
+        border-radius: 0.27rem;
+        text-decoration: none;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.2rem;
+      }
+    }
+  }
+ 
+  
+  .mr-02{
+    margin-right: 0.2rem;
+  }
+  .ml-084{
+    margin-left: 0.84rem;
+  }
+}
+
+@keyframes middle {
+  0% { width: 0; }
+  100% { width: 100px; }
+}

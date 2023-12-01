@@ -1,0 +1,83 @@
+.fly-top-banner-pc {
+  width: 100%;
+  height: 9.74rem;
+  position: relative;
+}
+.fly-top-banner-pc img {
+  width: 100%;
+  height: 100%;
+}
+.fly-top-banner-pc .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.3rem 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.fly-top-banner-pc .content-title {
+  font-size: 0.79rem;
+  line-height: 0.85rem;
+  font-weight: bold;
+  position: relative;
+  width: 11.2rem;
+  margin-bottom: 0.5rem;
+}
+.fly-top-banner-pc .content-title:before {
+  content: attr(data-text);
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  background: linear-gradient(6deg, #5463da 0%, #bfb8fe 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.06rem transparent;
+}
+.fly-top-banner-pc .content-title:after {
+  content: attr(data-text);
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  background: linear-gradient(124deg, #021b6e 0%, #3042f8 39%, #310c7e 74%, #041282 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  z-index: 1;
+}
+.fly-top-banner-pc .content-sub {
+  font-size: 0.38rem;
+  color: #fff;
+  font-weight: bold;
+  line-height: 0.38rem;
+  margin-top: 0.1rem;
+}
+.fly-top-banner-pc .content-text {
+  font-size: 0.29rem;
+  color: #fff;
+  margin-top: 0.98rem;
+}
+.fly-top-banner-pc .content-text span {
+  font-weight: bold;
+  font-style: italic;
+}
+.fly-top-banner-pc .content-bottom {
+  font-size: 0.29rem;
+  color: #fff;
+  margin-top: 0.89rem;
+}
+.fly-top-banner-pc .down-next {
+  width: 0.8rem;
+  height: 0.79rem;
+  background-image: url("https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%202.png_9de51adc-8.png");
+  background-size: 100%;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}

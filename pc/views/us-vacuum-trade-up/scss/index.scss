@@ -1,0 +1,311 @@
+@mixin flex-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//初始化h1 h2 h3
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  padding-block: unset;
+  line-height: 1.5;
+}
+
+.us-vacuum-trade-up-pc {
+  display: flex;
+  flex-direction: column;
+
+  .now-set-wrapper {
+    position: relative;
+
+    .cry {
+      width: 1.03rem;
+      height: 1rem;
+      background: url(https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%202%20%E6%8B%B7%E8%B4%9D.png_9b45c4a3-6.png) no-repeat center center / 100% 100%;
+      position: absolute;
+      top: 1rem;
+      right: 3.6rem;
+    }
+
+    .now-set-content {
+      margin-top: 0.72rem;
+      padding-bottom: 1.28rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .now-set-text {
+        .title {
+          font-size: 0.29rem;
+          color: #010101;
+          text-align: center;
+
+          .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+              margin-left: 0.06rem;
+              cursor: pointer;
+            }
+          }
+
+          &.mar-t-72 {
+            margin-top: 0.72rem;
+          }
+        }
+
+        .content {
+          font-size: 0.33rem;
+          font-weight: bold;
+          text-align: center;
+          color: #4930bb;
+          margin-top: 0.72rem;
+
+        }
+
+        .bottom-title {
+          margin-top: 0.56rem;
+          font-size: 0.67rem;
+          font-weight: bold;
+          text-align: center;
+          color: #503cae;
+          //字体外边框
+          position: relative;
+
+          &:before {
+            content: attr(data-text);
+            position: absolute;
+            font-weight: bold;
+            width: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(6deg, #ede7fe 0%, #ede7fe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-stroke: 0.12rem transparent;
+            z-index: -1;
+          }
+        }
+      }
+
+      .down-next {
+        width: 0.8rem;
+        height: 0.79rem;
+        background-image: url("https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%202.png_9de51adc-8.png");
+        background-size: 100%;
+        position: absolute;
+        bottom: 0.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+    }
+  }
+
+  .form-set-wrapper {
+    width: 100%;
+    height: 2.64rem;
+    background: url("https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%206.png_e923f789-8.png") no-repeat center center / 100% 100%;
+    margin-top: 0.81rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      font-size: 0.54rem;
+      color: #ffffff;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .sub {
+      font-size: 0.46rem;
+      color: #ffffff;
+    }
+  }
+
+  .step-wrapper {
+    .head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 0.01rem solid #979797;
+      padding-bottom: 0.02rem;
+
+      .title {
+        font-size: 0.5rem;
+        font-weight: bold;
+        background: linear-gradient(163deg, #1a349f 0, #3244e7 50%, #3445ee 55%, #2c1279 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .icon {
+        width: 0.7rem;
+        height: auto;
+      }
+    }
+
+    &.step2-wrapper {
+      width: 5.3rem;
+      height: 4.15rem;
+      background-color: #ffffff;
+      box-shadow: 0 0 0.27rem 0 rgba(2, 27, 139, 0.19);
+      padding: 0.6rem;
+
+      .text1 {
+        padding-top: 0.12rem;
+        font-size: 0.25rem;
+        color: #010101;
+      }
+
+      &:nth-child(2) {
+        margin-left: 0.4rem;
+      }
+    }
+  }
+
+  .flex-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    position: relative;
+
+    .down-next {
+      width: 0.8rem;
+      height: 0.79rem;
+      background-image: url("https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%202.png_9de51adc-8.png");
+      background-size: 100%;
+      position: absolute;
+      bottom: 0.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+  }
+
+  .buy-wrapper {
+    width: 100%;
+    padding: 0 0.3rem 0.7rem;
+    text-align: center;
+
+    .title {
+      font-size: 0.54rem;
+      color: #000000;
+      margin-bottom: 1.5rem;
+    }
+
+    .buy-list {
+      @include flex-2;
+      justify-content: center;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &.mar-r-150 {
+          margin-right: 1.5rem;
+        }
+
+        .icon {
+          width: 2.55rem;
+          height: 0.77rem;
+          margin-bottom: 0.24rem;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        a {
+          text-decoration: underline;
+          font-size: 0.34rem;
+          color: #010101;
+        }
+      }
+    }
+  }
+
+  .trade-up-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.2rem;
+
+    .content {
+      width: 14.86rem;
+      height: 1.15rem;
+      background-image: linear-gradient(163deg,
+              #021b6e 0%,
+              #3042f8 39%,
+              #310c7e 74%,
+              #041282 100%),
+      linear-gradient(#6770b1,
+                      #6770b1);
+      border-radius: 0.57rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .title {
+        font-size: 0.54rem;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .footer-text-wrapper {
+    padding: 0.3rem 3.2rem 0.62rem 3.2rem;
+
+    .text {
+      color: rgba($color: #000000, $alpha: 0.7);
+      font-size: 0.19rem;
+      font-style: italic;
+
+      a {
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+        color: #000000;
+      }
+    }
+  }
+
+
+}
+
+.trade-up-btn {
+  //背景渐变
+  background: linear-gradient(0deg, #07229e 0%, #221295 27%, #3c028b 50%, #4484ec 100%);
+  padding: 0.05rem 0.1rem;
+  border-radius: 0.05rem;
+  font-size: 0.29rem;
+  color: #ffffff;
+  line-height: 0.29rem;
+
+  &.fixed-btn {
+    position: fixed;
+    right: 0.4rem;
+    top: 1.8rem;
+    width: 2.4rem;
+    background: unset;
+    z-index: 9999;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

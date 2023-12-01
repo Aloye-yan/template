@@ -1,0 +1,491 @@
+.it-black5-pc .banner-wrapper {
+  width: 100%;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item {
+  position: relative;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .bg {
+  width: 100%;
+  height: auto;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .content {
+  position: absolute;
+  left: 2.24rem;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFF;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .content .text {
+  font-size: 0.34rem;
+  line-height: 0.44rem;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .content .text span {
+  font-weight: 700;
+  color: #E7BD88;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .content .title {
+  font-size: 0.64rem;
+  font-weight: 700;
+  margin: 0.42rem 0;
+  position: unset !important;
+  transform: unset !important;
+  transform-origin: unset !important;
+  color: #FFF;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .content .title span {
+  font-size: 0.8rem;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .content .btn-content {
+  display: flex;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .content .btn-content .btn {
+  width: 2.4rem;
+  height: 0.73rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 0.36rem;
+  background-image: linear-gradient(159deg, #E7BD88 0%, rgb(233, 199, 154) 100%), linear-gradient(#ffffff, #ffffff);
+  background-blend-mode: normal, normal;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .content .btn-content .btn .icon {
+  width: 1.61rem;
+  height: auto;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .tips {
+  position: absolute;
+  right: 0.36rem;
+  bottom: 0.25rem;
+  font-size: 0.14rem;
+  color: #FFF;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .banner-item .bg-link {
+  text-decoration: none;
+  display: block;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .swiper-pagination-banner {
+  width: 100%;
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .swiper-pagination-banner .swiper-pagination-bullet {
+  width: 100px;
+  height: 5px;
+  display: inline-block;
+  background: #FFF;
+  opacity: 1;
+  margin: 0 5px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .swiper-pagination-banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #FFF;
+  width: 100px;
+  transition-delay: 0s;
+}
+.it-black5-pc .banner-wrapper #bannerSwiper .swiper-pagination-banner .swiper-pagination-bullet.swiper-pagination-bullet-active .sprogress {
+  background: #E7BD88;
+  height: 5px;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  transform-origin: left;
+  z-index: 3;
+  transition-timing-function: linear;
+  animation: middle 5s;
+}
+.it-black5-pc .brand-wrapper {
+  width: 100%;
+  height: 1.19rem;
+  background: #000;
+  color: #CCC;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 2.4rem;
+  position: relative;
+}
+.it-black5-pc .brand-wrapper .brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+.it-black5-pc .brand-wrapper .brand-item .text {
+  font-size: 0.26rem;
+  font-weight: 700;
+}
+.it-black5-pc .brand-wrapper .brand-item .img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+.it-black5-pc .prod-classification-wrapper {
+  width: 100%;
+  background: #0F1319;
+  background-image: url("https://static-ussite.tineco.com/%E7%BB%84%201.png_cb16e092-4.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  padding: 0 2.4rem 1.17rem;
+}
+.it-black5-pc .prod-classification-wrapper .main-title {
+  color: #e9c79a;
+  font-size: 0.48rem;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  padding: 0.75rem 0;
+}
+.it-black5-pc .prod-classification-wrapper .guidance-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.it-black5-pc .prod-classification-wrapper .guidance-content .guidance-item {
+  width: 32%;
+  cursor: pointer;
+}
+.it-black5-pc .prod-classification-wrapper .guidance-content .guidance-item .img {
+  width: 100%;
+  height: auto;
+}
+.it-black5-pc .prod-classification-wrapper .guidance-content .guidance-item .text {
+  width: 100%;
+  height: 0.91rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f5f7f8;
+  font-size: 0.4rem;
+  line-height: 0.48rem;
+  font-weight: 700;
+  color: #090d15;
+}
+.it-black5-pc .prod-classification-wrapper .product-content {
+  color: #FFF;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .sub-title {
+  font-size: 0.4rem;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.97rem 0 0.57rem;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  opacity: 1;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item {
+  position: relative;
+  width: 3.36rem;
+  height: 4.8rem;
+  border-radius: 0.22rem;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin: 0 0.07rem 0.2rem;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .title {
+  font-size: 0.22rem;
+  line-height: 0.24rem;
+  white-space: nowrap;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .buy-at {
+  font-size: 0.16rem;
+  margin: 0.2rem auto 0.1rem;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.1rem;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .btn-content .buy-item {
+  width: 1.22rem;
+  padding: 0 0.1rem;
+  margin-bottom: 0.12rem;
+  position: relative;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .btn-content .buy-item .icon-item {
+  width: 1.02rem;
+  height: 0.36rem;
+  text-align: center;
+  border-radius: 0.17rem;
+  background: #FFF;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .btn-content .buy-item .icon-item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .btn-content .buy-item .icon-item a .icon {
+  width: 0.72rem;
+  height: 0.21rem;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .btn-content .buy-item .buy-tips {
+  font-size: 0.13rem;
+  position: absolute;
+  left: 0;
+  bottom: -0.22rem;
+  width: 100%;
+  text-align: center;
+  display: none;
+  opacity: 0;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .btn-content .buy-item:hover .icon-item {
+  background-image: linear-gradient(159deg, #E7BD88 0%, rgb(233, 199, 154) 100%), linear-gradient(#ffffff, #ffffff);
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .btn-content .buy-item:hover .buy-tips {
+  display: block;
+  opacity: 1;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .learn-more {
+  font-size: 0.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  color: #FFF;
+  margin-bottom: 0.2rem;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list .prod-item .hot-icon {
+  position: absolute;
+  top: -0.1rem;
+  left: 0.23rem;
+  width: 0.81rem;
+  height: 0.71rem;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list.hidden {
+  opacity: 0;
+  display: none;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list:first-of-type {
+  margin-left: 0 !important;
+}
+.it-black5-pc .prod-classification-wrapper .product-content .prod-list:nth-of-type(4n) {
+  margin-right: 0 !important;
+}
+.it-black5-pc .prod-classification-wrapper .where-to-buy-wrapper {
+  margin-top: 0.92rem;
+  width: 100%;
+  height: 2.61rem;
+  background: #000;
+  background-image: url("https://static-ussite.tineco.com/where-to-buy.png_e7cb16e7-9.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left;
+  border-radius: 0.54rem;
+  display: flex;
+  align-items: center;
+}
+.it-black5-pc .prod-classification-wrapper .where-to-buy-wrapper .text {
+  font-size: 0.6rem;
+  color: #FFF;
+  font-weight: 700;
+  margin-left: 2.9rem;
+}
+.it-black5-pc .prod-classification-wrapper .where-to-buy-wrapper .btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 30%;
+}
+.it-black5-pc .prod-classification-wrapper .where-to-buy-wrapper .btn-content .btn {
+  width: 2.39rem;
+  height: 0.73rem;
+  background-image: linear-gradient(159deg, #efbd81 0%, rgb(240, 199, 149) 100%), linear-gradient(#ffffff, #ffffff);
+  background-blend-mode: normal, normal;
+  border-radius: 0.36rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 0.35rem;
+}
+.it-black5-pc .prod-classification-wrapper .where-to-buy-wrapper .btn-content .btn .icon {
+  width: 1.61rem;
+  height: auto;
+}
+.it-black5-pc .live-wrapper {
+  width: 100%;
+  position: relative;
+  background: #0f1319;
+  margin-bottom: -0.07rem;
+}
+.it-black5-pc .live-wrapper .bg {
+  width: 100%;
+  height: auto;
+}
+.it-black5-pc .live-wrapper .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #FFF;
+  padding: 0.56rem 0 0.22rem;
+}
+.it-black5-pc .live-wrapper .content .title {
+  width: 12.69rem;
+  height: 0.83rem;
+  padding-left: 1.88rem;
+  background-image: url("https://static-ussite.tineco.com/about%201652.png_1d12a778-6.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  display: flex;
+  align-items: center;
+  font-size: 0.24rem;
+  color: #232222;
+}
+.it-black5-pc .live-wrapper .content .title span {
+  font-size: 0.36rem;
+  font-weight: 700;
+  color: #00327D;
+  letter-spacing: 0.01rem;
+  padding: 0 0.06rem;
+}
+.it-black5-pc .live-wrapper .content .sub-title {
+  font-size: 0.59rem;
+  font-weight: bold;
+  padding-left: 1.88rem;
+  margin: 0.2rem 0 0.3rem;
+}
+.it-black5-pc .live-wrapper .content .text {
+  font-size: 0.24rem;
+  padding-left: 1.88rem;
+}
+.it-black5-pc .live-wrapper .content .video-content {
+  margin: 0.24rem 0 0.56rem;
+  padding-left: 1.88rem;
+}
+.it-black5-pc .live-wrapper .content .video-content a {
+  text-decoration: none;
+}
+.it-black5-pc .live-wrapper .content .video-content a .video-btn {
+  color: #e9c79a;
+  border-radius: 0.27rem;
+  border: solid 0.02rem #e9c79a;
+  width: 2.2rem;
+  height: 0.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.2rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.it-black5-pc .live-wrapper .content .tips {
+  font-size: 0.14rem;
+  padding-left: 1.88rem;
+}
+.it-black5-pc .modal-content {
+  border-radius: 0.1rem;
+}
+.it-black5-pc .modal-content .modal-header {
+  padding: 0.16rem;
+}
+.it-black5-pc .modal-content .modal-header .modal-title {
+  font-size: 0.2rem;
+}
+.it-black5-pc .modal-content .modal-header .close {
+  padding: 0.16rem;
+  margin: -0.16rem -0.16rem -0.16rem auto;
+  font-size: 0.24rem;
+}
+.it-black5-pc .ugc-wrapper {
+  width: 100%;
+  position: relative;
+  background: #0f1319;
+  text-align: center;
+}
+.it-black5-pc .ugc-wrapper .bg {
+  width: 12.8rem;
+  height: auto;
+}
+.it-black5-pc .ugc-wrapper .content {
+  position: absolute;
+  top: 1.8rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.it-black5-pc .ugc-wrapper .content .title {
+  font-size: 0.56rem;
+  font-weight: 700;
+  line-height: 0.48rem;
+  color: #e9c79a;
+}
+.it-black5-pc .ugc-wrapper .content .text {
+  font-size: 0.32rem;
+  color: #FFF;
+  line-height: 0.48rem;
+  padding: 0.4rem 0;
+}
+.it-black5-pc .ugc-wrapper .content .ugc-btn {
+  width: 1.98rem;
+  height: 0.55rem;
+  background: #e9c79a;
+  border: 0.02rem solid #e9c79a;
+  border-radius: 0.27rem;
+  text-decoration: none;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.2rem;
+}
+.it-black5-pc .mr-02 {
+  margin-right: 0.2rem;
+}
+.it-black5-pc .ml-084 {
+  margin-left: 0.84rem;
+}
+
+@keyframes middle {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('./fonts/CenturyGothicBd.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('./fonts/CenturyGothic.otf');
+    font-style: normal;
+}
+
+img {
+    margin: 0;
+    border: 0;
+}
+
+html,
+body {
+    font-family: 'CenturyGothic', serif;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+html {
+    font-size: calc(100vw / 6);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.24rem;
+}

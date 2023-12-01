@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Title</title>
+    <link href="../../assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <link href="../../assets/css/base-h5.css" rel="stylesheet">
+    <link href="./css/us-vacuum-trade-up-h5.css" rel="stylesheet">
+
+    <style>
+        .us-vacuum-trade-up-h5 .banner-wrapper .content{
+            padding-top: [i18]tradeup.banner.contentcss[/i18];
+        }
+        .us-vacuum-trade-up-h5 .banner-wrapper .content .time{
+            padding-top: [i18]tradeup.banner.timecss[/i18];
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="us-vacuum-trade-up-h5">
+    <div class="trade-up-btn" onclick="handleScrollTo('.fly-trade-up-form-h5',-10)">
+        <img alt="" src="[i18]tradeup.tradeup_btn[/i18]"/>
+    </div>
+    <div class="banner-wrapper">
+        <img alt="vacuum-trade-up" class="bg" src="https://static-ussite.tineco.com/KV.jpg_929034c3-b.jpg"/>
+        <div class="content">
+            <h1 class="title">[i18]tradeup.banner.title[/i18]</h1>
+            <h1 class="sub-title" style="font-size:[i18]tradeup.banner.timecss1[/i18]">[i18]tradeup.banner.subtitle[/i18]</h1>
+            <div class="text">· [i18]tradeup.banner.text1[/i18]</div>
+            <div class="text">· [i18]tradeup.banner.text2[/i18]</div>
+            <div class="text">· [i18]tradeup.banner.text3[/i18]</div>
+            <div class="time">[i18]tradeup.banner.time[/i18]</div>
+        </div>
+        <img alt="" class="scorllto-icon"
+             onclick="handleScrollTo('.waterfall-title',-10)"
+             src="https://static-ussite.tineco.com/f8bb4097-5f07-41fa-93c0-3754d1415a43.svg_92ff93b5-b.svg">
+    </div>
+    <div class="waterfall-title">[i18]tradeup.waterfall.title[/i18]</div>
+    <!-- 瀑布流 -->
+    %%-fly-waterfall-%%
+    
+    <div class="tradeup-text-wrapper">
+        <div class="text">[i18]tradeup.waterfall.subtitle[/i18][i18]tradeup.waterfall.subtitle_l_h5[/i18]
+            <span onclick="handleScrollTo('.fly-trade-up-form-h5',-10)">[i18]tradeup.waterfall.subtitle_key_h5[/i18]</span>
+            [i18]tradeup.waterfall.subtitle_r_h5[/i18]
+        </div>
+        <h2 class="sub-text">[i18]tradeup.waterfall.subtitle2_h5[/i18]</h2>
+        <div class="text">[i18]tradeup.waterfall.tips[/i18]</div>
+        <div class="title" style="font-size:[i18]tradeup.waterfall.ft40[/i18] ">[i18]tradeup.waterfall.next_title[/i18]</div>
+        <img alt="" class="scorllto-icon"
+             onclick="handleScrollTo('.fly-imageTextSwiper-h5',-10)"
+             src="https://static-ussite.tineco.com/f8bb4097-5f07-41fa-93c0-3754d1415a43.svg_92ff93b5-b.svg">
+    </div>
+    
+    <!-- 图文轮播 -->
+    %%-fly-imageTextSwiper-%%
+    
+    <div class="tradeup-title-wrapper mt-08">
+        <h2 class="title">[i18]tradeup.code_wrapper.title[/i18]</h2>
+    </div>
+    
+    <div class="code-wrapper" style="background: url([i18]tradeup.code_wrapper.bgurl_h5[/i18]) no-repeat top/118% auto;">
+        <div class="content">
+            <div class="title">[i18]tradeup.code_wrapper.subtitle[/i18]</div>
+            <div class="text">[i18]tradeup.code_wrapper.text[/i18]</div>
+            <div class="code-list">
+                <div class="item">
+                    <img alt="" class="bg"
+                         src="https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%209.png_44c006a3-3.png">
+                    <div class="text-content">
+                        <div class="price">100 [i18]tradeup.code_wrapper.EUR[/i18]</div>
+                        <div class="text1">[i18]tradeup.code_wrapper.desc1_h5[/i18]<br/> <span>≤ 350 [i18]tradeup.code_wrapper.EUR[/i18]:</span><br/>
+                            [i18]tradeup.code_wrapper.desc2_h5[/i18] ≈100 [i18]tradeup.code_wrapper.EUR[/i18]
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img alt="" class="bg"
+                         src="https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%209.png_44c006a3-3.png">
+                    <div class="text-content">
+                        <div class="price">160 [i18]tradeup.code_wrapper.EUR[/i18]</div>
+                        <div class="text1">[i18]tradeup.code_wrapper.desc1_h5[/i18]<br/> <span>> 350 [i18]tradeup.code_wrapper.EUR[/i18]: </span><br/>
+                            [i18]tradeup.code_wrapper.desc2_h5[/i18] ≈160 [i18]tradeup.code_wrapper.EUR[/i18]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tradeup-title-wrapper">
+        <h2 class="title fz-03"><b>[i18]tradeup.step.title[/i18]</b></h2>
+        <h3 class="title mt-01">[i18]tradeup.step.subtitle[/i18]</h3>
+    </div>
+    
+    <div class="form-wrapper">
+        
+        <!-- 步骤1 表单 -->
+        %%-fly-trade-up-form-%%
+        
+        <div class="flex-2 plr-018 mb-056">
+            <div class="step-wrapper step2-wrapper">
+                <div class="head">
+                    <div class="title">[i18]tradeup.step.step[/i18] 2</div>
+                    <img alt="" class="icon"
+                         src="https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%2011.png_2d06219f-b.png">
+                </div>
+                <div class="text1">[i18]tradeup.step.text2[/i18]</div>
+            </div>
+            <div class="step-wrapper step2-wrapper">
+                <div class="head">
+                    <div class="title">[i18]tradeup.step.step[/i18] 3</div>
+                    <img alt="" class="icon"
+                         src="https://static-ussite.tineco.com/%E7%94%BB%E6%9D%BF%2012.png_036955bc-f.png">
+                </div>
+                <div class="text1">[i18]tradeup.step.text3[/i18]</div>
+            </div>
+        </div>
+        
+        <img alt="" class="scorllto-icon"
+             onclick="handleScrollTo('.buy-wrapper',0)"
+             src="https://static-ussite.tineco.com/f8bb4097-5f07-41fa-93c0-3754d1415a43.svg_92ff93b5-b.svg">
+    </div>
+    
+    <div class="buy-wrapper">
+        <div class="title">[i18]tradeup.buy.title[/i18]</div>
+        <div class="buy-list">
+            <div class="item">
+                <a class="icon"
+                   href="[i18]tradeup.buy.amazon_url[/i18]"
+                   rel="noopener noreferrer" target="_blank">
+                    <img alt=""
+                         src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-9.png_617f808c-7.png"/>
+                </a>
+                <a href="[i18]tradeup.buy.amazon_url[/i18]"
+                   rel="noopener noreferrer" target="_blank">[i18]tradeup.buy.amazon[/i18]</a>
+            </div>
+            <div class="item">
+                <a class="icon"
+                   href="[i18]tradeup.buy.official_url[/i18]"
+                   rel="noopener noreferrer" target="_blank">
+                    <img alt=""
+                         class="mt--01"
+                         src="https://static-ussite.tineco.com/%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93logo-8.png_cb3ca90c-1.png"/>
+                </a>
+                <a href="[i18]tradeup.buy.official_url[/i18]"
+                   rel="noopener noreferrer" target="_blank">[i18]tradeup.buy.official[/i18]</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tradeup-title-wrapper">
+        <h2 class="title [i18]tradeup.footer.title_class[/i18]"><b>[i18]tradeup.footer.title[/i18]</b></h2>
+    </div>
+    
+    <!-- 问答模块 -->
+    %%-fly-collapsefooter-%%
+    
+    <div class="footer-text-wrapper">
+        <div class="text">[i18]tradeup.footer.text1[/i18]</div>
+        <div class="text">[i18]tradeup.footer.text2[/i18]</div>
+        <div class="text">[i18]tradeup.footer.text3[/i18]</div>
+        <div class="text">[i18]tradeup.footer.text4[/i18]</div>
+        <div class="text">[i18]tradeup.footer.text5[/i18]</div>
+    </div>
+    
+    <script>
+      function handleScrollTo(id, pTop = 0) {
+        let offset = $(id).offset();
+        $('body,html').animate({
+          scrollTop: offset.top + pTop
+        })
+      }
+
+      let picListDom = $('.pic-list')
+
+      $('#pic').onchange = function () {
+        let picLength = this.files.length; // 对于input上传的图片，使用dom.files可以获取图片信息
+        for (let i = 0; i < picLength; i++) {
+          let fileImg = new FileReader();
+          fileImg.readAsDataURL(this.files[i]); // readAsDataURL方法将图片转为base64格式存储于result中
+          fileImg.onload = function () {
+            let picItem = new Image();
+            picItem.src = this.result; // 使用FileReader的result属性获取图片base64信息
+            picListDom.appendChild(picItem);
+          }
+          fileImg.onerror = function (e) {
+            console.log('error' + e);
+          }
+        }
+      }
+
+        //获取url里面的pre参数
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+
+        $(()=>{
+            const pre = getUrlParam('pre')
+            //如果pre参数存在，页面滚动到form表单
+            if (pre) {
+              handleScrollTo('.fly-trade-up-form-h5',-10)
+            }
+        })
+    </script>
+</div>
+<script src="./j s/us-vacuum-trade-up-index.js"></script>
+</body>
+
+</html>

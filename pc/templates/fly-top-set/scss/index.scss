@@ -1,0 +1,17 @@
+.fly-top-set-pc {
+  width: 100%;
+  padding-top: 1rem;
+  position: relative;
+
+  .title {
+    text-align: center;
+    font-size: 0.33rem;
+    color: #010101;
+    opacity: 0.7;
+
+    span {
+      font-weight: bold;
+      font-size: 0.54rem;
+    }
+  }
+}
