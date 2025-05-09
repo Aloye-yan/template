@@ -10,6 +10,10 @@ const countryList = [
   {
     country: "de",
     language: "de",
+  },
+  {
+    country: "ca",
+    language: "ca",
   }
 ]
 

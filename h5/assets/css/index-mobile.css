@@ -2278,8 +2278,21 @@ button {
 	font-size: 11px;
 	border: 1px solid #000000;
 	border-radius: 0;
+	width: 100%;
 }
-
+.signup-dialog .body .err-msg {
+	display: block;
+	width: 88%;
+	margin: 4px auto 0;
+	font-size: 13px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: #E71F39;
+	font-weight: 400;
+	background: #f4e4e6;
+	line-height: 26px;
+}
 .signup-dialog .body .sub-btn {
 	padding: 14px 46px;
 	font-size: 14px;
@@ -2290,6 +2303,31 @@ button {
 .signup-dialog .body .no-sign {
 	text-decoration: underline;
 	color: #3e3d3d;
+}
+.signup-dialog .content-success-img{
+	text-align: center;
+}
+.signup-dialog .content-thank-msg {
+	padding-top: 3%;
+	font-weight: 400;
+	color: #000000;
+	font-size: 20px;
+	text-align: center;
+}
+.signup-dialog .content-body-msg {
+	padding-top: 3%;
+	font-weight: 400;
+	color: #000000;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #151414;
+}
+.signup-dialog .content-logo {
+	text-align: center;
+	padding-top: 8%;
+}
+.signup-dialog .signup5-content-btn{
+	padding-top: 24px;
 }
 
 .signup-dialog .modal .modal-header {

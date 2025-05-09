@@ -1,6 +1,0 @@
-import './pc/templates/fly-image-box/index.mjs'
-import './pc/templates/fly-top-banner/index.mjs'
-import './pc/templates/fly-top-set/index.mjs'
-import './pc/templates/fly-trade-up-form/index.mjs'
-import './pc/templates/fly-trade-up-intro/index.mjs'
-import './pc/templates/fly-trade-up-intro-swiper/index.mjs'

@@ -11,7 +11,6 @@ const language = getLanguage(lang)
 const languageFile = await import(`../i18n/${language}.mjs`)
 const languageObj = languageFile.default
 
-
 const handleGetViewPath = (mode) => {
   return path.resolve(`./${mode}/views`)
 }
@@ -59,15 +58,19 @@ const pcCopyFile = new Promise((resolve) => {
 const handleGetTemp = (res, data) => {
   //模板的正则
   const regTemp = /%%-[\s\S]*?-%%/g
-  const matchArr = data.match(regTemp)
-  let newData = data
+  const matchArr = data?.match(regTemp) || []
+  let newData = data || ``
   let allCss = ``
   matchArr?.forEach((temp) => {
     //模板的中{{}}替换为对应的值
     const valueObj = res[temp].valueObj
     Object.keys(valueObj).forEach((key) => {
       const reg = new RegExp(`{{${key}}}`, 'g')
-      res[temp].tempData = res[temp].tempData.replace(reg, valueObj[key])
+      if (valueObj[key]) {
+        res[temp].tempData = res[temp].tempData.replace(reg, valueObj[key])
+      } else {
+        res[temp].tempData = res[temp].tempData.replace(reg, '')
+      }
     })
     newData = newData.replace(temp, res[temp].tempData)
     allCss = `${allCss}\n${res[temp].tempDataCss}`
@@ -81,6 +84,7 @@ const handleGetTemp = (res, data) => {
     //获取对应的国际化文案
     const nameList = tempText.split('.')
     let text = JSON.parse(JSON.stringify(languageObj))
+
     nameList.forEach((name) => {
       if (text && text[name]) {
         text = text[name]
@@ -93,7 +97,7 @@ const handleGetTemp = (res, data) => {
   return newData
 }
 h5CopyFile.then(() => {
-  pcFolders.forEach(async (item) => {
+  h5Folders.forEach(async (item) => {
     await handleReadTemplates("h5", item).then((res) => {
       fs.readFile(`${h5Path}/${item}/prod-index-${lang}.html`, 'utf8', (err, data) => {
         const newData = handleGetTemp(res, data)
@@ -121,11 +125,21 @@ const handleReadTemplates = (mode, item) => new Promise((resolve) => {
   const _path = handleGetViewPath(mode)
   fs.readFile(`${_path}/${item}/prod-index-${lang}.html`, 'utf8', (err, data) => {
     const reg = /%%-[\s\S]*?-%%/g
-    const matchArr = data.match(reg)
+    const matchArr = data?.match(reg) || []
     const replaceObj = {}
+    if (matchArr.length === 0) {
+      resolve(replaceObj)
+    }
+    let tempNameList = []
     matchArr?.forEach((temp, index) => {
       const splitList = temp.replace(/%%-/g, '').replace(/-%%/g, '').replace(/\r*\n/g, '').replace(/"/g, '').split('##')
       const tempName = splitList[0].replace(/\s*/g, '')
+      if (!tempNameList.find((item) => item.tempName === tempName)) {
+        tempNameList.push({
+          tempName,
+          temp
+        })
+      }
       const ValueList = splitList.slice(1)
       const valueObj = {}
       ValueList.forEach((stringValue) => {
@@ -147,10 +161,18 @@ const handleReadTemplates = (mode, item) => new Promise((resolve) => {
       const tempDataCss = fs.readFileSync(`${tempPath}/css/${tempName}-${mode}t.css`, 'utf8')
       const tempDataJs = fs.readFileSync(`${tempPath}/js/${tempName}-index.js`, 'utf8')
       const tempData = `${tempDataHtml}\n<script>\n${tempDataJs}\n</script>`
-      replaceObj[temp] = {
-        tempData,
-        tempDataCss: `${tempDataCss}\n${allTempDataCss || ''}`,
-        valueObj
+      if (tempNameList.find((item) => item.temp === temp)) {
+        replaceObj[temp] = {
+          tempData,
+          tempDataCss: `${tempDataCss}\n${allTempDataCss || ''}`,
+          valueObj
+        }
+      } else {
+        replaceObj[temp] = {
+          tempData,
+          tempDataCss: '',
+          valueObj
+        }
       }
       if (index === matchArr.length - 1) {
         resolve(replaceObj)

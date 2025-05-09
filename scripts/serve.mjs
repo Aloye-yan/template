@@ -69,7 +69,7 @@ prompt([
       }
     });
     //启动npm run watch
-    const cmdStrWatch = `npm run watch -- ${lang}`;
+    const cmdStrWatch = `npm run watch -- ${lang},${choice},${page}`;
     exec(cmdStrWatch, function (err, stdout, stderr) {
       if (err) {
         console.log('启动watch失败');

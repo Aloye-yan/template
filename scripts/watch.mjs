@@ -3,44 +3,33 @@ import chokidar from 'chokidar';
 import {spawn} from 'child_process';
 
 const args = process.argv.splice(2);
-const lang = args[0] || 'us';
+const lang = args[0].split(',')[0]
+const choice = args[0].split(',')[1]
+const page = args[0].split(',')[2]
+
+console.log(`lang: ${lang}, choice: ${choice}, page: ${page}`);
+
 // 监听view的文件夹路径
-const watchPcPath = ['pc/views/**/index.(js|scss)', 'pc/views/*/index.html'];
-const watchH5Path = ['h5/views/**/index.(js|scss)', 'h5/views/*/index.html']
+const watchPath = [`${choice}/views/${page}/*/index.(js|scss)`, `${choice}/views/*/index.html`];
 
 // 监听templates的文件夹路径
-const watchPcPathT = ['pc/templates/**/index.(js|scss)', 'pc/templates/*/index.html']
-const watchH5PathT = ['h5/templates/**/index.(js|scss)', 'h5/templates/*/index.html'];
+const watchPathT = [`${choice}/templates/**/index.(js|scss)`, `${choice}/templates/*/index.html`];
 
 // 执行的打包命令
-const buildCommandPc = 'npm run build:pc';
-const buildCommandH5 = 'npm run build:h5';
+const buildCommand = `npm run build:${choice}`;
+const buildCommandT = `npm run build:${choice}t`;
 
-const buildCommandPcT = 'npm run build:pct';
-const buildCommandH5T = 'npm run build:h5t';
+const watcher = chokidar.watch(watchPath);
+const watcherT = chokidar.watch(watchPathT);
 
-const watcherPc = chokidar.watch(watchPcPath);
-const watcherH5 = chokidar.watch(watchH5Path);
-const watcherPcT = chokidar.watch(watchPcPathT);
-const watcherH5T = chokidar.watch(watchH5PathT);
-
-watcherPc.on('change', (path) => {
+watcher.on('change', (path) => {
   console.log(`File ${path} has been changed`);
-  runBuildCommand('pc');
+  runBuildCommand(`${choice}`);
 });
-watcherH5.on('change', (path) => {
+watcherT.on('change', (path) => {
   console.log(`File ${path} has been changed`);
-  runBuildCommand('h5');
-})
-
-watcherPcT.on('change', (path) => {
-  console.log(`File ${path} has been changed`);
-  runBuildCommand('pct');
+  runBuildCommand(`${choice}t`);
 });
-watcherH5T.on('change', (path) => {
-  console.log(`File ${path} has been changed`);
-  runBuildCommand('h5t');
-})
 
 const runBuildCommand = (mode) => {
   const command = handleGetBuildCommand(mode);
@@ -61,15 +50,16 @@ const runBuildCommand = (mode) => {
     spawn(build, {shell: true});
   });
 }
+
 const handleGetBuildCommand = (mode) => {
   if (mode === 'pc') {
-    return buildCommandPc;
+    return buildCommand;
   } else if (mode === 'h5') {
-    return buildCommandH5;
+    return buildCommand;
   } else if (mode === 'pct') {
-    return buildCommandPcT;
+    return buildCommandT;
   } else if (mode === 'h5t') {
-    return buildCommandH5T;
+    return buildCommandT;
   }
 }
 
