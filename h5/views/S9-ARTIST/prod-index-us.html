@@ -3,18 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <title>Title</title>
-  <link href="../../assets/css/iconfonts.css" rel="stylesheet">
-  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="../../assets/css/swiper-bundle.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="../../assets/css/base-pc.css">
-  <link rel="stylesheet" href="./css/S9-ARTIST-pc.css">
-
-
-  <script src="../../assets/js/jquery.min.js" type="application/javascript"></script>
-  <script src="../../assets/js/bootstrap.min.js" type="application/javascript"></script>
-  <script src="../../assets/js/swiper-bundle.min.js" type="application/javascript"></script>
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="../../assets/js/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../assets/css/base-h5.css">
+  <link rel="stylesheet" href="./css/S9-ARTIST-h5.css">
 
 <style>
 
@@ -22,9 +19,9 @@
 </head>
 
 <body>
-  <div class="S9-ARTIST-pc">
+  <div class="S9-ARTIST-h5">
     <div class="banner-wrapper">
-      <img src="https://static-ussite.tineco.com/banner.png_c9a9c7c8-3.png" alt="" class="banner-wrapper_bg">
+      <img src="https://static-ussite.tineco.com/banner-app.png_ec62268e-4.png" alt="" class="banner-wrapper_bg">
       <div class="banner-wrapper_content">
         <h1 class="banner-wrapper_content_title"><b>FLOOR ONE S9</b> Artist Pro</h1>
         <div class="banner-wrapper_content_subtitle">Engineered For Modern Living</div>
@@ -41,28 +38,24 @@
     </div>
 
     <div class="overall-wrapper module-wrapper">
-      <div class="overall-wrapper_top">
-        <div class="overall-wrapper_top_right">
-          <div class="overall-wrapper_top_right_top">
-            <div class="overall-wrapper_top_right_top_left"></div>
-          </div>
-        </div>
+      <div class="swiper overall-swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="overall-wrapper_bottom"></div>
     </div>
 
     <div class="media-wrapper module-wrapper">
-      <h2 class="media-wrapper_title listting_base-title">Endorsement by Authoritative Media</h2>
+      <h2 class="media-wrapper_title listting_base-title">Endorsement by <br>Authoritative Media</h2>
       <div class="media-wrapper_content"></div>
     </div>
 
     <div class="gif-wrapper module-wrapper">
+      <div class="gif-wrapper_content">
+        <h2 class="module-header_title gif-wrapper_content_title">The Art of <br>Home Décor</h2>
+        <div class="module-header_subtitle gif-wrapper_content_subtitle">Perfectly Integrating<br> with Any Style</div>
+      </div>
       <video src="https://static-ussite.tineco.com/%E5%A4%9A%E5%9C%BA%E6%99%AF.mp4_4f9123f4-d.mp4" loop muted
         playsinline class="gif-wrapper_bg"></video>
-      <div class="gif-wrapper_content">
-        <h2 class="module-header_title gif-wrapper_content_title">The Art of Home Décor</h2>
-        <div class="module-header_subtitle gif-wrapper_content_subtitle">Perfectly Integrating with Any Style</div>
-      </div>
     </div>
 
     <div class="aesthetics-wrapper module-wrapper"></div>
@@ -70,7 +63,7 @@
     <div class="listting-module-wrapper listting-wrapper module-wrapper">
       <div class="listting-module_sticky">
         <div class="listting-content listting-module_content" style="opacity: 0;">
-          <img src="https://static-ussite.tineco.com/%E5%8D%96%E7%82%B91-%E6%80%BB%E8%B5%B7.png_694f14fe-1.png" alt=""
+          <img src="https://static-ussite.tineco.com/2-%E6%80%BB%E8%B5%B7.png_a75f0f47-f.png" alt=""
             class="listting-content_img">
         </div>
         <div class="module-header">
@@ -83,17 +76,23 @@
 
     <div class="listting-wrapper">
       <div class="listting-content type2" id="DualBlock">
-        <img src="https://static-ussite.tineco.com/%E9%98%B2%E7%BC%A0%E7%BB%95.png_0c720e11-c.png" alt=""
-          class="listting-content_img">
         <div class="listting-content_content">
-          <div class="listting_base-title"><span>DualBlock</span> Anti-tangle Design</div>
-          <div class="listting_base-subtitle">Dual-layer scrapers effectively prevent hair from tangling, <br>keeping the machine clog-free and ensuring smooth, uninterrupted cleaning.</div>
-          <div class="listting-content_content_step module-wrapper">
-            <div class="listting-content_content_step_text"><span>Step <b>02</b></span><span>The straight scraper efficiently wipes away dirty water and hair.</span></div>
-            <div class="listting-content_content_step_text"><span>Step <b>01</b></span><span>The comb scraper captures hair to prevent tangles.</span></div>
-          </div>
+          <div class="listting_base-title"><span>DualBlock</span><br> Anti-tangle Design</div>
+          <div class="listting_base-subtitle">Dual-layer scrapers effectively prevent hair from tangling, keeping the machine clog-free and ensuring smooth, uninterrupted cleaning.</div>
+
+        </div>
+        <div class="listting-content_img">
+          <img src="https://static-ussite.tineco.com/%E9%98%B2%E7%BC%A0%E6%AF%9B.png_e5dd8745-d.png" alt="">
+          <div class="listting-content_img_step step1">Step 01</div>
+          <div class="listting-content_img_step step2">Step 02</div>
+        </div>
+        <div class="listting-content_step module-wrapper">
+          <div class="listting-content_step_text"><b>Step 01</b> <span>The comb scraper captures hair to prevent tangles.</span></div>
+          <div class="listting-content_step_text"><b>Step 02</b> <span>The straight scraper efficiently wipes away dirty water and hair.</span></div>
         </div>
         <div class="tips-content module-wrapper">
+          <img src="https://static-ussite.tineco.com/%E9%98%B2%E7%BC%A0%E7%BB%95-%E5%AF%B9%E6%AF%94.png_85ec076e-e.png"
+            alt="" class="tips-content_bg">
           <div class="tips-content_content">
             <div class="tips-content_item active">
               <img src="https://static-ussite.tineco.com/icon-good.png_7d7496be-7.png" alt=""
@@ -110,58 +109,49 @@
               </div>
             </div>
           </div>
-          <img src="https://static-ussite.tineco.com/%E9%98%B2%E7%BC%A0%E7%BB%95-%E5%AF%B9%E6%AF%94.png_85ec076e-e.png"
-            alt="" class="tips-content_bg">
         </div>
       </div>
     </div>
 
-    <div class="features-wrapper module-wrapper" id="MHCBS">
+    <div class="features-wrapper" id="MHCBS">
       <div class="features-item">
-        <div class="features-item_left">
+        <div class="features-item_top">
           <div class="listting_base-title"><span>MHCBS</span><br> Technology</div>
           <div class="features-item_desc">Consistent clean brush washing, <br>since only clean brushes make clean floors.</div>
-          <img src="https://static-ussite.tineco.com/MHCBS-5%E6%AD%A5.png_8846b2b6-3.png" alt="" class="features-item_img module-wrapper">
         </div>
-        <div class="features-item_right">
-          <video src="https://static-ussite.tineco.com/MHCBS.mp4_0c52f0ba-4.mp4" loop muted autoplay playsinline
-            class="features-item_gif"></video>
-        </div>
+        <video src="https://static-ussite.tineco.com/MHCBS.mp4_0c52f0ba-4.mp4" loop muted autoplay playsinline
+          class="features-item_gif"></video>
+        <img src="https://static-ussite.tineco.com/MHCBS.jpg_53c3bd42-3.jpg" alt="" class="features-item_img">
       </div>
-      <div class="features-item reverse">
-        <div class="features-item_left">
+      <div class="features-item">
+        <div class="features-item_top">
           <div class="listting_base-title"><span>Automatic</span> Water<br>Streak Removal</div>
           <div class="features-item_desc">After pressing the stop button, the machine automatically reverses to eliminate water streaks, completing the final piece of your floor cleaning puzzle. Enjoy a perfectly clean and dry floor every time.</div>
         </div>
-        <div class="features-item_right">
-          <video src="https://static-ussite.tineco.com/%E5%81%9C%E6%9C%BA%E5%9B%9E%E9%80%80.mp4_db4b72a2-b.mp4" loop
-            muted autoplay playsinline class="features-item_gif"></video>
-        </div>
+        <video src="https://static-ussite.tineco.com/%E5%81%9C%E6%9C%BA%E5%9B%9E%E9%80%80.mp4_db4b72a2-b.mp4" loop muted
+          playsinline autoplay class="features-item_gif"></video>
       </div>
     </div>
 
     <div class="iloop-wrapper" id="iLoopSmart">
-      <img src="https://static-ussite.tineco.com/iLoop.png_6e0126e6-4.png" alt="" class="iloop-wrapper_bg">
-      <div class="iloop-wrapper_content">
-        <div class="listting_base-title">iLoop Smart Sensor</div>
+      <div class="iloop-wrapper_top">
+        <div class="listting_base-title"><span>iLoop</span><br>Smart Sensor</div>
         <div class="listting_base-subtitle">Adjusts suction power and water flow automatically.</div>
       </div>
-      <div class="iloop-wrapper_data">
-        <div class="iloop-wrapper_data_item"><span>Less </span>Debris</div>
-        <div class="iloop-wrapper_data_item"><span>No </span>Debris</div>
-        <div class="iloop-wrapper_data_item"><span>More </span>Debris</div>
+      <div class="iloop-wrapper_content">
+        <img src="https://static-ussite.tineco.com/iLoop.png_44bff43f-5.png" alt="" class="iloop-wrapper_bg">
       </div>
     </div>
 
     <div class="listting-module-wrapper listting-wrapper module-wrapper" id="SmoothDrive">
       <div class="listting-module_sticky">
         <div class="listting-content listting-module_content" style="opacity: 0;">
-          <img src="https://static-ussite.tineco.com/SmoothDrive.png_85c19310-d.png" alt=""
+          <img src="https://static-ussite.tineco.com/smoothdriver.png_b575c093-c.png" alt=""
             class="listting-content_img">
           <div class="listting-content_content">
             <div class="listting_base-title"><span>SmoothDrive</span> Technology</div>
             <div class="listting_base-subtitle type2">360° All-directional Propulsion</div>
-            <div class="listting_base-desc">Smoothly pushing forward, pulling back, or pivoting <br>around tight corners with minimal effort.</div>
+            <div class="listting_base-desc">Smoothly pushing forward, pulling back, or pivoting around tight corners with minimal effort.</div>
           </div>
         </div>
         <div class="module-header">
@@ -171,6 +161,7 @@
         </div>
       </div>
     </div>
+
     <div class="mainpro-wrapper module-wrapper" id="180lay-flat">
       <div class="mainpro_sticky-content">
         <img src="https://static-ussite.tineco.com/%E6%B2%99%E5%8F%91.png_8e3bb712-f.png" alt=""
@@ -186,7 +177,7 @@
             class="product-item_img">
         </div>
         <div class="mainpro-wrapper_title">
-          <div class="listting_base-title"><span>Reach Hidden Areas</span> with 180° Lay-Flat Design</div>
+          <div class="listting_base-title">Reach Hidden<br> Areas with<br> 180° Lay-Flat Design</div>
         </div>
       </div>
     </div>
@@ -198,16 +189,17 @@
           <div class="listting_base-subtitle">Ensures Excellent Cleaning Performance Even in a flat position.</div>
         </div>
         <video src="https://static-ussite.tineco.com/%E6%B0%B4%E6%B0%94%E5%88%86%E7%A6%BB.mp4_65ee383f-a.mp4" loop muted
-          autoplay playsinline class="listting-content_gif"></video>
+          playsinline autoplay class="listting-content_gif"></video>
       </div>
       <div class="listting-content type3">
         <div class="listting-content_content">
           <div class="listting_base-title"><span>Repositioned </span><br>Clean Water Tank</div>
-          <div class="listting_base-subtitle">Adding weight to the brush head for enhanced cleaning power while<br> reducing hand strain for a easier, more ergonomic experience.</div>
+          <div class="listting_base-subtitle">Adding weight to the brush head for enhanced cleaning power while reducing hand strain for a easier, more ergonomic experience.</div>
         </div>
-        <div class="listting-content_img">
-          <img src="https://static-ussite.tineco.com/%E6%B0%B4%E7%AE%B1%E4%B8%8B%E5%8E%8B.png_f01d9488-4.png" alt=""
+        <div class="listting-content_img plr_20">
+          <img src="https://static-ussite.tineco.com/%E6%B0%B4%E7%AE%B1%E4%B8%8B%E5%8E%8B.png_559503e8-9.png" alt=""
             class="listting-content_img_bg">
+          <div class="listting-content_tips">* vs Stretch S6. Based on Tineco Lab.</div>
           <div class="listting-content_img_content module-wrapper">
             <div class="listting-content_img_item">
               <img src="https://static-ussite.tineco.com/%E6%B0%B4%E7%AE%B1%E5%8E%8B%E5%8A%9B.png_d542c393-9.png" alt=""
@@ -215,7 +207,7 @@
               <div class="listting-content_img_item_content">
                 <div class="listting_base-title"><span
                     class=" fz_40">+28%*</span></div>
-                <div>pressure on the ground</div>
+                <div>pressure<br>on the ground</div>
               </div>
 
             </div>
@@ -225,141 +217,153 @@
               <div class="listting-content_img_item_content">
                 <div class="listting_base-title"><span
                     class=" fz_40">Reduce</span></div>
-                <div>hand weight-bearing</div>
+                <div>hand<br>weight-bearing</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="listting-content_tips">* vs Stretch S6. Based on Tineco Lab.</div>
+
       </div>
 
-      <div class="listting-content type4">
-        <div class="listting-content_item ">
+      <div class="listting-content type3">
+        <div class="listting-content_content">
           <div class="listting_base-title"><span>Dual-sided</span><br>Enhanced Edge Cleaning</div>
           <div class="listting_base-subtitle">No more gaps, and no more places missed when <br>maneuvering around the home.</div>
         </div>
-        <div class="listting-content_item ">
+        <div class="listting-content_img">
           <img src="https://static-ussite.tineco.com/%E5%8F%8C%E8%B4%B4%E8%BE%B9.png_ef8ee4fc-4.png" alt=""
-            class="listting-content_item_img">
+            class="listting-content_img_bg">
         </div>
-        <div class="listting-content_item ">
-          <img src="https://static-ussite.tineco.com/90%E5%BA%A6%E6%89%AD%E7%9F%A9.png_b4d5187f-2.png" alt=""
-            class="listting-content_item_img">
-        </div>
-        <div class="listting-content_item right">
+      </div>
+      <div class="listting-content type3">
+        <div class="listting-content_content">
+          <img src="https://static-ussite.tineco.com/icon-90%E5%BA%A6.png_68f65706-1.png" alt=""
+            class="listting-content_icon">
           <div class="listting_base-title"><span>90°Swivel Design</span><br>for Maximum Flexibility</div>
           <div class="listting_base-subtitle">Effortlessly glide around furniture, navigate tight corners, and tackle tricky spaces for a thorough, hassle-free clean.</div>
-          <img src="https://static-ussite.tineco.com/icon-90%E5%BA%A6.png_68f65706-1.png" alt=""
-            class="listting-content_item_icon">
+        </div>
+        <div class="listting-content_img">
+          <img src="https://static-ussite.tineco.com/90%E5%BA%A6%E6%89%AD%E7%9F%A9.png_b4d5187f-2.png" alt=""
+            class="listting-content_img_bg">
         </div>
       </div>
     </div>
+
     <div class="listting-module-wrapper listting-wrapper module-wrapper ">
       <div class="listting-module_sticky">
-        <div class="listting-content listting-module_content" style="opacity: 0;">
-          <img
-            src="https://static-ussite.tineco.com/%E5%85%A8%E9%93%BE%E8%B7%AF%E8%87%AA%E6%B8%85%E6%B4%81.png_c9b54b49-6.png"
-            alt="" class="listting-content_img">
+        <div class="listting-content listting-module_content type3 pb_0" style="opacity: 0;">
           <div class="listting-content_content">
-            <div class="listting_base-title"><span>Full-path Self-cleaning</span></div>
+            <div class="listting_base-title"><span>Full-path<br> Self-cleaning</span></div>
             <div class="listting_base-subtitle">Thoroughly clean and dry the entire path <br>for a truly worry-free experience after use.</div>
           </div>
-          <div class="listting-content_marks" style="bottom: 25%;right: 39%;">
-            <div class="listting-content_marks_title">Brush Roller<br> Cover</div>
-            <div class="listting-content_marks_line" style="width: 0.95rem;"></div>
-          </div>
-          <div class="listting-content_marks" style="bottom: 36%;right: 41%;">
-            <div class="listting-content_marks_title">Brush Roller</div>
-            <div class="listting-content_marks_line" style="width: 0.69rem;"></div>
-          </div>
-          <div class="listting-content_marks" style="bottom: 31%;right: 18.5%;">
-            <div class="listting-content_marks_line" style="width: 0.96rem;"></div>
-            <div class="listting-content_marks_title">Suction inlet</div>
-          </div>
-          <div class="listting-content_marks" style="bottom: 38%;right: 18%;">
-            <div class="listting-content_marks_line" style="width: 1.16rem;"></div>
-            <div class="listting-content_marks_title">Tube</div>
-          </div>
-          <div class="listting-content_marks">
-            <div class="listting-content_marks_line"></div>
-            <div class="listting-content_marks_title">Dry filter</div>
+          <div class="listting-content_details">
+            <img src="https://static-ussite.tineco.com/%E5%85%A8%E9%93%BE%E8%B7%AF%E8%87%AA%E6%B8%85%E6%B4%81.png_f3b9360f-3.png" alt="" class="listting-content_img">
+            <div class="listting-content_marks" style="bottom: 31%;right: 68%;">
+              <div class="listting-content_marks_title">Brush Roller<br> Cover</div>
+              <div class="listting-content_marks_line" style="width: 0.5rem;"></div>
+            </div>
+            <div class="listting-content_marks" style="bottom: 22%;right: 65%;">
+              <div class="listting-content_marks_title">Brush Roller</div>
+              <div class="listting-content_marks_line" style="width: 0.66rem;"></div>
+            </div>
+            <div class="listting-content_marks" style="bottom: 27%;right: 16.5%;">
+              <div class="listting-content_marks_line" style="width: 0.7rem;"></div>
+              <div class="listting-content_marks_title">Suction inlet</div>
+            </div>
+            <div class="listting-content_marks" style="bottom: 36%;right: 15%;">
+              <div class="listting-content_marks_line" style="width: 0.8rem;"></div>
+              <div class="listting-content_marks_title">Tube</div>
+            </div>
+            <div class="listting-content_marks">
+              <div class="listting-content_marks_line"></div>
+              <div class="listting-content_marks_title">Dry filter</div>
+            </div>
           </div>
         </div>
         <div class="module-header">
           <h2 class="module-header_title"
             style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-            Worry-Free After Use <br>Self-Cleans & Self-Dries</h2>
+            Worry-Free<br> After Use Self-Cleans<br> & Self-Dries</h2>
         </div>
       </div>
     </div>
 
     <div class="giflist-wrapper module-wrapper" id="FlashDry">
-      <div class="listting_base-title">Upgraded <span>FlashDry</span> Self-Cleaning</div>
+      <div class="listting_base-title">Upgraded <span>FlashDry</span><br>Self-Cleaning</div>
       <div class="giflist-wrapper_content module-wrapper"></div>
     </div>
 
     <div class="rotating-wrapper">
       <div class="rotating-wrapper_top">
-        <div class="rotating-wrapper_top_left">
-          <div class="listting_base-title"><span>720°</span> Bi-directional Rotating</div>
-          <div class="listting_base-subtitle">The brush rotates both forward and backward during self-cleaning <br>and drying, ensuring a deeper clean and fluffier results.</div>
-        </div>
-        <img src="https://static-ussite.tineco.com/%E5%AF%B9%E6%AF%94.png_870c7ffc-1.png" alt="" class="rotating-wrapper_top_img module-wrapper">
+        <div class="listting_base-title"><span>720°</span><br>Bi-directional Rotating</div>
+        <div class="listting_base-subtitle mb_20">The brush rotates both forward and backward during self-cleaning and drying, ensuring a deeper clean and fluffier results.</div>
+        <img src="https://static-ussite.tineco.com/%E5%AF%B9%E6%AF%94.png_870c7ffc-1.png" alt=""
+          class="rotating-wrapper_top_img module-wrapper m_12">
       </div>
       <video src="https://static-ussite.tineco.com/%E5%8F%8C%E6%97%8B.mp4_adf35e55-b.mp4" loop muted autoplay
         playsinline class="rotating-wrapper_img module-wrapper"></video>
     </div>
 
     <div class="runtime-wrapper" id="75Minutes">
-      <img src="https://static-ussite.tineco.com/%E9%95%BF%E7%BB%AD%E8%88%AA.png_5912904d-9.png" alt=""
-        class="runtime-wrapper_bg">
-      <div class="runtime-wrapper_content">
+      <div class="runtime-wrapper_top">
         <div class="listting_base-title"><span>Ultra-long</span> Runtime</div>
-        <div class="listting_base-subtitle">Allows for whole-house cleaning on a single charge.</div>
-
-        <div class="runtime-wrapper_content_time module-wrapper">
-          <div class="runtime-wrapper_time-item">
-            <img src="https://static-ussite.tineco.com/icon-%E7%94%B5%E6%B1%A0.png_de627c32-5.png" alt=""
-              class="runtime-wrapper_time-item_icon">
-            <div class="runtime-wrapper_time-item_right">
-              <div>up to</div>
-              <div class="runtime-wrapper_time-item_right_title">70 min*</div>
-              <div>Battery Runtime</div>
-            </div>
+        <div class="listting_base-subtitle">Allows for whole-house cleaning on a<br> single charge.</div>
+      </div>
+      <div class="runtime-wrapper_time module-wrapper">
+        <div class="runtime-wrapper_time-item">
+          <img src="https://static-ussite.tineco.com/icon-%E7%94%B5%E6%B1%A0.png_de627c32-5.png" alt=""
+            class="runtime-wrapper_time-item_icon">
+          <div class="runtime-wrapper_time-item_right">
+            <div>up to</div>
+            <div class="runtime-wrapper_time-item_right_title">70 min*</div>
+            <div>Battery Runtime</div>
           </div>
-          <div class="runtime-wrapper_time-item">
-            <img src="https://static-ussite.tineco.com/icom-%E6%B0%B4%E7%AE%B1.png_d9f87708-6.png" alt=""
-              class="runtime-wrapper_time-item_icon">
-            <div class="runtime-wrapper_time-item_right">
-              <div>up to</div>
-              <div class="runtime-wrapper_time-item_right_title">50 min*</div>
-              <div>Water Runtime</div>
-            </div>
+        </div>
+        <div class="runtime-wrapper_time-item">
+          <img src="https://static-ussite.tineco.com/icom-%E6%B0%B4%E7%AE%B1.png_d9f87708-6.png" alt=""
+            class="runtime-wrapper_time-item_icon">
+          <div class="runtime-wrapper_time-item_right">
+            <div>up to</div>
+            <div class="runtime-wrapper_time-item_right_title">50 min*</div>
+            <div>Water Runtime</div>
           </div>
         </div>
       </div>
-      <div class="runtime-wrapper_tips">*In lay-flat state with auto mode. Actual runtime may vary based on home environment and user habits.</div>
+      <div class="runtime-wrapper_content">
+        <img src="https://static-ussite.tineco.com/%E9%95%BF%E7%BB%AD%E8%88%AA.png_dee541c5-a.png" alt=""
+          class="runtime-wrapper_content_bg">
+        <div class="runtime-wrapper_content_tips">*In lay-flat state with auto mode. Actual runtime may vary based on home environment and user habits.</div>
+      </div>
     </div>
 
     <div class="volume-wrapper">
-      <div class="volume-wrapper_title"><span>75</span> mins*</div>
-      <img src="https://static-ussite.tineco.com/%E6%B0%B4%E7%AE%B1.png_87c5b809-c.png" alt=""
-        class="volume-wrapper_bg">
-      <div class="volume-wrapper_tips">*Allows for whole-house cleaning on a single charge.</div>
-      <div class="volume-wrapper_content module-wrapper">
-        <div class="volume-wrapper_content_item">
+      <div class="volume-wrapper_top">
+        <div class="volume-wrapper_title"><span>75</span> mins*</div>
+        <img src="https://static-ussite.tineco.com/%E8%BD%AF%E5%8C%85%E7%94%B5%E6%B1%A0.png_6cde9400-8.png" alt=""
+          class="volume-wrapper_bg">
+      </div>
+      <div class="volume-wrapper_content">
+        <div class="volume-wrapper_content_item module-wrapper">
+          <img
+            src="https://static-ussite.tineco.com/%E6%B0%B4%E7%AE%B1%E7%BB%AD%E8%88%AA--%E6%B8%85%E6%B0%B4%E7%AE%B1.png_edeb4d81-0.png"
+            alt="" class="volume-wrapper_content_item_img">
           <div class="volume-wrapper_content_item_title">1L</div>
           <div class="volume-wrapper_content_item_subtitle">Clean Water Tank</div>
         </div>
-        <div class="volume-wrapper_content_item">
+        <div class="volume-wrapper_content_item module-wrapper">
+          <img
+            src="https://static-ussite.tineco.com/%E6%B0%B4%E7%AE%B1%E7%BB%AD%E8%88%AA-%E6%B1%A1%E6%B0%B4%E7%AE%B1.png_59e7d5b3-a.png"
+            alt="" class="volume-wrapper_content_item_img">
           <div class="volume-wrapper_content_item_title">0.75L</div>
           <div class="volume-wrapper_content_item_subtitle">Dirty Water Tank</div>
         </div>
+        <div class="volume-wrapper_content_tips">*Allows for whole-house cleaning on a single charge.</div>
       </div>
     </div>
 
-    <div class="selling-wrapper" id="PouchCell">
-      <div class="selling-wrapper_content module-wrapper">
+    <div class="selling-wrapper module-wrapper" id="PouchCell">
+      <div class="swiper selling-swiper">
+        <div class="swiper-wrapper"></div>
       </div>
     </div>
 
@@ -383,70 +387,70 @@
   <script>
     window.OVERALL_LIST = [
       {
-        type: "type1",
-        bgSrc: "https://static-ussite.tineco.com/%E7%BE%8E%E5%AD%A6.png_46ba4a38-9.png",
-        title: "Unique Design<br> Aesthetic",
-        desc: "",
-        id: ""
+        bgSrc: 'https://static-ussite.tineco.com/%E7%BE%8E%E5%AD%A6-app.png_aa52a3b3-7.png',
+        title: 'Unique Design<br> Aesthetic',
+        desc: '',
+        id: ''
       },
       {
-        type: "type2",
-        bgSrc: "https://static-ussite.tineco.com/DUALBLOCK.png_3900d0c0-6.png",
-        title: "DualBlock",
-        desc: "Anti-Tangle",
-        id: "DualBlock"
+        bgSrc: 'https://static-ussite.tineco.com/%E9%98%B2%E7%BC%A0%E6%AF%9B-app.png_1883b973-c.png',
+        title: 'DualBlock',
+        desc: 'Anti-Tangle',
+        id: 'DualBlock'
       },
       {
-        type: "type2",
-        bgSrc: "https://static-ussite.tineco.com/MHCBS.png_089a2bc0-e.png",
-        title: "MHCBS",
-        desc: "Technology",
-        id: "MHCBS"
+        bgSrc: 'https://static-ussite.tineco.com/MHCBS-app.png_08ab4295-d.png',
+        title: 'MHCBS',
+        desc: 'Technology',
+        id: 'MHCBS'
       },
       {
-        type: "type3",
-        bgSrc: "https://static-ussite.tineco.com/%E8%87%AA%E6%B8%85%E6%B4%81.png_a5f0d382-1.png",
-        title: "FlashDry",
-        desc: "Self-cleaning System",
-        id: "FlashDry"
+        bgSrc: 'https://static-ussite.tineco.com/%E7%83%AD%E7%83%98-app.png_f7a49f9d-a.png',
+        title: 'FlashDry',
+        desc: 'Self-cleaning System',
+        id: 'FlashDry]'
       },
       {
-        type: "type3",
-        bgSrc: "https://static-ussite.tineco.com/SmoothDrive.png_5534a7ee-c.png",
-        title: "SmoothDrive",
-        desc: "Technology",
-        id: "SmoothDrive"
+        bgSrc: 'https://static-ussite.tineco.com/SmoothDrive-app.png_9612faf8-6.png',
+        title: 'SmoothDrive',
+        desc: 'Technology',
+        id: 'SmoothDrive'
       },
       {
-        type: "type4",
-        bgSrc: "https://static-ussite.tineco.com/180.png_2fbd4162-5.png",
-        title: "180°Lay-flat",
-        desc: "",
-        id: "180lay-flat"
+        type: 'double',
+        list: [
+          {
+            bgSrc: 'https://static-ussite.tineco.com/%E8%BA%BA%E5%B9%B3-app.png_7f9d0a47-3.png',
+            title: '180°Lay-flat',
+            desc: '',
+            id: '180lay-flat'
+          },
+          {
+            bgSrc: 'https://static-ussite.tineco.com/iloop-app.png_c462eb4e-a.png',
+            title: 'iLoop Smart Sensor',
+            desc: '',
+            id: 'iLoopSmart'
+          }
+        ]
       },
       {
-        type: "type5",
-        bgSrc: "https://static-ussite.tineco.com/3-1.png_dc5f66b8-c.png",
-        title: "iLoop Smart Sensor",
-        desc: "",
-        id: "iLoopSmart"
-      },
-      {
-        type: "type5",
-        bgSrc: "https://static-ussite.tineco.com/3-2.png_ef71ef6f-2.png",
-        title: "Up to 75 Minutes<br> Runtime",
-        desc: "",
-        id: "75Minutes"
-      },
-      {
-        type: "type5",
-        bgSrc: "https://static-ussite.tineco.com/3-3.png_0f3951de-c.png",
-        title: "Upgraded <br>Pouch Cell",
-        desc: "",
-        id: "PouchCell"
+        type: 'double',
+        list: [
+          {
+            bgSrc: 'https://static-ussite.tineco.com/%E7%94%B5%E6%B1%A0-app.png_b319ad5f-4.png',
+            title: 'Up to 75 Minutes<br> Runtime',
+            desc: '',
+            id: '75Minutes'
+          },
+          {
+            bgSrc: 'https://static-ussite.tineco.com/%E7%BB%AD%E8%88%AA-app.png_8fb1dc1c-3.png',
+            title: 'Upgraded Pouch Cell',
+            desc: '',
+            id: ''
+          }
+        ]
       }
-    ];
-
+    ]
     window.AESTHETICS_LIST = [
       {
         img: "https://static-ussite.tineco.com/%E7%BE%8E%E5%AD%A6-1.png_5d309f1f-b.png",
@@ -483,17 +487,17 @@
       {
         imgSrc: "https://static-ussite.tineco.com/%E8%BD%AE%E6%92%AD-1.png_9b97d305-e.png",
         title: "Upgraded<br> pouch cells",
-        subtitle: "Enhanced safety, exceptional battery life, stable and reliable power ensures uninterrupted cleaning."
+        subtitle: "Enhanced safety,<br> exceptional battery life, stable and reliable power ensures uninterrupted cleaning."
       },
       {
         imgSrc: "https://static-ussite.tineco.com/%E8%BD%AE%E6%92%AD-2.png_139c976b-c.png",
-        title: "Charge Faster, Clean Longer",
-        subtitle: "2A flash charging ensures you are always ready for the next cleaning session."
+        title: "Charge Faster,<br> Clean Longer",
+        subtitle: "2A flash charging ensures <br>you are always ready for the next cleaning session."
       },
       {
         imgSrc: "https://static-ussite.tineco.com/%E8%BD%AE%E6%92%AD-3.png_cb68b195-c.png",
-        title: "App Support <br>& Voice Assistant",
-        subtitle: "Seamless app control and instant voice assistance deliver ultimate convenience."
+        title: "App Support & Voice Assistant",
+        subtitle: "Seamless app control and <br>instant voice assistance deliver ultimate convenience."
       },
       {
         imgSrc: "https://static-ussite.tineco.com/%E8%BD%AE%E6%92%AD-4.png_3dd238cc-0.png",

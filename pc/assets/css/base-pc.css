@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'CenturyGothic';
-    src: url('./fonts/CenturyGothicBd.otf');
-    font-weight: bold;
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirLTStd-Heavy.otf');
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: 'CenturyGothic';
-    src: url('./fonts/CenturyGothic.otf');
-    font-style: normal;
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirLTStd-Light.otf');
+  font-style: normal;
 }
 
 img {

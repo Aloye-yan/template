@@ -1,0 +1,1 @@
+import './h5/views/S9-ARTIST/index.js'

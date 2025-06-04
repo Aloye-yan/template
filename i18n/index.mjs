@@ -14,6 +14,10 @@ const countryList = [
   {
     country: "ca",
     language: "ca",
+  },
+  {
+    country: "it",
+    language: "it",
   }
 ]
 

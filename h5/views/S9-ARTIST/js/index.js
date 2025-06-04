@@ -1,9 +1,10 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+$(document).ready(function () {
 
   $(window).on('beforeunload', function () {
     $(window).scrollTop(0);
   });
   wrapperLazy();
+
 
   $("#videoModal").on("show.bs.modal", function (event) {
     let button = $(event.relatedTarget); // Button that triggered the modal
@@ -16,6 +17,68 @@ document.addEventListener('DOMContentLoaded', (event) => {
       allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     });
   });
+  const OVERALL_LIST = window.OVERALL_LIST
+  function initOverall () {
+    const swiperWrapper = document.querySelector('.overall-wrapper .swiper-wrapper');
+    let slidesHtml = '';
+
+    OVERALL_LIST.forEach(item => {
+      if (item.type === 'double') {
+        // 处理类型为 double 的项目
+        slidesHtml += `<div class="swiper-slide slide-item double">`;
+        item.list.forEach(subItem => {
+          slidesHtml += `
+            <div class="double-item" data-to-wrapper="${subItem.id}">
+              <img src="${subItem.bgSrc}" alt="" class="slide-item_bg">
+              <div class="slide-item_content">
+                <div class="slide-item_content_title">${subItem.title}</div>
+                <div class="slide-item_content_desc">${subItem.desc}</div>
+              </div>
+            </div>`;
+        });
+        slidesHtml += `</div>`;
+      } else {
+        // 处理普通项目
+        slidesHtml += `
+        <div class="swiper-slide slide-item" data-to-wrapper="${item.id}">
+          <img src="${item.bgSrc}" alt="" class="slide-item_bg">
+          <div class="slide-item_content">
+            <div class="slide-item_content_title">${item.title}</div>
+            <div class="slide-item_content_desc">${item.desc}</div>
+          </div>
+        </div>`;
+      }
+    });
+
+    swiperWrapper.innerHTML = slidesHtml;
+    const overallSwiper = new Swiper('.overall-swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      centeredSlides: true,
+      loop: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    swiperWrapper.addEventListener('click', function (event) {
+      const slideItem = event.target.closest('.slide-item, .double-item');
+      if (slideItem) {
+        const targetId = slideItem.getAttribute('data-to-wrapper');
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  }
+  const gifVideo = document.querySelector('.gif-wrapper video');
+  const GifContent = document.querySelector('.gif-wrapper .gif-wrapper_content');
+
   // 动态渲染每个item
   function createObserver (itemSelector, initDelay, delayIncrement) {
     const observerOptions = {
@@ -60,68 +123,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     `;
     });
     $('.media-wrapper_content').html(mediaItemsHTML);
-    createObserver('.media-item', 0, 150);
+    createObserver('.media-item', 0, 100);
   }
-  const OVERALL_LIST = window.OVERALL_LIST
-  function initOverall () {
-    const overallWrapperTop = document.querySelector('.overall-wrapper_top');
-    const overallWrapperTopRight = overallWrapperTop.querySelector('.overall-wrapper_top_right');
-    const overallWrapperTopRightTop = overallWrapperTopRight.querySelector('.overall-wrapper_top_right_top');
-    const overallWrapperTopRightTopLeft = overallWrapperTopRightTop.querySelector('.overall-wrapper_top_right_top_left');
-    const overallWrapperBottom = document.querySelector('.overall-wrapper_bottom');
 
-    OVERALL_LIST.forEach(item => {
-      const overallItem = document.createElement('div');
-      overallItem.className = `overall-item ${item.type}`;
-      overallItem.setAttribute('data-to-wrapper', item.id);
-
-      overallItem.innerHTML = `
-      <img src="${item.bgSrc}" alt="" class="overall-item_bg">
-      <div class="overall-item_content">
-        <div class="overall-item_content_title">${item.title}</div>
-        <div class="overall-item_content_desc">${item.desc}</div>
-      </div>
-      <div class="overall-item_icon">
-    `;
-
-      switch (item.type) {
-        case 'type1':
-          overallWrapperTop.insertBefore(overallItem, overallWrapperTop.firstChild);
-          break;
-        case 'type2':
-          overallWrapperTopRightTopLeft.appendChild(overallItem);
-          break;
-        case 'type3':
-          overallWrapperTopRightTop.appendChild(overallItem);
-          break;
-        case 'type4':
-          overallWrapperTopRight.appendChild(overallItem);
-          break;
-        case 'type5':
-          overallWrapperBottom.appendChild(overallItem);
-          break;
-        default:
-          console.warn(`Unknown type: ${item.type}`);
-      }
-
-      overallItem.addEventListener('click', function () {
-        const targetId = this.getAttribute('data-to-wrapper');
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          const offset = 70; // 根据固定导航栏的高度进行调整
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.scrollY - offset;
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-         
-        } else {
-          console.warn(`No element found with id: ${targetId}`);
-        }
-      });
-    });
-  }
   const AESTHETICS_LIST = window.AESTHETICS_LIST
   function initAesthetics () {
     let aestheticsItemsHTML = '';
@@ -134,96 +138,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     `;
     });
     $('.aesthetics-wrapper').html(aestheticsItemsHTML);
-  }
-  const GIFT_LIST = window.GIFT_LIST
-  function initGifList () {
-    const contentWrapper = document.querySelector('.giflist-wrapper_content');
-    contentWrapper.innerHTML = ''; // 清空内容以避免重复添加
-    let allItemsHtml = '';
-    GIFT_LIST.forEach((item, index) => {
-      const videoAttributes = `src="${item.videoSrc}" loop muted  playsinline class="giflist-wrapper_gif-item_video" ${index === 0 ? 'autoplay' : ''}`;
-      allItemsHtml += `
-        <div class="giflist-wrapper_gif-item">
-          <video ${videoAttributes}></video>
-          <div class="giflist-wrapper_gif-item_title">${item.title}</div>
-          <div class="giflist-wrapper_gif-item_desc">${item.description}</div>
-        </div>
-      `;
-    });
-    contentWrapper.innerHTML = allItemsHtml;
-
-    const items = contentWrapper.querySelectorAll('.giflist-wrapper_gif-item');
-    items.forEach((item, index) => {
-      setTimeout(() => {
-        item.classList.add('visible'); // 添加可见类以应用 CSS 动画
-
-        const videoElement = item.querySelector('video');
-        item.addEventListener('mouseenter', () => {
-          // 暂停所有视频
-          items.forEach(otherItem => {
-            const otherVideo = otherItem.querySelector('video');
-            if (otherVideo && otherVideo !== videoElement) {
-              otherVideo.pause();
-            }
-          });
-          // 播放当前视频
-          videoElement.play().catch(error => {
-            console.error("Error attempting to play video:", error);
-          });
-        });
-        item.addEventListener('mouseleave', () => {
-          // 暂停当前视频
-          videoElement.pause();
-        });
-      }, index * 200);
-    });
-  }
-  function hideGifList () {
-    const items = document.querySelectorAll('.giflist-wrapper_gif-item');
-    items.forEach(item => {
-      item.classList.remove('visible');
-    });
-  }
-  let swiperInstance = false
-  const SWIPER_LIST = window.SWIPER_LIST
-  function initSelling () {
-    const sellingContent = $('.selling-wrapper .selling-wrapper_content');
-
-    SWIPER_LIST.forEach(slide => {
-      const slideItem =
-        '<div class="selling-item">' +
-        '<img src="' + slide.imgSrc + '" alt="" class="selling-item_img">' +
-        '<div class="selling-item_content">' +
-        '<div class="selling-item_content_title">' + slide.title + '</div>' +
-        '<div class="selling-item_content_subtitle">' + slide.subtitle + '</div>' +
-        '</div>' +
-        '</div>';
-
-      sellingContent.append(slideItem);
-    });
-    swiperInstance = true
+    createObserver('.aesthetics-item', 0, 100);
   }
 
-  const mainWrapper = document.querySelector('.mainpro-wrapper');
-  const images = document.querySelectorAll('.product-item_img');
-  const totalImages = images.length;
-  const viewportHeight = window.innerHeight;
-  const scrollStep = 0.5 * viewportHeight; // 50vh
-  let hasEnteredView = false;
 
-  function handleScrollMainPro () {
-    const scrollTop = window.scrollY;
-    const wrapperTop = mainWrapper.offsetTop;
-    const scrolledViewportHeights = (scrollTop - wrapperTop) / scrollStep;
-    let currentIndex = Math.floor(scrolledViewportHeights);
-    currentIndex = Math.min(currentIndex, totalImages - 1);
-
-    images.forEach((img, index) => {
-      if (index <= currentIndex) {
-        img.classList.add('show');
-      }
-    });
-  }
   let isVisible = false;
   function handleScrollModuleTitle (listtingWrapper) {
     const moduleHeader = $(listtingWrapper).find('.module-header');
@@ -271,9 +189,83 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   }
 
-  const gifVideo = document.querySelector('.gif-wrapper video');
-  const GifContent = document.querySelector('.gif-wrapper .gif-wrapper_content');
-  // 模块懒加载
+  const mainWrapper = document.querySelector('.mainpro-wrapper');
+  const images = document.querySelectorAll('.product-item_img');
+  const totalImages = images.length;
+  const viewportHeight = window.innerHeight;
+  const scrollStep = 0.5 * viewportHeight; // 50vh
+  let hasEnteredView = false;
+
+  function handleScrollMainPro () {
+    const scrollTop = window.scrollY;
+    const wrapperTop = mainWrapper.offsetTop;
+    const scrolledViewportHeights = (scrollTop - wrapperTop) / scrollStep;
+    let currentIndex = Math.floor(scrolledViewportHeights);
+    currentIndex = Math.min(currentIndex, totalImages - 1);
+
+    images.forEach((img, index) => {
+      if (index <= currentIndex) {
+        img.classList.add('show');
+      }
+    });
+  }
+
+  function initGifList () {
+    const GIFT_LIST = window.GIFT_LIST
+    const contentWrapper = document.querySelector('.giflist-wrapper_content');
+    contentWrapper.innerHTML = ''; // 清空内容以避免重复添加
+    let allItemsHtml = '';
+    GIFT_LIST.forEach((item, index) => {
+      const videoAttributes = `src="${item.videoSrc}" autoplay loop muted  playsinline class="giflist-wrapper_gif-item_video "`;
+      allItemsHtml += `
+        <div class="giflist-wrapper_gif-item">
+          <video ${videoAttributes}></video>
+          <div class="giflist-wrapper_gif-item_title">${item.title}</div>
+          <div class="giflist-wrapper_gif-item_desc">${item.description}</div>
+        </div>
+      `;
+    });
+    contentWrapper.innerHTML = allItemsHtml;
+
+    const items = contentWrapper.querySelectorAll('.giflist-wrapper_gif-item');
+    items.forEach((item, index) => {
+      setTimeout(() => {
+        item.classList.add('visible'); 
+      }, index * 200);
+    });
+  }
+  function hideGifList () {
+    const items = document.querySelectorAll('.giflist-wrapper_gif-item');
+    items.forEach(item => {
+      item.classList.remove('visible');
+    });
+  }
+  let sellingSwiperInstance = false
+  const SWIPER_LIST = window.SWIPER_LIST
+  function initSelling () {
+    const sellingContent = $('.selling-wrapper .swiper-wrapper');
+
+    SWIPER_LIST.forEach(slide => {
+      const slideItem =
+        '<div class="swiper-slide selling-item">' +
+        '<img src="' + slide.imgSrc + '" alt="" class="selling-item_img">' +
+        '<div class="selling-item_content">' +
+        '<div class="selling-item_content_title">' + slide.title + '</div>' +
+        '<div class="selling-item_content_subtitle">' + slide.subtitle + '</div>' +
+        '</div>' +
+        '</div>';
+
+      sellingContent.append(slideItem);
+    });
+    const sellingSwiper = new Swiper('.selling-swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      centeredSlides: true,
+      loop: false,
+    });
+    sellingSwiperInstance = true
+  }
+
   function wrapperLazy () {
     const observerOptions = {
       root: null, // 默认为视口
@@ -309,11 +301,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             // 解绑滚动事件处理程序
             $(document).off('scroll.listtingModule');
           }
-        } else if (entry.target.classList.contains('listting-content_content_step')) {
-          const stepTexts = entry.target.querySelectorAll('.listting-content_content_step_text');
+        } else if (entry.target.classList.contains('listting-content_step')) {
+          const stepTexts = entry.target.querySelectorAll('.listting-content_step_text');
           if (entry.isIntersecting) {
             stepTexts.forEach((stepText, index) => {
-              const delay = (index === 0 ? 1 : 0) * 300; 
+              const delay = index * 300; // 为每个元素设置不同的延迟
               setTimeout(() => {
                 stepText.classList.add('visible');
               }, delay);
@@ -330,28 +322,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
           } else {
             hideGifList();
           }
-        } else if (entry.target.classList.contains('rotating-wrapper_top_img') || entry.target.classList.contains('runtime-wrapper_content_time') || entry.target.classList.contains('tips-content') || entry.target.classList.contains('features-item_img') || entry.target.classList.contains('listting-content_img_content')) {
+        } else if (entry.target.classList.contains('rotating-wrapper_top_img') || entry.target.classList.contains('runtime-wrapper_time') || entry.target.classList.contains('tips-content') || entry.target.classList.contains('listting-content_img_content') || entry.target.classList.contains('volume-wrapper_content_item')) {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
           } else {
             entry.target.classList.remove('visible');
           }
-        } else if (entry.target.classList.contains('volume-wrapper_content')) {
-          const titles = entry.target.querySelectorAll('.volume-wrapper_content_item_title');
-          const subtitles = entry.target.querySelectorAll('.volume-wrapper_content_item_subtitle');
-
+        } else if (entry.target.classList.contains('selling-wrapper')) {
           if (entry.isIntersecting) {
-            // 元素进入视图
-            titles.forEach(title => title.classList.add('visible'));
-            subtitles.forEach(subtitle => subtitle.classList.add('visible'));
-          } else {
-            // 元素离开视图
-            titles.forEach(title => title.classList.remove('visible'));
-            subtitles.forEach(subtitle => subtitle.classList.remove('visible'));
-          }
-        } else if (entry.target.classList.contains('selling-wrapper_content')) {
-          if (entry.isIntersecting) {
-            if (!swiperInstance) {
+            if (!sellingSwiperInstance) {
               initSelling()
             }
             entry.target.classList.add('visible');
@@ -366,12 +345,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             $(document).off('scroll.mainpro', handleScrollMainPro);
             observer.unobserve(mainWrapper); // 停止观察
           }
-        } else if (entry.target.classList.contains('rotating-wrapper_img')) {
-          if (entry.isIntersecting) {
-            entry.target.play();
-          } else {
-            entry.target.pause();
-          }
         }
       })
     };
@@ -385,5 +358,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
       observerWrapper.observe(this);
     });
   }
-
 });
